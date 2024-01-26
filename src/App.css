@@ -3,116 +3,152 @@
   src: url("../otr-type\OTR type\fonts\otf\OTRtypeGX.ttf") format("truetype");
 }
 
-body {
-  display: flex;
-  height: 90vh;
-  background-color: antiquewhite;
+@font-face {
+  font-family: "arvo-regular";
+  src: url("../arvo/Arvo-Regular.ttf") format("truetype");
 }
 
-.login-input-email {
-  border-radius: 10px;
-  display: block;
-  width: 45vw;
-  padding: 16px;
-  margin-top: 20vh;
-}
-
-.login-button {
-  margin-top: 34vh;
-  margin-left: 78vw;
-  width: 20vw;
-  height: 10vh;
-}
-
-.nav-toggle-button {
-  position: relative;
-  top: 10px;
-  left: 10px;
-  z-index: 1000;
-  width: 4vw;
-  aspect-ratio: 1 / 1;
-  transition: scale 0.2s ease-in-out;
-}
-
-.nav-toggle-button:hover {
-  scale: 1.1;
-}
-
-.nav-toggle-button-icon {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.nav-toggle-button-active {
-  opacity: 1;
+@font-face {
+  font-family: "arvo-bold";
+  src: url("../arvo/Arvo-Bold.ttf") format("truetype");
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  width: 70vw;
-  height: 100vh;
-  background-color: #97bbd6;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  z-index: 500;
-  transition: left 0.5s ease-in-out;
+  width: 99vw;
+  height: 10vh;
+  background-color: #8abcd7;
+  border-radius: 10px;
 }
 
-.nav-open {
-  left: 0;
-}
-
-.nav-closed {
-  left: -70vw;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+.nav-hstack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 400;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-}
-
-.overlay-visible {
-  opacity: 1;
-  visibility: visible;
+  gap: 20px;
 }
 
 .nav-links {
-  position: absolute;
-  margin: 5vh 1vw;
-  padding: 10px;
   text-decoration: none;
-  font-size: xx-large;
+  font-size: large;
   color: whitesmoke;
   font-family: "otr", sans-serif;
-  transition: scale 0.1s ease-in-out;
-}
-
-.nav-links.first {
-  top: 30vh;
-  left: 20vw;
-}
-
-.nav-links.second {
-  top: 40vh;
-  left: 20vw;
-}
-
-.nav-links.third {
-  top: 50vh;
-  left: 20vw;
+  transition: scale 0.2s ease-in-out;
 }
 
 .nav-links:hover {
-  scale: 1.1;
+  scale: 1.2;
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-image {
+  max-height: 10vh;
+  border-radius: 100px;
+  animation: rotateImage 5s cubic-bezier(0.5, -0.5, 0.5, 1.5) infinite;
+}
+
+.nav-image-container {
+  max-height: 10vh;
+}
+
+@keyframes scaleIcon {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav-email-container {
+  animation: scaleIcon 2s linear infinite;
+}
+
+.members-founders-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.members-founders-card {
+  background: linear-gradient(51deg, #2b59c3 30%, #20063b 95%);
+  margin: 10px;
+  width: 40vw;
+  height: 40vh;
+  border-radius: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.members-founders-card-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 50px 40px;
+  background-color: #7facc4;
+  color: #ffffff;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  font-family: "arvo-regular", sans-serif;
+}
+
+.members-founders-card-container > h1 {
+  font-family: "arvo-bold", sans-serif;
+}
+
+.members-founders-card:hover .members-founders-card-container {
+  border-radius: 10px;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+}
+
+.members-founders-card-contacts {
+  display: flex;
+  margin-top: 40px;
+}
+
+.members-founders-card-contacts a {
+  color: black;
+}
+
+.members-founders-card-contacts img,
+.members-founders-card-contacts svg {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.members-founders-card-contacts-instagram,
+.members-founders-card-contacts-email {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.members-founders-card-picture {
+  position: absolute;
+  left: 25vw;
+  bottom: 12vh;
+}
+
+.members-founders-card-picture .chakra-avatar__img {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50% !important;
 }
