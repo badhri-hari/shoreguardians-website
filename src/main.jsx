@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import Home from "./pages/Home.jsx";
-import Members from './pages/Members.jsx';
-import Admin from './pages/Admin.jsx';
+import Members from "./pages/Members.jsx";
+import Admin from "./pages/Admin.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
