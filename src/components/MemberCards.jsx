@@ -7,7 +7,7 @@ export default function MemberCards() {
     fetch("/member_details")
       .then((response) => response.json())
       .then((data) => setMembers(data))
-      .catch((error) => console.error("Error fetching member data:", error));
+      .catch((error) => console.error(error));
   }, []);
 
   return (
