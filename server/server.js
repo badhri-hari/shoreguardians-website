@@ -9,7 +9,7 @@ const API_KEY = "YOUR_API_KEY";
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "shoreguardians.vercel.app",
   })
 );
 
@@ -29,9 +29,11 @@ function checkApiKey(req, res, next) {
 app.post("/new_member", checkApiKey, async (req, res) => {
   try {
     const newMember = req.body;
+    console.log(newMember);
+
     // TODO: Save the newMember data to your database or process as needed
 
-    res.status(200).json({ message: "New member data received" });
+    res.status(200);
   } catch (error) {
     return res.status(500).json({ error: error.message });
   }
