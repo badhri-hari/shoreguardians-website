@@ -9,11 +9,14 @@ export default function Nav() {
       <HStack className="nav-hstack" spacing={300}>
         <a
           href="https://form.jotform.com/232942341832050"
+          // <a href="javascript:void( window.open( 'https://form.jotform.com/232942341832050', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) "> ShoreGuardians Signup Form </a>
+          // <div data-fillout-id="cYwGeWiA8Tus" data-fillout-embed-type="slider" data-fillout-slider-direction="right" data-fillout-inherit-parameters></div><script src="https://server.fillout.com/embed/v1/"></script>
+
           target="blank"
           className="nav-image-container"
         >
           <img
-            src="../../public/shoreguardians-logo-hands.jpg"
+            src="/shoreguardians-logo-hands.jpg"
             className="nav-image"
             alt="Part of the ShoreGuardians Logo"
           />

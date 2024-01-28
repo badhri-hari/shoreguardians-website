@@ -1,6 +1,7 @@
 import { EmailIcon } from "@chakra-ui/icons";
-import { Avatar } from "@chakra-ui/react";
+import { Avatar, Divider, VStack, Box, AbsoluteCenter } from "@chakra-ui/react";
 import Nav from "../components/Nav";
+import MemberCards from "../components/MemberCards";
 
 export default function Members() {
   const mailtoURL0 = `mailto:average.runner216@gmail.com&subject=Hey Badhri!`;
@@ -17,7 +18,7 @@ export default function Members() {
             <div className="members-founders-card-contacts">
               <a href="https://www.instagram.com/badh.hari/" target="blank">
                 <img
-                  src="../../public/instagram-icon.svg"
+                  src="/instagram-icon.svg"
                   className="members-founders-card-contacts-instagram"
                 />
               </a>
@@ -26,11 +27,7 @@ export default function Members() {
               </a>
             </div>
             <div className="members-founders-card-picture">
-              <Avatar
-                size={null}
-                name="Badhri Hari"
-                src="../../public/badhri-image.jpeg"
-              />
+              <Avatar size={null} name="Badhri Hari" src="/badhri-image.jpeg" />
             </div>
           </div>
         </div>
@@ -41,7 +38,7 @@ export default function Members() {
             <div className="members-founders-card-contacts">
               <a href="https://www.instagram.com/rishiii__13/" target="blank">
                 <img
-                  src="../../public/instagram-icon.svg"
+                  src="/instagram-icon.svg"
                   className="members-founders-card-contacts-instagram"
                 />
               </a>
@@ -59,6 +56,15 @@ export default function Members() {
           </div>
         </div>
       </div>
+      <Box position="relative" padding="30">
+        <Divider />
+        <AbsoluteCenter bg="white" px="4" className="members-header">
+          Members
+        </AbsoluteCenter>
+      </Box>
+      <VStack>
+        <MemberCards />
+      </VStack>
     </>
   );
 }

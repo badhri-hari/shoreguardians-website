@@ -1,16 +1,16 @@
 @font-face {
   font-family: "otr";
-  src: url("../otr-type\OTR type\fonts\otf\OTRtypeGX.ttf") format("truetype");
+  src: url("/otr-type/OTR type/fonts/otf/OTRtypeGX.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "arvo-regular";
-  src: url("../arvo/Arvo-Regular.ttf") format("truetype");
+  src: url("/arvo/Arvo-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "arvo-bold";
-  src: url("../arvo/Arvo-Bold.ttf") format("truetype");
+  src: url("/arvo/Arvo-Bold.ttf") format("truetype");
 }
 
 nav {
@@ -151,4 +151,22 @@ nav {
   width: 150px !important;
   height: 150px !important;
   border-radius: 50% !important;
+}
+
+.members-header {
+  font-family: "otr", sans-serif;
+}
+
+.members-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 83vw;
+  height: 20vh;
+  background-color: #7facc4;
+  border-radius: 10px;
+}
+
+.members-card-content {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
