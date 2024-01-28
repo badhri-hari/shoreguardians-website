@@ -1,8 +1,16 @@
-import fetch from "node-fetch";
+import axios from "axios";
 
-fetch(
-  "https://script.google.com/macros/s/AKfycbwsIYmcpnpEYIS-8rHNrNxsneZCm43oUjUOIggp1P0/dev"
-)
-  .then((response) => response.json())
-  .then((data) => console.log(data))
-  .catch((error) => console.error("Error:", error));
+async function getMembersDataFromGoogleAppsScript() {
+  try {
+    const response = await axios.get(
+      "https://script.google.com/macros/s/AKfycbwsIYmcpnpEYIS-8rHNrNxsneZCm43oUjUOIggp1P0/dev",
+      {
+        headers: { Authorization: "Bearer YOUR_API_KEY" },
+      }
+    );
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching data from Google Apps Script:", error);
+    throw error;
+  }
+}
