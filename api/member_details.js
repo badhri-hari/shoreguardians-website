@@ -14,13 +14,18 @@ function checkApiKey(req) {
 }
 
 async function getMembersDataFromGoogleAppsScript() {
-  const response = await fetch(
-    "https://script.google.com/macros/s/AKfycbyDOAKYy5q1PdW44wp-hXy-4mzwwHJSGZPy_8OfUMmYxXR5toLkix20vV0U0JAPhqie/exec",
-    {
+  try {
+    const response = await fetch("GOOGLE_APPS_SCRIPT_WEB_APP_URL", {
       headers: { Authorization: "Bearer YOUR_API_KEY" },
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
     }
-  );
-  return response.json();
+    return response.json();
+  } catch (error) {
+    console.error("Error fetching data from Google Apps Script:", error);
+    throw error;
+  }
 }
 
 export default async (req, res) => {
