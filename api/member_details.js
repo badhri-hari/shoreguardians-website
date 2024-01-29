@@ -9,6 +9,7 @@ async function getMembersDataFromGoogleAppsScript() {
       }
     );
     return response.data;
+    console.log(response);
   } catch (error) {
     console.error("Error fetching data from Google Apps Script:", error);
     throw error;
