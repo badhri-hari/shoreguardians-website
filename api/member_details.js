@@ -1,18 +1,14 @@
 import axios from "axios";
 
-async function getMembersDataFromGoogleAppsScript() {
+export default async function handler(req, res) {
+  const url =
+    "https://script.googleusercontent.com/macros/echo?user_content_key=GQBGRfYGJ3zwbfkFN6ws1h9myh309eRESAsqNzT8L-5UqCgGLhrm7-AnvWSY5mpIGV000PmMIZnDUzGJy66RaEafFjlRJOmCm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnIURuQLlkRa5YohIF8FebwdrsRnSdNrTq4RgqB3Xi1NFuQm6K6Bjh1FFghBl97br2w&lib=MN4McHg5VF7hVJ1wlZo-Il2s80ntowcNA";
+
   try {
-    const response = await axios.get(
-      "https://script.googleusercontent.com/macros/echo?user_content_key=A-S417Y8zCQafn42q2SF8pm8yPADqWatqC583Lm-FS4y3_m57jjcda3z-HBvPqVOD83gpvs9H8nwakLrEtbk3FDh7ca-tswGm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnASciXxnS3nx4JGKSZJ7MhPwoC0sGDynUR3LJMG5A3qzBAnYQXmYTsGbbT05nNJzOHu-YW6DzHJw&lib=MN4McHg5VF7hVJ1wlZo-Il2s80ntowcNA"
-    );
-    console.log(response.data);
-    return response.data;
+    const response = await axios.get(url);
+    res.status(200).json(response.data);
   } catch (error) {
-    console.error("Error fetching data from Google Apps Script:", error);
-    throw error;
+    console.error("Error fetching member details:", error);
+    res.status(500).json({ error: "Error fetching member details" });
   }
 }
-
-getMembersDataFromGoogleAppsScript()
-  .then((data) => console.log(data))
-  .catch((error) => console.error(error));
