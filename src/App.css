@@ -180,6 +180,7 @@ nav {
   gap: 20px;
   padding: 10px;
   overflow: hidden;
+  border: 20px solid black;
 }
 
 .members-card {
@@ -191,7 +192,6 @@ nav {
   flex: 0 0 auto;
   transform: scale(0.98);
   transition: transform 0.25s ease-in-out;
-  border: 20px black;
 }
 
 .members-card:hover {
