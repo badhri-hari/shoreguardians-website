@@ -38,7 +38,7 @@ export default function MemberCards() {
           </div>
         ))
       ) : (
-        <p>Please wait...</p>
+        <div className="members-card">Please wait...</div>
       )}
     </div>
   );
