@@ -180,11 +180,12 @@ nav {
   gap: 20px;
   padding: 10px;
   overflow: hidden;
+  width: 90%;
 }
 
 .members-card {
   background-color: #7facc4;
-  width: 50vw;
+  width: 70vw;
   height: 25vh;
   border-radius: 10px;
   position: relative;
