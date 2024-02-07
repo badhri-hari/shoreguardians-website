@@ -11,8 +11,8 @@ export default function Members() {
     <>
       <Nav />
       <div className="members-founders-container">
-        <div className="members-founders-card">
-          <div className="members-founders-card-container">
+        <div className="members-founders-card-container">
+          <div className="members-founders-card">
             <h1>Badhri N Hari</h1>
             <p>Director</p>
             <div className="members-founders-card-contacts">

@@ -83,7 +83,7 @@ nav {
   padding: 20px;
 }
 
-.members-founders-card {
+.members-founders-card-container {
   background: linear-gradient(51deg, #2b59c3 30%, #20063b 95%);
   margin: 10px;
   width: 40vw;
@@ -93,7 +93,7 @@ nav {
   flex: 0 0 auto;
 }
 
-.members-founders-card-container {
+.members-founders-card {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -153,17 +153,90 @@ nav {
   border-radius: 50% !important;
 }
 
-.members-header {
-  font-family: "otr", sans-serif;
-}
 
-.members-card {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.members-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 83vw;
-  height: 20vh;
-  background-color: #7facc4;
+  gap: 20px;
+  padding: 20px;
+}
+
+.members-card-container {
+  background: linear-gradient(51deg, #2b59c3 30%, #20063b 95%);
+  margin: 10px;
+  width: 40vw;
+  height: 40vh;
   border-radius: 10px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.members-card {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 50px 40px;
+  background-color: #7facc4;
+  color: #ffffff;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  font-family: "arvo-regular", sans-serif;
+}
+
+.members-card-container > h1 {
+  font-family: "arvo-bold", sans-serif;
+}
+
+.members-card:hover .members-card-container {
+  border-radius: 10px;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+}
+
+.members-card-contacts {
+  display: flex;
+  margin-top: 40px;
+}
+
+.members-card-contacts a {
+  color: black;
+}
+
+.members-card-contacts img,
+.members-card-contacts svg {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.members-card-contacts-instagram,
+.members-card-contacts-email {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.members-card-picture {
+  position: absolute;
+  left: 25vw;
+  bottom: 12vh;
 }
