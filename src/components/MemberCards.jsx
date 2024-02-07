@@ -31,8 +31,8 @@ export default function MemberCards() {
           //   <p>{member.PhoneNumber}</p>
           //   <p>{member.Reason}</p>
           // </div>
-          <div key={member.SubmissionID} className="members-card-container">
-            <div className="members-card">
+          <div key={member.SubmissionID} className="members-card">
+            <div className="members-card-container">
               <h1>{member.Name}</h1>
               <div className="members-card-contacts">
                 <a href={member.Email} target="blank">

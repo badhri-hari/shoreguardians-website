@@ -83,7 +83,7 @@ nav {
   padding: 20px;
 }
 
-.members-founders-card-container {
+.members-founders-card {
   background: linear-gradient(51deg, #2b59c3 30%, #20063b 95%);
   margin: 10px;
   width: 40vw;
@@ -93,7 +93,7 @@ nav {
   flex: 0 0 auto;
 }
 
-.members-founders-card {
+.members-founders-card-container {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -165,10 +165,6 @@ nav {
 
 
 
-
-
-
-
 .members-container {
   display: flex;
   justify-content: center;
@@ -177,8 +173,8 @@ nav {
   padding: 20px;
 }
 
-.members-card-container {
-  background: linear-gradient(51deg, #2b59c3 30%, #20063b 95%);
+.members-card {
+  background-color: #7facc4;
   margin: 10px;
   width: 40vw;
   height: 40vh;
@@ -187,7 +183,7 @@ nav {
   flex: 0 0 auto;
 }
 
-.members-card {
+.members-card-container {
   position: absolute;
   top: 0;
   bottom: 0;
