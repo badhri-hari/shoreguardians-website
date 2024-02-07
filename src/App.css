@@ -157,7 +157,7 @@ nav {
   font-family: "otr", sans-serif;
 }
 
-.members-card-container {
+.members-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,8 +165,5 @@ nav {
   height: 20vh;
   background-color: #7facc4;
   border-radius: 10px;
-}
-
-.members-card-content {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }

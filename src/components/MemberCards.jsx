@@ -12,7 +12,6 @@ export default function MemberCards() {
 
   return (
     <div
-      className="members-card-container"
       style={{
         display: "flex",
         flexWrap: "wrap",
@@ -24,7 +23,7 @@ export default function MemberCards() {
         members.map((member) => (
           <div
             key={member.SubmissionID}
-            className="member-card"
+            className="members-card"
             style={{
               border: "1px solid #ccc",
               borderRadius: "5px",
@@ -39,7 +38,7 @@ export default function MemberCards() {
           </div>
         ))
       ) : (
-        <p>No member details to display.</p>
+        <p>Please wait...</p>
       )}
     </div>
   );
