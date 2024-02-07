@@ -228,6 +228,7 @@ nav {
 .members-card-contacts {
   display: flex;
   margin-top: 40px;
+  border: 20px solid blueviolet;
 }
 
 .members-card-contacts a {
@@ -239,16 +240,18 @@ nav {
   width: 40px;
   height: 40px;
   margin-right: 20px;
+  border: 20px solid cyan;
 }
 
-.members-card-contacts-instagram,
 .members-card-contacts-email {
   display: inline-block;
   margin-right: 10px;
+  border: 20px solid brown;
 }
 
 .members-card-picture {
   position: absolute;
   left: 25vw;
   bottom: 12vh;
+  border: 20px solid hotpink;
 }
