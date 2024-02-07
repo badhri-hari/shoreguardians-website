@@ -62,7 +62,7 @@ export default function Members() {
           Members
         </AbsoluteCenter>
       </Box>
-      <VStack>
+      <VStack w="90%">
         <MemberCards />
       </VStack>
     </>
