@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Avatar } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
 
 export default function MemberCards() {
@@ -25,12 +24,12 @@ export default function MemberCards() {
                 </a>
               </div>
               <div className="members-card-picture">
-                <Avatar
+                {/* <Avatar
                   size="xl"
                   name={member.Name}
                   src="https://bit.ly/sage-adebayo"
                   alt={`${member.Name}'s profile picture`}
-                />
+                /> */}
               </div>
             </div>
           </div>
