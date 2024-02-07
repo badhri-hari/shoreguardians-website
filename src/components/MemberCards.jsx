@@ -32,9 +32,9 @@ export default function MemberCards() {
             }}
           >
             <h3>{member.Name}</h3>
-            <p>Email: {member.Email}</p>
-            <p>Phone: {member.PhoneNumber}</p>
-            <p>Reason: {member.Reason}</p>
+            <p>{member.Email}</p>
+            <p>{member.PhoneNumber}</p>
+            <p>{member.Reason}</p>
           </div>
         ))
       ) : (
