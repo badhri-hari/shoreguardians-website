@@ -192,6 +192,7 @@ nav {
   flex: 0 0 auto;
   transform: scale(0.98);
   transition: transform 0.25s ease-in-out;
+  border: 20px solid blue;
 }
 
 .members-card:hover {
