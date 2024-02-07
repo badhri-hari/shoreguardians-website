@@ -1,5 +1,12 @@
 import { EmailIcon } from "@chakra-ui/icons";
-import { Avatar, Divider, VStack, Box, AbsoluteCenter } from "@chakra-ui/react";
+import {
+  Avatar,
+  Divider,
+  VStack,
+  Box,
+  AbsoluteCenter,
+  Center,
+} from "@chakra-ui/react";
 import Nav from "../components/Nav";
 import MemberCards from "../components/MemberCards";
 
@@ -62,9 +69,11 @@ export default function Members() {
           Members
         </AbsoluteCenter>
       </Box>
-      <VStack w="90%">
-        <MemberCards />
-      </VStack>
+      <Center width="full" height="full">
+        <VStack>
+          <MemberCards />
+        </VStack>
+      </Center>
     </>
   );
 }
