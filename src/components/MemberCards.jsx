@@ -16,21 +16,6 @@ export default function MemberCards() {
     <div className="members-container">
       {members.length > 0 ? (
         members.map((member) => (
-          // <div
-          //   key={member.SubmissionID}
-          //   className="members-card"
-          //   style={{
-          //     border: "1px solid #ccc",
-          //     borderRadius: "5px",
-          //     padding: "20px",
-          //     boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
-          //   }}
-          // >
-          //   <h3>{member.Name}</h3>
-          //   <p>{member.Email}</p>
-          //   <p>{member.PhoneNumber}</p>
-          //   <p>{member.Reason}</p>
-          // </div>
           <div key={member.SubmissionID} className="members-card">
             <div className="members-card-container">
               <h1>{member.Name}</h1>
@@ -41,10 +26,10 @@ export default function MemberCards() {
               </div>
               <div className="members-card-picture">
                 <Avatar
-                  size={null}
-                  name="{member.Name}"
-                  src=""
-                  alt="how-to-add-member-images?"
+                  size="xl"
+                  name={member.Name}
+                  src="https://bit.ly/sage-adebayo"
+                  alt={`${member.Name}'s profile picture`}
                 />
               </div>
             </div>

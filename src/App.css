@@ -165,12 +165,18 @@ nav {
 
 
 
+
+
+
+
+
 .members-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 20px;
   padding: 20px;
+  overflow: hidden;
 }
 
 .members-card {
@@ -181,6 +187,12 @@ nav {
   border-radius: 10px;
   position: relative;
   flex: 0 0 auto;
+  transform: scale(0.9);
+  transition: transform 0.2s ease;
+}
+
+.members-card:hover {
+  transform: scale(1);
 }
 
 .members-card-container {
