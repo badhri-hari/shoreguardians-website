@@ -8,7 +8,7 @@ export default function Members() {
   const mailtoURL1 = `mailto:rishirajanmenon@gmail.com&subject=Hey Rishi!`;
 
   return (
-    <>
+    <div style={{ width: "99%" }}>
       <Nav />
       <div className="members-founders-container">
         <div className="members-founders-card">
@@ -65,6 +65,6 @@ export default function Members() {
       <VStack>
         <MemberCards />
       </VStack>
-    </>
+    </div>
   );
 }
