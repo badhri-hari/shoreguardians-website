@@ -180,7 +180,6 @@ nav {
   gap: 20px;
   padding: 10px;
   overflow: hidden;
-  border: 20px solid black;
 }
 
 .members-card {
@@ -192,7 +191,6 @@ nav {
   flex: 0 0 auto;
   transform: scale(0.98);
   transition: transform 0.25s ease-in-out;
-  border: 20px solid blue;
 }
 
 .members-card:hover {
@@ -210,7 +208,6 @@ nav {
   border-radius: 8px;
   transition: 0.2s ease;
   font-family: "arvo-regular", sans-serif;
-  border: 20px solid violet;
 }
 
 .members-card-container > h1 {
@@ -228,7 +225,6 @@ nav {
 .members-card-contacts {
   display: flex;
   margin-top: 40px;
-  border: 20px solid blueviolet;
 }
 
 .members-card-contacts a {
@@ -240,18 +236,15 @@ nav {
   width: 40px;
   height: 40px;
   margin-right: 20px;
-  border: 20px solid cyan;
 }
 
 .members-card-contacts-email {
   display: inline-block;
   margin-right: 10px;
-  border: 20px solid brown;
 }
 
 .members-card-picture {
   position: absolute;
   left: 25vw;
   bottom: 12vh;
-  border: 20px solid hotpink;
 }
