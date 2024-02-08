@@ -157,22 +157,6 @@ nav {
   border-radius: 50% !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .members-container {
   display: flex;
   flex-direction: column;
@@ -247,6 +231,12 @@ nav {
 
 .members-card-picture {
   position: absolute;
-  left: 25vw;
+  left: 55vw;
   bottom: 12vh;
+}
+
+.members-card-picture .chakra-avatar__img {
+  width: 15vw !important;
+  height: 15vh !important;
+  border-radius: 50% !important;
 }
