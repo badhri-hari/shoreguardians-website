@@ -58,7 +58,7 @@ export default function Members() {
       </div>
       <Box position="relative" padding="30">
         <Divider />
-        <AbsoluteCenter bg="white" px="4" className="members-header">
+        <AbsoluteCenter px="4" className="members-header">
           Members
         </AbsoluteCenter>
       </Box>

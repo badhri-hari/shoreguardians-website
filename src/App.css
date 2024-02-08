@@ -14,11 +14,11 @@
 }
 
 body {
-  background-color: rgb(231, 21, 35);
+  background-color: blanchedalmond;
 }
 
 nav {
-  width: 99vw;
+  width: 98vw;
   height: 10vh;
   background-color: #8abcd7;
   border-radius: 10px;
@@ -153,8 +153,12 @@ nav {
 
 .members-founders-card-picture .chakra-avatar__img {
   width: 10vw !important;
-  height: 20vh !important;
+  height: 22vh !important;
   border-radius: 50% !important;
+}
+
+.members-header {
+  font-family: "otr", sans-serif;
 }
 
 .members-container {
