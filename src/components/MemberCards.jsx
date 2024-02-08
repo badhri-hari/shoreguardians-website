@@ -19,7 +19,11 @@ export default function MemberCards() {
             <div className="members-card-container">
               <h1>{member.Name}</h1>
               <div className="members-card-contacts">
-                <a href={member.Email} target="blank">
+                <a
+                  href={`mailto:${member.Email}?subject=Hey ${member.Name}!`}
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <EmailIcon style={{ color: "black", fontSize: "20px" }} />
                 </a>
               </div>
