@@ -20,7 +20,7 @@ export default function MemberCards() {
               <h1>{member.Name}</h1>
               <div className="members-card-contacts">
                 <a href={member.Email} target="blank">
-                  <EmailIcon style={{ color: "black", fontSize: "40px" }} />
+                  <EmailIcon style={{ color: "black", fontSize: "20px" }} />
                 </a>
               </div>
               <div className="members-card-picture">
