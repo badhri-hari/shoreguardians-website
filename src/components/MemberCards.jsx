@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { EmailIcon } from "@chakra-ui/icons";
+import { Avatar } from "@chakra-ui/react";
 
 export default function MemberCards() {
   const [members, setMembers] = useState([]);
@@ -28,12 +29,12 @@ export default function MemberCards() {
                 </a>
               </div>
               <div className="members-card-picture">
-                {/* <Avatar
-                  size="xl"
+                <Avatar
+                  size="sm"
                   name={member.Name}
                   src="https://bit.ly/sage-adebayo"
                   alt={`${member.Name}'s profile picture`}
-                /> */}
+                />
               </div>
             </div>
           </div>
