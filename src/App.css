@@ -265,10 +265,12 @@ nav {
   position: absolute;
   left: 76%;
   bottom: 12vh;
+  width: auto;
+  height: auto;
 }
 
 .members-card-picture .chakra-avatar__img {
-  width: 9vw !important;
-  height: 9vh !important;
+  width: 10vw !important;
+  height: 10svh !important;
   border-radius: 50% !important;
 }
