@@ -262,7 +262,7 @@ nav {
 }
 
 .members-card-picture {
-  position: relative;
+  position: absolute;
   left: 76%;
   border: 2px solid black;
 }
