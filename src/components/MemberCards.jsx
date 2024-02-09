@@ -16,7 +16,7 @@ export default function MemberCards() {
     <div className="members-container">
       {members.length > 0 ? (
         members.map((member) => (
-          <div key={member.SubmissionID} className="members-card">
+          <div key={member.SubmissionTime} className="members-card">
             <div className="members-card-container">
               <h1>{member.Name}</h1>
               <div className="members-card-contacts">
@@ -32,7 +32,7 @@ export default function MemberCards() {
                 <Avatar
                   size="sm"
                   name={member.Name}
-                  src="https://bit.ly/sage-adebayo"
+                  src={member.Picture}
                   alt={`${member.Name}'s profile picture`}
                 />
               </div>

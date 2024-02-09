@@ -25,7 +25,7 @@ export default function Nav() {
     <nav>
       <HStack className="nav-hstack" spacing={"17.5%"}>
         <a
-          href="https://form.jotform.com/232942341832050"
+          href="https://forms.gle/bSLuxKf6MdMM7nHL9"
           target="blank"
           className="nav-item-container"
         >
