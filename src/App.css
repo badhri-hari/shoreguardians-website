@@ -265,12 +265,13 @@ nav {
   position: absolute;
   left: 76%;
   bottom: 12vh;
-  width: 10vw;
-  height: 10vh;
+  width: 15vw;
+  height: 15vw;
 }
 
-.members-card-picture .chakra-avatar__img {
-  width: 10vw !important;
-  height: 10svh !important;
+.chakra-avatar__img,
+.members-card-picture img {
+  width: 100% !important;
+  height: 100% !important;
   border-radius: 50% !important;
 }
