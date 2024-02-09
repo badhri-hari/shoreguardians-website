@@ -29,7 +29,6 @@ nav {
   justify-content: center;
   align-items: center;
   height: 100%;
-  gap: 20px;
 }
 
 .nav-links {
@@ -40,7 +39,7 @@ nav {
   transition: scale 0.2s ease-in-out;
 }
 
-.nav-links:hover {
+.nav-links:hover:not(.no-scale) {
   scale: 1.2;
 }
 
@@ -77,6 +76,35 @@ nav {
 
 .nav-email-container {
   animation: scaleIcon 2s linear infinite;
+}
+
+.nav-item-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-text-icon-container {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+
+.nav-image {
+  transition: transform 0.3s ease;
+}
+
+.nav-item-container:hover .nav-image {
+  transform: none;
+}
+
+.nav-links .letter {
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+
+.nav-links.expand .letter:not(:first-child) {
+  transform: translateX(10px);
 }
 
 .members-founders-container {
@@ -147,13 +175,13 @@ nav {
 
 .members-founders-card-picture {
   position: absolute;
-  left: 25vw;
+  margin-left: 60%;
   bottom: 12vh;
 }
 
 .members-founders-card-picture .chakra-avatar__img {
-  width: 10vw !important;
-  height: 22vh !important;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50% !important;
 }
 
