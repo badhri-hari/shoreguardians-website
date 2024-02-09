@@ -265,6 +265,7 @@ nav {
   position: absolute;
   left: 76%;
   bottom: 12vh;
+  border: 2px solid black;
 }
 
 .members-card-picture .chakra-avatar__img {
