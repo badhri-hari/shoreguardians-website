@@ -196,6 +196,7 @@ nav {
   gap: 20px;
   padding: 10px;
   overflow: hidden;
+  font-family: "arvo-regular", sans-serif;
 }
 
 .members-card {
@@ -225,7 +226,6 @@ nav {
   color: #ffffff;
   border-radius: 8px;
   transition: 0.2s ease;
-  font-family: "arvo-regular", sans-serif;
 }
 
 .members-card-container > h1 {
