@@ -181,6 +181,7 @@ nav {
 
 .members-founders-card-picture .chakra-avatar__img {
   width: 10vw;
+  height: 10vw;
   border-radius: 50% !important;
 }
 
@@ -267,6 +268,7 @@ nav {
 }
 
 .members-card-picture .chakra-avatar__img {
+  margin-top: 2px;
   width: 10vw !important;
   border-radius: 50% !important;
 }
