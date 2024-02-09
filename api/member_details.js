@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default async function handler(req, res) {
   const apiKey = "SHOREGUARDIANS_SECRET_KEY";
-  const url = `https://script.google.com/macros/s/AKfycbze_dPJDXy99PgeLnNd4pHvY6pZmKaPrC9rsKAdzPeY1jxicUo2JWOUs1nB8d1p2-bW/exec?apiKey=${apiKey}`;
+  const url = `https://script.google.com/macros/s/AKfycbztwW7v4SHraoFeheKxZ69xGpezVxBMgCbuAqNwEoBLyz8FGDUYn6-NaScxTRtkc7hN/exec?apiKey=${apiKey}`;
 
   try {
     const response = await axios.get(url);
