@@ -8,7 +8,14 @@ export default function MemberCards() {
   useEffect(() => {
     fetch("/api/member_details")
       .then((response) => response.json())
-      .then((data) => setMembers(data))
+      .then((data) => {
+        const transformedData = data.map((member) => {
+          const fileId = member.Picture.split("/d/")[1].split("/")[0];
+          const directLink = `https://drive.google.com/uc?export=view&id=${fileId}`;
+          return { ...member, Picture: directLink };
+        });
+        setMembers(transformedData);
+      })
       .catch((error) => console.error(error));
   }, []);
 
