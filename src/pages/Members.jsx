@@ -50,7 +50,7 @@ export default function Members() {
               <Avatar
                 size={null}
                 name="Sage Adebayo"
-                src="https://bit.ly/sage-adebayo"
+                src="/badhri-image.jpeg"
               />
             </div>
           </div>
