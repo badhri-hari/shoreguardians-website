@@ -11,8 +11,9 @@ export default function MemberCards() {
       .then((data) => {
         const transformedData = data.map((member) => {
           let imageSrc = "https://bit.ly/sage-adebayo";
-          if (member.PictureBase64) {
-            imageSrc = `data:image/jpeg;base64,${member.PictureBase64}`;
+          if (member.Picture && member.Picture.includes("open?id=")) {
+            const fileId = member.Picture.split("open?id=")[1];
+            imageSrc = `https://drive.google.com/uc?export=view&id=${fileId}`;
           }
           return { ...member, Picture: imageSrc };
         });
