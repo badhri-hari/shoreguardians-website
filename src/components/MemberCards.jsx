@@ -15,7 +15,7 @@ export default function MemberCards() {
             const parts = member.Picture.split("open?id=");
             if (parts[1]) {
               const fileId = parts[1].split("&")[0];
-              directLink = `https://drive.google.com/uc?export=view&id=${fileId}`;
+              directLink = `https://drive.usercontent.google.com/download?id=${fileId}&export=view`;
             }
           }
           return { ...member, Picture: directLink };
