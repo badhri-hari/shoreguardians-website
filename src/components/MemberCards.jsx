@@ -10,9 +10,13 @@ export default function MemberCards() {
       .then((response) => response.json())
       .then((data) => {
         const transformedData = data.map((member) => {
-          const fileId = member.Picture.split("/d/")[1].split("/")[0];
-          const directLink = `https://drive.google.com/uc?export=view&id=${fileId}`;
-          return { ...member, Picture: directLink };
+          if (member.Picture) {
+            const fileId = member.Picture.split("/d/")[1].split("/")[0];
+            const directLink = `https://drive.google.com/uc?export=view&id=${fileId}`;
+            return { ...member, Picture: directLink };
+          } else {
+            return { ...member, Picture: undefined };
+          }
         });
         setMembers(transformedData);
       })
@@ -39,7 +43,7 @@ export default function MemberCards() {
                 <Avatar
                   size="sm"
                   name={member.Name}
-                  src="https://bit.ly/sage-adebayo"
+                  src={member.Picture}
                   alt={`${member.Name}'s profile picture`}
                 />
               </div>
