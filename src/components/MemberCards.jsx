@@ -10,13 +10,15 @@ export default function MemberCards() {
       .then((response) => response.json())
       .then((data) => {
         const transformedData = data.map((member) => {
-          if (member.Picture) {
-            const fileId = member.Picture.split("/d/")[1].split("/")[0];
-            const directLink = `https://drive.google.com/uc?export=view&id=${fileId}`;
-            return { ...member, Picture: directLink };
-          } else {
-            return { ...member, Picture: undefined };
+          if (member.Picture && member.Picture.includes("/d/")) {
+            const parts = member.Picture.split("/d/");
+            if (parts[1]) {
+              const fileId = parts[1].split("/")[0];
+              const directLink = `https://drive.google.com/uc?export=view&id=${fileId}`;
+              return { ...member, Picture: directLink };
+            }
           }
+          return { ...member, Picture: "https://bit.ly/sage-adebayo" };
         });
         setMembers(transformedData);
       })
