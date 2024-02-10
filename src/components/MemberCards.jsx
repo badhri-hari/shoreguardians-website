@@ -53,7 +53,7 @@ export default function MemberCards() {
           </div>
         ))
       ) : (
-        <div>Please wait...</div>
+        <div className="members-card">Please wait...</div>
       )}
     </div>
   );
