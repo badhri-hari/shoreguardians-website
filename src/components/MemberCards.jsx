@@ -13,7 +13,7 @@ export default function MemberCards() {
           let imageSrc = "https://bit.ly/sage-adebayo";
           if (member.Picture && member.Picture.includes("open?id=")) {
             const fileId = member.Picture.split("open?id=")[1];
-            imageSrc = `https://drive.google.com/uc?export=view&id=${fileId}`;
+            imageSrc = `https://drive.usercontent.google.com/download?id=${fileId}&export=view`;
           }
           return { ...member, Picture: imageSrc };
         });
@@ -44,6 +44,10 @@ export default function MemberCards() {
                   name={member.Name}
                   src={member.Picture}
                   alt={`${member.Name}'s profile picture`}
+                />
+                <img
+                  src="https://drive.google.com/uc?export=view&id=17Tes_BRfeiTbE6TXidWRU-NDBsMV7rof"
+                  alt="Test Image"
                 />
               </div>
             </div>
