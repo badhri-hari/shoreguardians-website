@@ -6,17 +6,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await axios.get(url);
-    if (
-      response.headers["content-type"] &&
-      response.headers["content-type"].includes("application/json")
-    ) {
-      res.status(200).json(response.data);
-    } else {
-      console.error("Received non-JSON response");
-      res
-        .status(500)
-        .json({ error: "Expected JSON response, got something else." });
-    }
+    res.status(200).json(response.data);
   } catch (error) {
     console.error("Error fetching data:", error);
     res.status(500).json({ error: "Error fetching member details" });

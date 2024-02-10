@@ -39,7 +39,7 @@ export default function MemberCards() {
                 <Avatar
                   size="sm"
                   name={member.Name}
-                  src={member.Picture}
+                  src="../../public/badhri-image.jpeg"
                   alt={`${member.Name}'s profile picture`}
                 />
               </div>
