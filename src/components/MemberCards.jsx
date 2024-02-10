@@ -10,15 +10,11 @@ export default function MemberCards() {
       .then((response) => response.json())
       .then((data) => {
         const transformedData = data.map((member) => {
-          let directLink = "https://bit.ly/sage-adebayo";
-          if (member.Picture && member.Picture.includes("open?id=")) {
-            const parts = member.Picture.split("open?id=");
-            if (parts[1]) {
-              const fileId = parts[1].split("&")[0];
-              directLink = `https://drive.usercontent.google.com/download?id=${fileId}&export=view`;
-            }
+          let imageSrc = "https://bit.ly/sage-adebayo";
+          if (member.PictureBase64) {
+            imageSrc = `data:image/jpeg;base64,${member.PictureBase64}`;
           }
-          return { ...member, Picture: directLink };
+          return { ...member, Picture: imageSrc };
         });
         setMembers(transformedData);
       })
