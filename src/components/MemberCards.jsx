@@ -10,15 +10,15 @@ export default function MemberCards() {
       .then((response) => response.json())
       .then((data) => {
         const transformedData = data.map((member) => {
-          if (member.Picture && member.Picture.includes("/d/")) {
-            const parts = member.Picture.split("/d/");
+          let directLink = "https://bit.ly/sage-adebayo";
+          if (member.Picture && member.Picture.includes("open?id=")) {
+            const parts = member.Picture.split("open?id=");
             if (parts[1]) {
-              const fileId = parts[1].split("/")[0];
-              const directLink = `https://drive.google.com/uc?export=view&id=${fileId}`;
-              return { ...member, Picture: directLink };
+              const fileId = parts[1].split("&")[0];
+              directLink = `https://drive.google.com/uc?export=view&id=${fileId}`;
             }
           }
-          return { ...member, Picture: "https://bit.ly/sage-adebayo" };
+          return { ...member, Picture: directLink };
         });
         setMembers(transformedData);
       })
@@ -53,7 +53,7 @@ export default function MemberCards() {
           </div>
         ))
       ) : (
-        <div className="members-card">Please wait...</div>
+        <div>Please wait...</div>
       )}
     </div>
   );
