@@ -6,20 +6,10 @@ export default function MemberCards() {
   const [members, setMembers] = useState([]);
 
   useEffect(() => {
+    // Correctly chain the promise to setMembers after the response is converted to JSON
     fetch("/api/member_details")
-      .then((response) => response.json())
-      .then((data) => {
-        const transformedData = data.map((member) => {
-          let imageSrc = "https://bit.ly/sage-adebayo";
-          if (member.Picture && member.Picture.includes("open?id=")) {
-            const fileId = member.Picture.split("open?id=")[1];
-            imageSrc = `https://drive.usercontent.google.com/download?id=${fileId}&export=view`;
-          }
-          return { ...member, Picture: imageSrc };
-        });
-        setMembers(transformedData);
-      })
-      .catch((error) => console.error(error));
+      .then((response) => response.json()) // Convert the response to JSON
+      .then((data) => setMembers(data)); // Set the state with the resulting data
   }, []);
 
   return (
@@ -42,7 +32,7 @@ export default function MemberCards() {
                 <Avatar
                   size="sm"
                   name={member.Name}
-                  src="https://drive.usercontent.google.com/download?id=17Tes_BRfeiTbE6TXidWRU-NDBsMV7rof&export=view"
+                  src={member.Picture}
                   alt={`${member.Name}'s profile picture`}
                 />
               </div>
