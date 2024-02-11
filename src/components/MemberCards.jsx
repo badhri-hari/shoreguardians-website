@@ -42,12 +42,8 @@ export default function MemberCards() {
                 <Avatar
                   size="sm"
                   name={member.Name}
-                  src={member.Picture}
-                  alt={`${member.Name}'s profile picture`}
-                />
-                <img
                   src="https://drive.usercontent.google.com/download?id=17Tes_BRfeiTbE6TXidWRU-NDBsMV7rof&export=view"
-                  alt="Test Image"
+                  alt={`${member.Name}'s profile picture`}
                 />
               </div>
             </div>
