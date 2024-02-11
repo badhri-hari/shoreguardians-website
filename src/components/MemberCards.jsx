@@ -6,10 +6,9 @@ export default function MemberCards() {
   const [members, setMembers] = useState([]);
 
   useEffect(() => {
-    // Correctly chain the promise to setMembers after the response is converted to JSON
     fetch("/api/member_details")
-      .then((response) => response.json()) // Convert the response to JSON
-      .then((data) => setMembers(data)); // Set the state with the resulting data
+      .then((response) => response.json())
+      .then((data) => setMembers(data));
   }, []);
 
   return (
