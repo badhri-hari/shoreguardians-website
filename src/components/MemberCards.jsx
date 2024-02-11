@@ -46,7 +46,7 @@ export default function MemberCards() {
                   alt={`${member.Name}'s profile picture`}
                 />
                 <img
-                  src="https://drive.google.com/uc?export=view&id=17Tes_BRfeiTbE6TXidWRU-NDBsMV7rof"
+                  src="https://drive.usercontent.google.com/download?id=17Tes_BRfeiTbE6TXidWRU-NDBsMV7rof&export=view"
                   alt="Test Image"
                 />
               </div>
