@@ -13,6 +13,10 @@
   src: url("/arvo/Arvo-Bold.ttf") format("truetype");
 }
 
+* {
+  margin: 0;
+}
+
 body {
   background-color: blanchedalmond;
 }
@@ -20,9 +24,10 @@ body {
 nav {
   height: 10vh;
   background-color: #8abcd7;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-left: 2vw;
   margin-right: 2vw;
+  margin-top: 1.5vh;
 }
 
 .nav-hstack {
@@ -76,10 +81,6 @@ nav {
   min-width: 10vw;
 }
 
-.nav-image {
-  transition: transform 0.3s ease;
-}
-
 .nav-item-container:hover .nav-image {
   transform: none;
 }
@@ -93,22 +94,26 @@ nav {
   transform: translateX(10px);
 }
 
+.footer-container {
+  padding: 15px;
+}
+
 footer {
-  height: 235px;
-  width: 100vw;
-  margin-left: -8px;
   background-color: #8abcd7;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 15px;
   padding: 10px;
   align-content: center;
 }
 
 .footer-logo {
   height: 235px;
+  padding-left: 70px;
+  padding-right: 30px;
 }
 
 .footer-text-container {
+  padding-left: 30px;
+  padding-right: 70px;
   font-size: smaller;
   color: white;
   font-family: "otr", sans-serif;

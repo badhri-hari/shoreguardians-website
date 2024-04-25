@@ -17,12 +17,6 @@ export default function Members() {
             <h1>Badhri N Hari</h1>
             <p>Director</p>
             <div className="members-founders-card-contacts">
-              <a href="https://www.instagram.com/badh.hari/" target="blank">
-                <img
-                  src="/instagram-icon.svg"
-                  className="members-founders-card-contacts-instagram"
-                />
-              </a>
               <a href={mailtoURL0} target="blank">
                 <EmailIcon style={{ color: "black", fontSize: "40px" }} />
               </a>
@@ -37,12 +31,6 @@ export default function Members() {
             <h1>Rishi Rajan Menon</h1>
             <p>President</p>
             <div className="members-founders-card-contacts">
-              <a href="https://www.instagram.com/rishiii__13/" target="blank">
-                <img
-                  src="/instagram-icon.svg"
-                  className="members-founders-card-contacts-instagram"
-                />
-              </a>
               <a href={mailtoURL1} target="blank">
                 <EmailIcon style={{ color: "black", fontSize: "40px" }} />
               </a>
@@ -50,8 +38,8 @@ export default function Members() {
             <div className="members-founders-card-picture">
               <Avatar
                 size={null}
-                name="Sage Adebayo"
-                src="/badhri-image.jpeg"
+                name="Rishi Rajan Menon"
+                src="/rishi-image.jpg"
               />
             </div>
           </div>
@@ -66,7 +54,7 @@ export default function Members() {
       <VStack>
         <MemberCards />
       </VStack>
-      <Footer />
+        <Footer />
     </>
   );
 }
