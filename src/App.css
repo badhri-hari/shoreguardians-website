@@ -207,6 +207,10 @@ a {
   border-radius: 50% !important;
 }
 
+.members-container-grid {
+  width: 100vw;
+}
+
 .members-header {
   font-family: "otr", sans-serif;
 }
@@ -215,15 +219,13 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  padding: 10px;
-  overflow: hidden;
+  padding: 12px;
   font-family: "arvo-regular", sans-serif;
 }
 
 .members-card {
   background-color: #7facc4;
-  width: 70vw;
+  width: 29vw;
   height: 25vh;
   padding: 20px;
   border-radius: 10px;
@@ -285,12 +287,12 @@ a {
 
 .members-card-picture {
   position: absolute;
-  left: 76%;
-  top: 10.5%;
+  left: 60%;
+  top: 16%;
 }
 
 .members-card-picture .chakra-avatar__img {
-  height: 180px !important;
-  width: 180px !important;
+  height: 150px !important;
+  width: 150px !important;
   border-radius: 50% !important;
 }
