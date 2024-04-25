@@ -18,25 +18,36 @@
 }
 
 body {
-  background-color: blanchedalmond;
+  background-color: #e3fef7;
 }
 
 nav {
   height: 10vh;
-  background-color: #8abcd7;
-  border-radius: 15px;
   margin-left: 2vw;
   margin-right: 2vw;
   margin-top: 1.5vh;
+  border-radius: 15px;
+  background-color: #8abcd7;
+  padding: 10px;
+}
+
+.nav-container {
+  border-radius: 15px;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-hstack {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .nav-links {

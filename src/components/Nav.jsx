@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { HStack } from "@chakra-ui/react";
+import { HStack, Center } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
 
 export default function Nav() {
@@ -23,41 +23,43 @@ export default function Nav() {
 
   return (
     <nav>
-      <HStack className="nav-hstack" spacing={"20%"}>
-        <a
-          href="https://forms.gle/gTJoSBaykAgRVwtx8"
-          target="blank"
-          className="nav-item-container"
-        >
-          <img
-            src="/shoreguardians-logo-hands.jpg"
-            className="nav-image"
-            alt="Part of the ShoreGuardians Logo"
-          />
-          <div className="nav-text-icon-container">
-            <div
-              className="nav-links forms-text no-scale signup-text"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-            >
-              {letters}
+      <Center className="nav-container glassmorphism">
+        <HStack className="nav-hstack" spacing={"50%"}>
+          <a
+            href="https://forms.gle/gTJoSBaykAgRVwtx8"
+            target="blank"
+            className="nav-item-container"
+          >
+            <img
+              src="/shoreguardians-logo-hands.jpg"
+              className="nav-image"
+              alt="Part of the ShoreGuardians Logo"
+            />
+            <div className="nav-text-icon-container">
+              <div
+                className="nav-links forms-text no-scale signup-text"
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
+                {letters}
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="/" className="nav-links first">
-          Home
-        </a>
-        <a href="/members" className="nav-links second">
-          Members
-        </a>
-        <a href={mailtoURL} target="blank">
-          <EmailIcon
-            color="white"
-            boxSize="2em"
-            className="nav-email-container"
-          />
-        </a>
-      </HStack>
+          </a>
+          <a href="/" className="nav-links first">
+            Home
+          </a>
+          <a href="/members" className="nav-links second">
+            Members
+          </a>
+          <a href={mailtoURL} target="blank">
+            <EmailIcon
+              color="white"
+              boxSize="2em"
+              className="nav-email-container"
+            />
+          </a>
+        </HStack>
+      </Center>
     </nav>
   );
 }
