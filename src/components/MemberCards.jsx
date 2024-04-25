@@ -26,7 +26,6 @@ export default function MemberCards() {
                     target="_blank"
                   >
                     <EmailIcon style={{ color: "black", fontSize: "20px" }} />
-                    <div>${member.Picture}</div>
                   </a>
                 </div>
                 <div className="members-card-picture">
