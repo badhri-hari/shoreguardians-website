@@ -2,6 +2,7 @@ import { EmailIcon } from "@chakra-ui/icons";
 import { Avatar, Divider, VStack, Box, AbsoluteCenter } from "@chakra-ui/react";
 import Nav from "../components/Nav";
 import MemberCards from "../components/MemberCards";
+import Footer from "../components/Footer";
 
 export default function Members() {
   const mailtoURL0 = `mailto:average.runner216@gmail.com&subject=Hey Badhri!`;
@@ -65,6 +66,7 @@ export default function Members() {
       <VStack>
         <MemberCards />
       </VStack>
+      <Footer />
     </>
   );
 }

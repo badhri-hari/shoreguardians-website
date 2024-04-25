@@ -46,7 +46,7 @@ nav {
   scale: 1.1;
 }
 
-.signup-text{
+.signup-text {
   min-width: 137px;
 }
 
@@ -91,6 +91,34 @@ nav {
 
 .nav-links.expand .letter:not(:first-child) {
   transform: translateX(10px);
+}
+
+footer {
+  height: 235px;
+  width: 100vw;
+  margin-left: -8px;
+  background-color: #8abcd7;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  align-content: center;
+}
+
+.footer-logo {
+  height: 235px;
+}
+
+.footer-text-container {
+  font-size: smaller;
+  color: white;
+  font-family: "otr", sans-serif;
+  text-align: center;
+}
+
+a {
+  color: white;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.35em;
 }
 
 .members-founders-container {
