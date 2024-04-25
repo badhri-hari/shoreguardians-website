@@ -1,10 +1,12 @@
 import axios from "axios";
 
 export default async function handler(req, res) {
-  let { url } = req.query;
+  let { url } = URL(req.query);
   if (!url) {
     return res.status(400).json({ error: "No URL provided" });
   }
+
+  url.pathname = '/thumbnail';
 
   try {
     const response = await axios.get(url);
