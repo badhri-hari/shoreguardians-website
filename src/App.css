@@ -18,10 +18,11 @@ body {
 }
 
 nav {
-  width: 98vw;
   height: 10vh;
   background-color: #8abcd7;
   border-radius: 10px;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
 .nav-hstack {
