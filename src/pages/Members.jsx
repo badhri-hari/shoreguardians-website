@@ -48,7 +48,7 @@ export default function Members() {
       <Box position="relative" padding="30">
         <Divider />
         <AbsoluteCenter px="4" className="members-header">
-          Members
+          Our Members
         </AbsoluteCenter>
       </Box>
       <VStack>

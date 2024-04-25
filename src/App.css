@@ -212,7 +212,8 @@ a {
 }
 
 .members-header {
-  font-family: "otr", sans-serif;
+  font-family: "arvo-regular", sans-serif;
+  font-size: xx-large;
 }
 
 .members-container {
