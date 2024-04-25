@@ -95,10 +95,13 @@ nav {
 }
 
 .footer-container {
-  padding: 15px;
+  width: 100vw;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 footer {
+  width: 95%;
   background-color: #8abcd7;
   border-radius: 15px;
   padding: 10px;
@@ -106,24 +109,24 @@ footer {
 }
 
 .footer-logo {
-  height: 235px;
-  padding-left: 70px;
-  padding-right: 30px;
+  height: 200px;
+  padding-left: 90px;
+  padding-right: 50px;
 }
 
 .footer-text-container {
-  padding-left: 30px;
-  padding-right: 70px;
-  font-size: smaller;
+  padding-left: 50px;
+  padding-right: 90px;
+  font-size: larger;
   color: white;
-  font-family: "otr", sans-serif;
+  font-family: "arvo-regular", sans-serif;
   text-align: center;
 }
 
 a {
   color: white;
   text-decoration-thickness: 1.5px;
-  text-underline-offset: 0.35em;
+  text-underline-offset: 0.3em;
 }
 
 .members-founders-container {
