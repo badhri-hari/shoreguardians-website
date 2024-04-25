@@ -31,7 +31,7 @@ export default function MemberCards() {
                 <Avatar
                   size="sm"
                   name={member.Name}
-                  src={`/api/member_images?url=${member.Picture}`}
+                  src={`${member.Picture}`}
                   alt={`${member.Name}'s profile picture`}
                 />
               </div>
