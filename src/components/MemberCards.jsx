@@ -26,13 +26,14 @@ export default function MemberCards() {
                     target="_blank"
                   >
                     <EmailIcon style={{ color: "black", fontSize: "20px" }} />
+                    <div>${member.Picture}</div>
                   </a>
                 </div>
                 <div className="members-card-picture">
                   <Avatar
                     size="sm"
                     name={member.Name}
-                    src="URL(${member.Picture})"
+                    src={member.PictureLink}
                     alt={`${member.Name}'s profile picture`}
                   />
                 </div>
