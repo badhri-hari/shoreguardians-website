@@ -8,16 +8,14 @@ export default function MemberCards() {
   useEffect(() => {
     fetch("/api/member_details")
       .then((response) => response.json())
-      .then((data) => {
-        setMembers(data);
-      });
+      .then((data) => setMembers(data));
   }, []);
 
   return (
     <Grid templateColumns="repeat(3, 1fr)" className="members-container-grid">
       {members.length > 0 ? (
         members.map((member) => (
-          <Box key={member.SubmissionTime} className="members-container">
+          <Box className="members-container" key={member.SubmissionTime}>
             <div className="members-card">
               <div className="members-card-container">
                 <h1>{member.Name}</h1>
@@ -43,7 +41,7 @@ export default function MemberCards() {
           </Box>
         ))
       ) : (
-        <Box className="members-card">Please wait...</Box>
+        <div className="members-card">Please wait...</div>
       )}
     </Grid>
   );
