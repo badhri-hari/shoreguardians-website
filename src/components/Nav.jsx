@@ -25,7 +25,7 @@ export default function Nav() {
     <nav>
       <HStack className="nav-hstack" spacing={"20%"}>
         <a
-          href="https://forms.gle/7Uf8UyPmBqMgEacFA"
+          href="https://forms.gle/gTJoSBaykAgRVwtx8"
           target="blank"
           className="nav-item-container"
         >
