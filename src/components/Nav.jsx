@@ -6,7 +6,7 @@ export default function Nav() {
   const mailtoURL = `mailto:shoreguardians.chennai@gmail.com?cc=average.runner216@gmail.com&subject=Hey ShoreGuardians! I Have A Question...`;
   const [isHovered, setIsHovered] = useState(false);
 
-  const formsText = "Signup-Form";
+  const formsText = "Signup";
   const letters = formsText.split("").map((letter, index) => (
     <span
       key={index}
@@ -23,7 +23,7 @@ export default function Nav() {
 
   return (
     <nav>
-      <HStack className="nav-hstack" spacing={"17.5%"}>
+      <HStack className="nav-hstack" spacing={"20%"}>
         <a
           href="https://forms.gle/bSLuxKf6MdMM7nHL9"
           target="blank"
@@ -36,7 +36,7 @@ export default function Nav() {
           />
           <div className="nav-text-icon-container">
             <div
-              className="nav-links forms-text no-scale"
+              className="nav-links forms-text no-scale signup-text"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
             >

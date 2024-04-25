@@ -30,6 +30,8 @@ nav {
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .nav-links {
@@ -41,7 +43,11 @@ nav {
 }
 
 .nav-links:hover:not(.no-scale) {
-  scale: 1.2;
+  scale: 1.1;
+}
+
+.signup-text{
+  min-width: 137px;
 }
 
 .nav-image {
@@ -53,20 +59,8 @@ nav {
   max-height: 10vh;
 }
 
-@keyframes scaleIcon {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .nav-email-container {
-  animation: scaleIcon 2s linear infinite;
+  max-height: 10vh;
 }
 
 .nav-item-container {
@@ -79,6 +73,7 @@ nav {
   display: flex;
   align-items: center;
   height: 10vh;
+  min-width: 10vw;
 }
 
 .nav-image {
