@@ -5,11 +5,13 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <img
-        src="/test-image.png"        
-        alt="test image"
-        className="home-page-image"
-      ></img>
+      <div className="home-page-image-container">
+        <img
+          src="/test-image.png"
+          className="home-page-image"
+          alt="test image"
+        ></img>
+      </div>
       <Footer />
     </>
   );
