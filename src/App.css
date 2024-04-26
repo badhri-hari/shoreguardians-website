@@ -17,8 +17,10 @@
   margin: 0;
 }
 
+html,
 body {
-  background-color: #e3fef7;
+  overflow-x: hidden;
+  background-color: #181a1b;
 }
 
 nav,
@@ -123,6 +125,49 @@ nav,
   overflow: hidden;
 }
 
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+.content-blur {
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  margin-top: -20px;
+  padding-top: 2.5vh;
+}
+
+#blob {
+  background-color: black;
+  height: 300px;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, mediumpurple, #8abcd7);
+  animation: rotate 10s infinite;
+  opacity: 0.3;
+}
+
+#blur {
+  height: 200vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -12;
+  backdrop-filter: blur(12vmax);
+}
+
 .home-page-image {
   height: 100vh;
   width: 100vw;
@@ -135,11 +180,12 @@ nav,
 }
 
 footer {
-  width: 95%;
+  width: 80%;
   background-color: #8abcd7;
   border-radius: 15px;
   padding: 10px;
   align-content: center;
+  margin-top: 7vh;
 }
 
 .footer-logo {
@@ -195,16 +241,21 @@ a {
   font-family: "arvo-regular", sans-serif;
 }
 
-.members-founders-card-container > h1 {
-  font-family: "arvo-bold", sans-serif;
-}
-
 .members-founders-card:hover .members-founders-card-container {
   border-radius: 10px;
   top: 3px;
   bottom: 3px;
   left: 3px;
   right: 3px;
+}
+
+.members-founders-card-text-container {
+  font-family: "arvo-bold", sans-serif;
+  width: fit-content;
+  align-items: center;
+  position: absolute;
+  margin-left: 3%;
+  top: 12vh;
 }
 
 .members-founders-card-contacts {
@@ -242,12 +293,29 @@ a {
 }
 
 .members-container-grid {
-  width: 100vw;
+  width: 90vw;
+  height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+  padding: 5px;
+  box-shadow: 0 0 5px white, inset 0 0 2.5px white;
+}
+
+.members-container-grid::-webkit-scrollbar {
+  display: none;
 }
 
 .members-header {
   font-family: "arvo-regular", sans-serif;
   font-size: xx-large;
+  color: white;
 }
 
 .members-container {
