@@ -5,6 +5,11 @@ export default function Home() {
   return (
     <>
       <Nav />
+      <img
+        src="/test-image.png"        
+        alt="test image"
+        className="home-page-image"
+      ></img>
       <Footer />
     </>
   );

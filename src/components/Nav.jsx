@@ -1,10 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { HStack, Center } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
 
-export default function Nav() {
+/* eslint-disable react/prop-types */
+export default function Nav({ page }) {
   const mailtoURL = `mailto:shoreguardians.chennai@gmail.com?cc=average.runner216@gmail.com&subject=Hey ShoreGuardians! I Have A Question...`;
   const [isHovered, setIsHovered] = useState(false);
+  const [currentPage, setCurrentPage] = useState("");
+
+  useEffect(() => {
+    if (page === "members") {
+      setCurrentPage("members");
+    }
+  }, [page]);
 
   const formsText = "Signup";
   const letters = formsText.split("").map((letter, index) => (
@@ -22,8 +30,8 @@ export default function Nav() {
   ));
 
   return (
-    <nav>
-      <Center className="nav-container glassmorphism">
+    <nav className={currentPage === "members" ? "nav-members" : ""}>
+      <Center className="nav-container-home glassmorphism">
         <HStack className="nav-hstack" spacing={"50%"}>
           <a
             href="https://forms.gle/gTJoSBaykAgRVwtx8"

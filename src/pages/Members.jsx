@@ -10,7 +10,7 @@ export default function Members() {
 
   return (
     <>
-      <Nav />
+      <Nav page="members" />
       <div className="members-founders-container">
         <div className="members-founders-card">
           <div className="members-founders-card-container">

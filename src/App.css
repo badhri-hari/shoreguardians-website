@@ -21,14 +21,21 @@ body {
   background-color: #e3fef7;
 }
 
-nav {
+nav,
+.nav-members {
   height: 10vh;
   margin-left: 2vw;
   margin-right: 2vw;
   margin-top: 1.5vh;
   border-radius: 15px;
-  background-color: #8abcd7;
+  background-color: rgba(138, 188, 215, 0.1);
   padding: 10px;
+  z-index: 10;
+  position: relative;
+}
+
+.nav-members {
+  background-color: #8abcd7;
 }
 
 .nav-container {
@@ -36,11 +43,11 @@ nav {
 }
 
 .glassmorphism {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.25);
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -103,6 +110,13 @@ nav {
 
 .nav-links.expand .letter:not(:first-child) {
   transform: translateX(10px);
+}
+
+.home-page-image {
+  z-index: -10;
+  height: 99vh;
+  width: 99vw;
+  margin-top: -14.2vh;
 }
 
 .footer-container {
