@@ -1,73 +1,41 @@
-import { useState, useEffect } from "react";
-import { HStack, Center } from "@chakra-ui/react";
+import { HStack, Center, Link, Box } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
 
-/* eslint-disable react/prop-types */
-export default function Nav({ page }) {
-  const mailtoURL = `mailto:shoreguardians.chennai@gmail.com?cc=average.runner216@gmail.com&subject=Hey ShoreGuardians! I Have A Question...`;
-  const [isHovered, setIsHovered] = useState(false);
-  const [currentPage, setCurrentPage] = useState("");
-
-  useEffect(() => {
-    if (page === "members") {
-      setCurrentPage("members");
-    }
-  }, [page]);
-
-  const formsText = "Signup";
-  const letters = formsText.split("").map((letter, index) => (
-    <span
-      key={index}
-      className="letter"
-      style={{
-        transition: "transform 0.2s ease",
-        transform:
-          isHovered && index !== 0 ? `translateX(${index * 0.5}rem)` : "none",
-      }}
-    >
-      {letter}
-    </span>
-  ));
-
+export default function Nav() {
   return (
-    <nav className={currentPage === "members" ? "nav-members" : ""}>
-      <Center className="nav-container-home glassmorphism">
-        <HStack className="nav-hstack" spacing={"50%"}>
-          <a
-            href="https://forms.gle/gTJoSBaykAgRVwtx8"
-            target="blank"
-            className="nav-item-container"
-          >
-            <img
-              src="/shoreguardians-logo-hands.jpg"
-              className="nav-image"
-              alt="Part of the ShoreGuardians Logo"
-            />
-            <div className="nav-text-icon-container">
-              <div
-                className="nav-links forms-text no-scale signup-text"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-              >
-                {letters}
-              </div>
-            </div>
-          </a>
-          <a href="/" className="nav-links first">
-            Home
-          </a>
-          <a href="/members" className="nav-links second">
-            Members
-          </a>
-          <a href={mailtoURL} target="blank">
-            <EmailIcon
-              color="white"
-              boxSize="2em"
-              className="nav-email-container"
-            />
-          </a>
-        </HStack>
-      </Center>
-    </nav>
+    <header className="header-container">
+      <Box className="nav-logo-container nav-logo-blue-background">
+        <img
+          src="/shoreguardians-logo-hands.jpg"
+          className="nav-image"
+          alt="ShoreGuardians Logo"
+        />
+      </Box>
+      <nav>
+        <Center className="glassmorphism-nav">
+          <HStack className="nav-hstack" spacing="auto">
+            <Link href="/" className="nav-links">
+              Home
+            </Link>
+            <Link href="/members" className="nav-links">
+              Members
+            </Link>
+            <Link href="/recognition" className="nav-links">
+              Recognition
+            </Link>
+            <a
+              href="mailto:shoreguardians.chennai@gmail.com?cc=average.runner216@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
+              target="blank"
+            >
+              <EmailIcon
+                color="white"
+                boxSize="2em"
+                className="nav-email-container"
+              />
+            </a>
+          </HStack>
+        </Center>
+      </nav>
+    </header>
   );
 }

@@ -1,54 +1,53 @@
 import { useState, useEffect } from "react";
+
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 
 export default function Home() {
-  const [position, setPosition] = useState({ left: 0, top: 0 });
-
-  const handlePointerMove = (event) => {
-    const xPosition = Math.min(event.clientX, window.innerWidth - 300);
-    const yPosition = Math.min(event.clientY, window.innerHeight - 300);
-    setPosition({
-      left: xPosition,
-      top: yPosition,
-    });
-  };
+  const [images, setImages] = useState([]);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [fade, setFade] = useState(true);
 
   useEffect(() => {
-    const updatePosition = (event) => {
-      handlePointerMove(event);
+    const fetchImages = async () => {
+      const images = import.meta.glob("/public/home-page-pictures/*.jpg");
+      const imagePaths = await Promise.all(
+        Object.keys(images).map(async (path) => {
+          const module = await images[path]();
+          return module.default;
+        })
+      );
+      setImages(imagePaths);
     };
-    window.addEventListener("mousemove", updatePosition);
+
+    fetchImages();
+
+    const interval = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+        setFade(true);
+      }, 1000);
+    }, 5000);
 
     return () => {
-      window.removeEventListener("mousemove", updatePosition);
+      clearInterval(interval);
     };
-  }, []);
+  }, [images.length]);
 
   return (
     <>
-      <div
-        id="blob"
-        style={{
-          position: "absolute",
-          left: `${position.left}px`,
-          top: `${position.top}px`,
-          transition: "left 1s, top 1s",
-        }}
-      ></div>
-      <div onPointerMove={handlePointerMove}>
-        <div className="content-blur">
-          <Nav />
-          <div className="home-page-image-container">
-            <img
-              src="/test-image.png"
-              className="home-page-image"
-              alt="test image"
-            />
-          </div>
-          <Footer />
-        </div>
+      <Nav />
+      <div className="home-image-container">
+        {images.length > 0 && (
+          <img
+            src={images[currentImageIndex]}
+            className={`home-image ${fade ? "fade-in" : "fade-out"}`}
+            alt="Home Page Images"
+          />
+        )}
       </div>
+      <Footer />
     </>
   );
 }
