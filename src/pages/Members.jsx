@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { EmailIcon } from "@chakra-ui/icons";
-import { Avatar, Divider, VStack, Box, AbsoluteCenter } from "@chakra-ui/react";
+import { Avatar, SimpleGrid, Center } from "@chakra-ui/react";
 
 import Nav from "../components/Nav";
 import MemberCards from "../components/MemberCards";
@@ -19,8 +19,84 @@ export default function Members() {
     });
   };
 
-  const mailtoURL0 = `mailto:average.runner216@gmail.com?subject=Hey Badhri!`;
-  const mailtoURL1 = `mailto:rishirajanmenon@gmail.com?subject=Hey Rishi!`;
+  const mailtoURLs = [
+    `mailto:badhrihari123@gmail.com?subject=Hey Badhri!`,
+    `mailto:rishirajanmenon@gmail.com?subject=Hey Rishi!`,
+    `mailto:rmfawaz07@gmail.com?subject=Hey Fawaz!`,
+    `mailto:shrikkanthb@gmail.com?subject=Hey Shrikkanth!`,
+    `mailto:siddvaka1303@gmail.com?subject=Hey Siddhaarth!`,
+    `mailto:praneshsch@gmail.com?subject=Hey Pranesh!`,
+    `mailto:mithulchokan12@gmail.com?subject=Hey Mithul!`,
+    `mailto:sahanaselvasankari@gmail.com?subject=Hey Sahana!`,
+    `mailto:pritamkrishna2007@gmail.com?subject=Hey Pritam!`,
+    `mailto:danadev0dd@gmail.com?subject=Hey Dana Dev!`,
+  ];
+
+  const keyMembers = [
+    {
+      name: "Badhri N Hari",
+      title: "Founder | Director",
+      emailIndex: 0,
+      image: "/badhri-image.jpeg",
+    },
+    {
+      name: "Rishi Rajan Menon",
+      title: "Founder | President",
+      emailIndex: 1,
+      image: "/rishi-image.jpg",
+    },
+    {
+      name: "Fawaz RM",
+      title: "Playboy",
+      emailIndex: 2,
+      image: "/fawazd-image.jpeg",
+    },
+    {
+      name: "Shrikkanth",
+      title: "Child Safety Officer",
+      emailIndex: 3,
+      image: "/shrikkanthd-image.jpeg",
+    },
+    {
+      name: "Siddhaarth",
+      title: "Plantation Owner",
+      emailIndex: 4,
+      image: "/siddhaarth-image.jpeg",
+    },
+    {
+      name: "Pranesh Ramachandran",
+      title: "100% Legal Immigrant",
+      emailIndex: 5,
+      image: "/pranesh-image.jpeg",
+    },
+    {
+      name: "Mithul Chokan",
+      title: "White Shirt Wearer",
+      emailIndex: 6,
+      image: "/mithul-image.jpeg",
+    },
+    {
+      name: "Sahana Sankari",
+      title: "Social Media Content Editor",
+      emailIndex: 7,
+      image: "/sahana-image.jpeg",
+    },
+    {
+      name: "Pritam Krishna Suresh",
+      title: "Unpaid Cotton Picker",
+      emailIndex: 8,
+      image: "/pritam-image.jpeg",
+    },
+    {
+      name: "Dana Dev DS",
+      title: "Professional School Absentee",
+      emailIndex: 9,
+      image: "/dana-image.jpeg",
+    },
+  ];
+
+  const founders = keyMembers.slice(0, 2);
+  const coreMembers = keyMembers.slice(0);
 
   return (
     <>
@@ -35,49 +111,68 @@ export default function Members() {
       ></div>
       <div className="content-blur" onPointerMove={handlePointerMove}>
         <Nav />
-        <div className="members-founders-container">
-          <div className="members-founders-card">
-            <div className="members-founders-card-container">
-              <div className="members-founders-card-text-container">
-                <h1>Badhri N Hari</h1>
-                <p>Founder | Director</p>
-                <div className="members-founders-card-contacts">
-                  <a href={mailtoURL0} target="_blank" rel="noreferrer">
-                    <EmailIcon style={{ color: "black", fontSize: "40px" }} />
-                  </a>
+        <Center>
+          <div className="members-founders-container">
+            {founders.map((founder, index) => (
+              <div key={index} className="members-founders-card">
+                <div className="members-founders-card-container">
+                  <div className="members-founders-card-text-container">
+                    <h1>{founder.name}</h1>
+                    <p>{founder.title}</p>
+                    <div className="members-founders-card-contacts">
+                      <a
+                        href={mailtoURLs[founder.emailIndex]}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <EmailIcon
+                          style={{ color: "black", fontSize: "40px" }}
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="members-founders-card-picture">
+                    <Avatar name={founder.name} src={founder.image} />
+                  </div>
                 </div>
               </div>
-              <div className="members-founders-card-picture">
-                <Avatar name="Badhri Hari" src="/badhri-image.jpeg" />
-              </div>
-            </div>
+            ))}
           </div>
-          <div className="members-founders-card">
-            <div className="members-founders-card-container">
-              <div className="members-founders-card-text-container">
-                <h1>Rishi Rajan Menon</h1>
-                <p>Founder | President</p>
-                <div className="members-founders-card-contacts">
-                  <a href={mailtoURL1} target="_blank" rel="noreferrer">
-                    <EmailIcon style={{ color: "black", fontSize: "40px" }} />
-                  </a>
+        </Center>
+        <Center pt={20} pb={40} px="4" className="members-core-header">
+          Key Members
+        </Center>
+        <Center>
+          <Center className="members-core-grid">
+            <SimpleGrid columns={[1, 2]} spacingX={100} spacingY={20}>
+              {coreMembers.map((keyMember, index) => (
+                <div key={index} className="members-core-card">
+                  <div className="members-core-card-container">
+                    <div className="members-core-card-text-container">
+                      <h1>{keyMember.name}</h1>
+                      <p>{keyMember.title}</p>
+                      <div className="members-core-card-contacts">
+                        <a
+                          href={mailtoURLs[keyMember.emailIndex]}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <EmailIcon
+                            style={{ color: "black", fontSize: "40px" }}
+                          />
+                        </a>
+                      </div>
+                    </div>
+                    <div className="members-core-card-picture">
+                      <Avatar name={keyMember.name} src={keyMember.image} />
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="members-founders-card-picture">
-                <Avatar name="Rishi Rajan Menon" src="/rishi-image.jpg" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <Box position="relative" padding="30">
-          <Divider />
-          <AbsoluteCenter px="4" className="members-header">
-            Our Members
-          </AbsoluteCenter>
-        </Box>
-        <VStack>
-          <MemberCards />
-        </VStack>
+              ))}
+            </SimpleGrid>
+          </Center>
+        </Center>
+        <MemberCards />
         <Footer />
       </div>
     </>

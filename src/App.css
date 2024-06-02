@@ -190,8 +190,8 @@ nav,
 }
 
 .content-blur {
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(90px);
+  -webkit-backdrop-filter: blur(90px);
 }
 
 .blob {
@@ -312,7 +312,6 @@ a {
   margin-right: 20px;
 }
 
-.members-founders-card-contacts-instagram,
 .members-founders-card-contacts-email {
   display: inline-block;
   margin-right: 10px;
@@ -328,6 +327,105 @@ a {
   width: 10vw;
   height: 10vw;
   border-radius: 50% !important;
+}
+
+.members-core-header {
+  font-family: "arvo-regular", sans-serif;
+  font-size: xx-large;
+  color: white;
+}
+
+.members-core-grid {
+  width: 90vw;
+  height: 80vh;
+  overflow-y: auto;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+  padding: 5px;
+  box-shadow: 0 0 5px white, inset 0 0 2.5px white;
+  margin-bottom: 6vh;
+  position: relative;
+}
+
+.members-core-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.members-core-card {
+  margin: 10px;
+  width: 35vw;
+  height: 35vh;
+  border-radius: 10px;
+  position: relative;
+  flex: 0 0 auto;
+  z-index: 1;
+}
+
+.members-core-card-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 50px 40px;
+  background-color: #7facc4;
+  color: #ffffff;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  font-family: "arvo-regular", sans-serif;
+  z-index: 2;
+}
+
+.members-core-card:hover .members-core-card-container {
+  transform: scale(1.01);
+  z-index: 3;
+}
+
+.members-core-card-text-container {
+  font-family: "arvo-bold", sans-serif;
+  width: fit-content;
+  align-items: center;
+  position: absolute;
+  top: 12vh;
+}
+
+.members-core-card-contacts {
+  display: flex;
+  margin-top: 40px;
+}
+
+.members-core-card-contacts a {
+  color: black;
+}
+
+.members-core-card-contacts img,
+.members-core-card-contacts svg {
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+}
+
+.members-core-card-contacts-email {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.members-core-card-picture {
+  position: absolute;
+  margin-left: 60%;
+  bottom: 12vh;
+}
+
+.members-core-card-picture .chakra-avatar__img {
+  width: 9vw;
+  aspect-ratio: 1 / 1;
+  border-radius: 50% !important;
+  margin-top: 100vh;
 }
 
 .members-container-grid {

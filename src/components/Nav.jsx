@@ -24,7 +24,7 @@ export default function Nav() {
               Recognition
             </Link>
             <a
-              href="mailto:shoreguardians.chennai@gmail.com?cc=average.runner216@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
+              href="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
               target="blank"
             >
               <EmailIcon
