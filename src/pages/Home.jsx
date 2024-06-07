@@ -17,7 +17,9 @@ export default function Home() {
           return module.default;
         })
       );
-      setImages(imagePaths);
+
+      const shuffledImages = imagePaths.sort(() => Math.random() - 0.5);
+      setImages(shuffledImages);
     };
 
     fetchImages();

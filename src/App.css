@@ -338,7 +338,7 @@ a {
 .members-core-grid {
   width: 90vw;
   height: 80vh;
-  overflow-y: auto;
+  overflow: auto;
   border: 2px solid white;
   background: rgba(255, 255, 255, 0.25);
   border-radius: 15px;
@@ -346,7 +346,6 @@ a {
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
-  padding: 5px;
   box-shadow: 0 0 5px white, inset 0 0 2.5px white;
   margin-bottom: 6vh;
   position: relative;

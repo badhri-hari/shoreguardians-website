@@ -46,57 +46,81 @@ export default function Members() {
       image: "/rishi-image.jpg",
     },
     {
+      name: "Name",
+      title: "Role",
+      emailIndex: 0,
+      image: "/image.jpeg",
+    },
+    {
+      name: "Name",
+      title: "Role",
+      emailIndex: 0,
+      image: "/image.jpeg",
+    },
+    {
+      name: "Name",
+      title: "Role",
+      emailIndex: 0,
+      image: "/image.jpeg",
+    },
+    {
+      name: "Name",
+      title: "Role",
+      emailIndex: 0,
+      image: "/image.jpeg",
+    },
+    {
       name: "Fawaz RM",
-      title: "Playboy",
+      title: "Role 1",
       emailIndex: 2,
-      image: "/fawazd-image.jpeg",
+      image: "/fawaz-image.jpeg",
     },
     {
       name: "Shrikkanth",
-      title: "Child Safety Officer",
+      title: "Role 2",
       emailIndex: 3,
-      image: "/shrikkanthd-image.jpeg",
+      image: "/shrikkanth-image.jpeg",
     },
     {
       name: "Siddhaarth",
-      title: "Plantation Owner",
+      title: "Role 3",
       emailIndex: 4,
       image: "/siddhaarth-image.jpeg",
     },
     {
       name: "Pranesh Ramachandran",
-      title: "100% Legal Immigrant",
+      title: "Role 4",
       emailIndex: 5,
       image: "/pranesh-image.jpeg",
     },
     {
       name: "Mithul Chokan",
-      title: "White Shirt Wearer",
+      title: "Role 5",
       emailIndex: 6,
       image: "/mithul-image.jpeg",
     },
     {
       name: "Sahana Sankari",
-      title: "Social Media Content Editor",
+      title: "Role 6",
       emailIndex: 7,
       image: "/sahana-image.jpeg",
     },
     {
       name: "Pritam Krishna Suresh",
-      title: "Unpaid Cotton Picker",
+      title: "Role 7",
       emailIndex: 8,
       image: "/pritam-image.jpeg",
     },
     {
       name: "Dana Dev DS",
-      title: "Professional School Absentee",
+      title: "Role 8",
       emailIndex: 9,
       image: "/dana-image.jpeg",
     },
   ];
 
   const founders = keyMembers.slice(0, 2);
-  const coreMembers = keyMembers.slice(0);
+  const coreMembers = keyMembers.slice(2);
 
   return (
     <>
