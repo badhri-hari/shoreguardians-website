@@ -30,7 +30,7 @@ export default function Home() {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
         setFade(true);
       }, 1000);
-    }, 6500);
+    }, 5000);
 
     return () => {
       clearInterval(interval);
