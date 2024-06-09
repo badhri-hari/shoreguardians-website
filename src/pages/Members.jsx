@@ -48,13 +48,13 @@ export default function Members() {
     },
     {
       name: "Siddhaarth",
-      title: "Role 1",
+      title: "Cleanup Operations Manager",
       emailIndex: 2,
       image: "/siddhaarth-image.jpg",
     },
     {
       name: "Fawaz RM",
-      title: "Role 2",
+      title: "Vice Director",
       emailIndex: 3,
       image: "/fawaz-image.jpg",
     },
