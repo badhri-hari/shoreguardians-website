@@ -28,6 +28,7 @@ export default function Members() {
     `mailto:praneshsch@gmail.com?subject=Hey Pranesh!`,
     `mailto:mithulchokan12@gmail.com?subject=Hey Mithul!`,
     `mailto:sahanaselvasankari@gmail.com?subject=Hey Sahana!`,
+    `mailto:example@gmail.com?subject=Hey Prathap!`,
     `mailto:pritamkrishna2007@gmail.com?subject=Hey Pritam!`,
     `mailto:danadev0dd@gmail.com?subject=Hey Dana Dev!`,
   ];
@@ -46,76 +47,58 @@ export default function Members() {
       image: "/rishi-image.jpg",
     },
     {
-      name: "Name",
-      title: "Role",
-      emailIndex: 0,
-      image: "/image.jpeg",
-    },
-    {
-      name: "Name",
-      title: "Role",
-      emailIndex: 0,
-      image: "/image.jpeg",
-    },
-    {
-      name: "Name",
-      title: "Role",
-      emailIndex: 0,
-      image: "/image.jpeg",
-    },
-    {
-      name: "Name",
-      title: "Role",
-      emailIndex: 0,
-      image: "/image.jpeg",
-    },
-    {
       name: "Fawaz RM",
       title: "Role 1",
       emailIndex: 2,
-      image: "/fawaz-image.jpeg",
+      image: "/fawaz-image.jpg",
     },
     {
       name: "Shrikkanth",
       title: "Role 2",
       emailIndex: 3,
-      image: "/shrikkanth-image.jpeg",
+      image: "/shrikkanth-image.jpg",
     },
     {
       name: "Siddhaarth",
       title: "Role 3",
       emailIndex: 4,
-      image: "/siddhaarth-image.jpeg",
+      image: "/siddhaarth-image.jpg",
     },
     {
-      name: "Pranesh Ramachandran",
+      name: "Pranesh",
       title: "Role 4",
       emailIndex: 5,
-      image: "/pranesh-image.jpeg",
+      image: "/pranesh-image.jpg",
     },
     {
       name: "Mithul Chokan",
       title: "Role 5",
       emailIndex: 6,
-      image: "/mithul-image.jpeg",
+      image: "/mithul-image.jpg",
     },
     {
       name: "Sahana Sankari",
       title: "Role 6",
       emailIndex: 7,
-      image: "/sahana-image.jpeg",
+      image: "/sahana-image.jpg",
     },
     {
-      name: "Pritam Krishna Suresh",
+      name: "Prathap",
       title: "Role 7",
       emailIndex: 8,
-      image: "/pritam-image.jpeg",
+      image: "/prathap-image.jpg",
+    },
+    {
+      name: "Pritam KS",
+      title: "Role 8",
+      emailIndex: 9,
+      image: "/pritam-image.jpg",
     },
     {
       name: "Dana Dev DS",
-      title: "Role 8",
-      emailIndex: 9,
-      image: "/dana-image.jpeg",
+      title: "Role 9",
+      emailIndex: 10,
+      image: "/dana-image.jpg",
     },
   ];
 
@@ -168,7 +151,7 @@ export default function Members() {
         </Center>
         <Center>
           <Center className="members-core-grid">
-            <SimpleGrid columns={[1, 2]} spacingX={100} spacingY={20}>
+            <SimpleGrid columns={[1, 2, 3]} spacingX={50} spacingY={10}>
               {coreMembers.map((keyMember, index) => (
                 <div key={index} className="members-core-card">
                   <div className="members-core-card-container">

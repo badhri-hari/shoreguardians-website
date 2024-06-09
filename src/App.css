@@ -20,7 +20,18 @@
 html,
 body {
   overflow-x: hidden;
+  overflow-y: scroll;
   background-color: #181a1b;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .header-container {
@@ -143,36 +154,108 @@ nav,
   display: none;
 }
 
-.container {
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-}
-
-.home-image-container {
-  height: 90vh;
+.home-container {
+  height: 120vh;
   width: 100vw;
   margin-top: -16vh;
   position: relative;
   overflow: hidden;
 }
 
-.home-image {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-  transition: opacity 1s ease-in-out;
-}
-
 .fade-in {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .fade-out {
-  opacity: 0.1;
+  opacity: 0;
+}
+
+.about-mission-overlay {
+  width: 100%;
+  height: 102.7vh;
+  display: flex;
+  margin-top: calc(16vh + 10px);
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  justify-content: center;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.about-mission-overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.about-us-component,
+.our-mission-component {
+  display: flex;
+  height: 50%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-us,
+.our-mission {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 70%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  padding: 35px;
+  box-shadow: 0 0 5px white, inset 0 0 2.5px white;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: white;
+  font-family: "arvo-regular", sans-serif;
+  z-index: 2;
+  font-size: 1.2rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.about-usm .our-mission::-webkit-scrollbar {
+  display: none;
+}
+
+.about-us h2,
+.our-mission h2 {
+  font-family: "arvo-bold", sans-serif;
+  font-size: xx-large;
+  margin-bottom: 10px;
+}
+
+.rectangle {
+  height: 87%;
+  width: 60%;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #8abcd7;
+  z-index: 1;
+}
+
+.rectangle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fade-in-smaller-images {
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.fade-out-smaller-images {
+  transition: opacity 1s ease-in-out;
+  opacity: 0.5;
 }
 
 @keyframes rotate {
@@ -190,8 +273,8 @@ nav,
 }
 
 .content-blur {
-  backdrop-filter: blur(90px);
-  -webkit-backdrop-filter: blur(90px);
+  backdrop-filter: blur(70px);
+  -webkit-backdrop-filter: blur(70px);
 }
 
 .blob {
@@ -337,8 +420,8 @@ a {
 
 .members-core-grid {
   width: 90vw;
-  height: 80vh;
-  overflow: auto;
+  height: 100vh;
+  overflow: hidden;
   border: 2px solid white;
   background: rgba(255, 255, 255, 0.25);
   border-radius: 15px;
@@ -348,6 +431,7 @@ a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
   box-shadow: 0 0 5px white, inset 0 0 2.5px white;
   margin-bottom: 6vh;
+  padding-top: 7vh;
   position: relative;
 }
 
@@ -356,8 +440,7 @@ a {
 }
 
 .members-core-card {
-  margin: 10px;
-  width: 35vw;
+  width: 26vw;
   height: 35vh;
   border-radius: 10px;
   position: relative;
@@ -368,10 +451,10 @@ a {
 .members-core-card-container {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  padding: 50px 40px;
+  padding: 30px;
+  height: 20vh;
   background-color: #7facc4;
   color: #ffffff;
   border-radius: 8px;
@@ -390,7 +473,7 @@ a {
   width: fit-content;
   align-items: center;
   position: absolute;
-  top: 12vh;
+  top: 20%;
 }
 
 .members-core-card-contacts {
@@ -416,8 +499,8 @@ a {
 
 .members-core-card-picture {
   position: absolute;
-  margin-left: 60%;
-  bottom: 12vh;
+  left: 63%;
+  bottom: 15%;
 }
 
 .members-core-card-picture .chakra-avatar__img {
