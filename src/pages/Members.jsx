@@ -48,7 +48,7 @@ export default function Members() {
     },
     {
       name: "Siddhaarth",
-      title: "Cleanup Operations Manager",
+      title: "Chief of Staff",
       emailIndex: 2,
       image: "/siddhaarth-image.jpg",
     },
