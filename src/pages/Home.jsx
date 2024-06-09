@@ -49,6 +49,11 @@ export default function Home() {
     };
   }, [images.length]);
 
+  useEffect(() => {
+    const timeoutId = setTimeout(() => setFade(true), 1000);
+    return () => clearTimeout(timeoutId);
+  }, [currentImageIndex]);
+
   return (
     <>
       <div
