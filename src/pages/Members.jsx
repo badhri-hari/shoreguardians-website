@@ -48,7 +48,7 @@ export default function Members() {
     },
     {
       name: "Siddhaarth",
-      title: "Chief of Staff",
+      title: "Chief of Members",
       emailIndex: 2,
       image: "/siddhaarth-image.jpg",
     },
