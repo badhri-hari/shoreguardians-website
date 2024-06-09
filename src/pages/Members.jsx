@@ -47,12 +47,6 @@ export default function Members() {
       image: "/rishi-image.jpg",
     },
     {
-      name: "Pranesh",
-      title: "Finances Manager",
-      emailIndex: 5,
-      image: "/pranesh-image.jpg",
-    },
-    {
       name: "Siddhaarth",
       title: "Role 1",
       emailIndex: 2,
@@ -66,9 +60,15 @@ export default function Members() {
     },
     {
       name: "Shrikkanth",
-      title: "Role 3",
+      title: "Vice President",
       emailIndex: 4,
       image: "/shrikkanth-image.jpg",
+    },
+    {
+      name: "Pranesh",
+      title: "Finances Manager",
+      emailIndex: 5,
+      image: "/pranesh-image.jpg",
     },
     {
       name: "Mithul Chokan",
