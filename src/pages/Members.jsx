@@ -22,9 +22,9 @@ export default function Members() {
   const mailtoURLs = [
     `mailto:badhrihari123@gmail.com?subject=Hey Badhri!`,
     `mailto:rishirajanmenon@gmail.com?subject=Hey Rishi!`,
+    `mailto:siddvaka1303@gmail.com?subject=Hey Siddhaarth!`,
     `mailto:rmfawaz07@gmail.com?subject=Hey Fawaz!`,
     `mailto:shrikkanthb@gmail.com?subject=Hey Shrikkanth!`,
-    `mailto:siddvaka1303@gmail.com?subject=Hey Siddhaarth!`,
     `mailto:praneshsch@gmail.com?subject=Hey Pranesh!`,
     `mailto:mithulchokan12@gmail.com?subject=Hey Mithul!`,
     `mailto:sahanaselvasankari@gmail.com?subject=Hey Sahana!`,
@@ -38,7 +38,7 @@ export default function Members() {
       name: "Badhri N Hari",
       title: "Founder | Director",
       emailIndex: 0,
-      image: "/badhri-image.jpeg",
+      image: "/badhri-image.jpg",
     },
     {
       name: "Rishi Rajan Menon",
@@ -47,28 +47,28 @@ export default function Members() {
       image: "/rishi-image.jpg",
     },
     {
-      name: "Fawaz RM",
+      name: "Pranesh",
+      title: "Finances Manager",
+      emailIndex: 5,
+      image: "/pranesh-image.jpg",
+    },
+    {
+      name: "Siddhaarth",
       title: "Role 1",
       emailIndex: 2,
+      image: "/siddhaarth-image.jpg",
+    },
+    {
+      name: "Fawaz RM",
+      title: "Role 2",
+      emailIndex: 3,
       image: "/fawaz-image.jpg",
     },
     {
       name: "Shrikkanth",
-      title: "Role 2",
-      emailIndex: 3,
-      image: "/shrikkanth-image.jpg",
-    },
-    {
-      name: "Siddhaarth",
       title: "Role 3",
       emailIndex: 4,
-      image: "/siddhaarth-image.jpg",
-    },
-    {
-      name: "Pranesh",
-      title: "Role 4",
-      emailIndex: 5,
-      image: "/pranesh-image.jpg",
+      image: "/shrikkanth-image.jpg",
     },
     {
       name: "Mithul Chokan",
