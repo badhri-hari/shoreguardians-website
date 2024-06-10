@@ -37,12 +37,12 @@ Although this project is not meant to be run locally given its informational pur
    cd shoreguardians
    ```
 
-3. **Open the local dev environment:**
+2. **Open the local dev environment:**
 
-```npm
-run dev
+   ```npm
+   run dev
    ```
-
+   
 4. **Navigate to "localhost:5173" in your preferred browser.**
 
 ## Contributing
