@@ -285,6 +285,7 @@ nav,
     justify-content: center;
     bottom: 0;
     height: 14vh;
+    width: 100%;
   }
 }
 
@@ -408,8 +409,8 @@ nav,
 }
 
 .content-blur {
-  backdrop-filter: blur(70px);
-  -webkit-backdrop-filter: blur(70px);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
 }
 
 .blob {
@@ -422,16 +423,8 @@ nav,
   translate: -50% -50%;
   border-radius: 50%;
   background: linear-gradient(to right, mediumpurple, #8abcd7);
-  animation: rotate 7s infinite;
-  opacity: 0.3;
-}
-
-#blur {
-  height: 200vh;
-  width: 100vw;
-  position: absolute;
-  z-index: -12;
-  backdrop-filter: blur(12vmax);
+  animation: rotate 15s infinite;
+  opacity: 0.5;
 }
 
 .footer-container {
@@ -785,7 +778,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   height: 80%;
   width: 91%;
   padding: 20px;

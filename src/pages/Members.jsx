@@ -62,11 +62,11 @@ export default function Members() {
       accomplishments: "Accomplishments for Badhri N Hari",
     },
     {
-      name: "Rishi Rajan Menon",
+      name: "Rishi RM",
       title: "Founder | President",
       emailIndex: 1,
       image: "/rishi-image.jpg",
-      accomplishments: "Accomplishments for Rishi Rajan Menon",
+      accomplishments: "Accomplishments for Rishi RM",
     },
     {
       name: "Siddhaarth",
