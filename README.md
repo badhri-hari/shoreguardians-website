@@ -1,4 +1,4 @@
-# ![ShoreGuardians Logo](./shoreguardians-logo.png)
+# ![ShoreGuardians Logo](./public/shoreguardians-logo.png)
 
 # ShoreGuardians Website
 
@@ -9,7 +9,6 @@ This repository contains the code for the official website for ShoreGuardians, a
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Technologies Used
@@ -43,10 +42,6 @@ Although this project is not meant to be run locally given its informational pur
 ## Contributing
 
 Contributions are not expected. However, if you are part of the future ShoreGuardians web development team and would like to suggest improvements, feel free to fork the repository and create pull requests.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
