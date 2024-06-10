@@ -1,6 +1,19 @@
 import { useState } from "react";
 import { EmailIcon } from "@chakra-ui/icons";
-import { Avatar, SimpleGrid, Center } from "@chakra-ui/react";
+import { CgDetailsMore } from "react-icons/cg";
+import {
+  Avatar,
+  SimpleGrid,
+  Center,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  useDisclosure,
+  VStack,
+  Box,
+} from "@chakra-ui/react";
 
 import Nav from "../components/Nav";
 import MemberCards from "../components/MemberCards";
@@ -8,6 +21,8 @@ import Footer from "../components/Footer";
 
 export default function Members() {
   const [position, setPosition] = useState({ left: 0, top: 0 });
+  const [selectedMember, setSelectedMember] = useState(null);
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
   const handlePointerMove = (event) => {
     const { clientX, clientY } = event;
@@ -17,6 +32,11 @@ export default function Members() {
       left: (clientX / innerWidth) * 100,
       top: (clientY / innerHeight) * 100,
     });
+  };
+
+  const handleClick = (member) => {
+    setSelectedMember(member);
+    onOpen();
   };
 
   const mailtoURLs = [
@@ -39,66 +59,77 @@ export default function Members() {
       title: "Founder | Director",
       emailIndex: 0,
       image: "/badhri-image.jpg",
+      accomplishments: "Accomplishments for Badhri N Hari",
     },
     {
       name: "Rishi Rajan Menon",
       title: "Founder | President",
       emailIndex: 1,
       image: "/rishi-image.jpg",
+      accomplishments: "Accomplishments for Rishi Rajan Menon",
     },
     {
       name: "Siddhaarth",
       title: "Chief of Members",
       emailIndex: 2,
       image: "/siddhaarth-image.jpg",
+      accomplishments: "Accomplishments for Siddhaarth",
     },
     {
       name: "Fawaz RM",
       title: "Vice Director",
       emailIndex: 3,
       image: "/fawaz-image.jpg",
+      accomplishments: "Accomplishments for Fawaz RM",
     },
     {
       name: "Shrikkanth",
       title: "Vice President",
       emailIndex: 4,
       image: "/shrikkanth-image.jpg",
+      accomplishments: "Accomplishments for Shrikkanth",
     },
     {
       name: "Pranesh",
       title: "Finances Manager",
       emailIndex: 5,
       image: "/pranesh-image.jpg",
+      accomplishments: "Accomplishments for Pranesh",
     },
     {
-      name: "Sahana Sankari",
+      name: "Sahana S",
       title: "Marketing Head",
       emailIndex: 7,
       image: "/sahana-image.jpg",
+      accomplishments: "Accomplishments for Sahana S",
     },
     {
       name: "Mithul Chokan",
       title: "Role 5",
       emailIndex: 6,
       image: "/mithul-image.jpg",
+      accomplishments: "Accomplishments for Mithul Chokan",
     },
     {
       name: "Prathap",
       title: "Role 7",
       emailIndex: 8,
       image: "/prathap-image.jpg",
+      accomplishments: "Accomplishments for Prathap",
     },
     {
       name: "Pritam KS",
       title: "Role 8",
       emailIndex: 9,
       image: "/pritam-image.jpg",
+      accomplishments: "Accomplishments for Pritam KS",
     },
     {
       name: "Dana Dev DS",
       title: "Role 9",
       emailIndex: 10,
       image: "/dana-image.jpg",
+      accomplishments: "Accomplishments for Dana Dev DS",
     },
   ];
 
@@ -132,10 +163,16 @@ export default function Members() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <EmailIcon
-                          style={{ color: "black", fontSize: "40px" }}
-                        />
+                        <EmailIcon />
                       </a>
+                      <CgDetailsMore
+                        style={{
+                          color: "black",
+                          fontSize: "40px",
+                          cursor: "pointer",
+                        }}
+                        onClick={() => handleClick(founder)}
+                      />
                     </div>
                   </div>
                   <div className="members-founders-card-picture">
@@ -168,6 +205,14 @@ export default function Members() {
                             style={{ color: "black", fontSize: "40px" }}
                           />
                         </a>
+                        <CgDetailsMore
+                          style={{
+                            color: "black",
+                            fontSize: "40px",
+                            cursor: "pointer",
+                          }}
+                          onClick={() => handleClick(keyMember)}
+                        />
                       </div>
                     </div>
                     <div className="members-core-card-picture">
@@ -182,6 +227,43 @@ export default function Members() {
         <MemberCards />
         <Footer />
       </div>
+
+      {selectedMember && (
+        <Modal isOpen={isOpen} onClose={onClose} isCentered>
+          <ModalOverlay
+            bg="blackAlpha.600"
+            backdropFilter="blur(10px)"
+            transition="backdrop-filter 0.3s ease"
+          />
+          <ModalContent
+            className="members-modal"
+            transition="transform 0.3s ease"
+          >
+            <Center height="100%" width="100%">
+              <VStack className="members-modal-glassmorphism">
+                <ModalHeader
+                  style={{
+                    fontFamily: "arvo-bold, sans-serif",
+                    fontSize: "40px",
+                    marginBottom: "1vh",
+                  }}
+                >
+                  {selectedMember.name} | {selectedMember.title}
+                </ModalHeader>
+                <ModalBody>
+                  <div className="members-modal-picture">
+                    <Avatar
+                      name={selectedMember.name}
+                      src={selectedMember.image}
+                    />
+                  </div>
+                  <Box>{selectedMember.accomplishments}</Box>
+                </ModalBody>
+              </VStack>
+            </Center>
+          </ModalContent>
+        </Modal>
+      )}
     </>
   );
 }

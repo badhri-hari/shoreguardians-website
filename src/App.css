@@ -766,3 +766,39 @@ a {
   width: 150px !important;
   border-radius: 50% !important;
 }
+
+.members-modal {
+  background: #8abcd7;
+  font-family: "arvo-regular", sans-serif;
+  color: white;
+  height: 50vh;
+  justify-content: center;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 20vh;
+  border-radius: 15px;
+}
+
+.members-modal-glassmorphism {
+  background: rgb(138, 188, 215);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 80%;
+  width: 91%;
+  padding: 20px;
+}
+
+.members-modal-picture {
+  position: absolute;
+  left: 5%;
+  top: 27%;
+}
+
+.members-modal-picture .chakra-avatar__img {
+  height: 200px !important;
+  width: 200px !important;
+  border-radius: 50% !important;
+}
