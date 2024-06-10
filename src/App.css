@@ -49,8 +49,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   width: 100px;
-  height: 100%;
-  padding: 5px;
+  height: 12.5vh;
   margin-left: 1vw;
   margin-top: 4vh;
 }
@@ -89,6 +88,7 @@ nav,
   overflow: visible;
   margin-right: 1vw;
   margin-top: 4vh;
+  width: 50vw;
 }
 
 .nav-members {
@@ -127,7 +127,7 @@ nav,
   max-height: 10vh;
 }
 
-.nav-links {
+.nav-links-desktop {
   text-decoration: none;
   font-size: large;
   color: white;
@@ -142,7 +142,7 @@ nav,
   font-family: "arvo-bold", sans-serif;
 }
 
-.nav-links:hover {
+.nav-links-desktop:hover {
   scale: 1.05;
   background: rgba(56, 44, 44, 0.1);
   border-radius: 5px;
@@ -150,14 +150,149 @@ nav,
   transition: all 0.3s ease;
 }
 
-.nav-links::after {
+.nav-links-desktop::after {
   display: none;
+}
+
+.burger-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 759px) {
+  .header-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 12.5vh;
+    margin-bottom: 2vh;
+    z-index: 2;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .nav-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 12.5vh;
+    margin-left: 1vw;
+  }
+
+  .nav-logo-blue-background {
+    background: rgb(138, 188, 215);
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px;
+  }
+
+  .nav-image {
+    height: 12vh;
+    border-radius: 10%;
+  }
+
+  .nav-logo-container:hover .nav-image {
+    transform: scale(1);
+  }
+
+  nav,
+  .nav-members {
+    flex: 1;
+    height: 100%;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgb(138, 188, 215);
+    z-index: 2;
+    position: relative;
+    overflow: visible;
+  }
+
+  .nav-members {
+    background: rgba(138, 188, 215, 0.1);
+  }
+
+  .glassmorphism-nav {
+    background: rgb(138, 188, 215);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+  }
+
+  .nav-hstack {
+    display: none;
+  }
+
+  .nav-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-item-container:hover .nav-image {
+    transform: none;
+  }
+
+  .nav-image-container {
+    max-height: 10vh;
+  }
+
+  .nav-links-desktop {
+    display: none;
+  }
+
+  .nav-links-mobile {
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    transition: scale 0.2s ease-in-out, transform 0.3s ease;
+    padding: 10px 20px;
+    white-space: nowrap;
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "arvo-bold", sans-serif;
+  }
+
+  .nav-links-mobile:hover {
+    scale: 1.05;
+    background: rgba(56, 44, 44, 0.1);
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .nav-links-mobile::after {
+    display: none;
+  }
+
+  .nav-email-container-desktop,
+  .nav-instagram-container-desktop,
+  .nav-signup-container-desktop {
+    display: none;
+  }
+
+  .burger-menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    height: 14vh;
+  }
 }
 
 .home-container {
   height: 120vh;
   width: 100vw;
   margin-top: -16vh;
+  margin-bottom: calc(2vh + 10px);
   position: relative;
   overflow: hidden;
 }
@@ -172,9 +307,9 @@ nav,
 
 .about-mission-overlay {
   width: 100%;
-  height: 102.7vh;
+  height: 100vh;
   display: flex;
-  margin-top: calc(16vh + 10px);
+  margin-top: calc(19vh + 10px);
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
@@ -219,7 +354,7 @@ nav,
   scrollbar-width: none;
 }
 
-.about-usm .our-mission::-webkit-scrollbar {
+.about-us .our-mission::-webkit-scrollbar {
   display: none;
 }
 
@@ -231,8 +366,8 @@ nav,
 }
 
 .rectangle {
-  height: 87%;
-  width: 60%;
+  height: 89%;
+  width: 62%;
   border-radius: 15px;
   overflow: hidden;
   display: flex;
@@ -328,6 +463,18 @@ a {
   color: white;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 0.3em;
+}
+
+@media only screen and (max-width: 759px) {
+  .footer-logo {
+    height: 200px;
+    padding: 20px 0;
+  }
+
+  .footer-text-container {
+    padding: 20px 0;
+    font-size: medium;
+  }
 }
 
 .members-founders-container {
