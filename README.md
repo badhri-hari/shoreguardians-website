@@ -1,5 +1,6 @@
-# ![ShoreGuardians Logo](./public/shoreguardians-logo.png)
-
+<p align="center">
+  <img src="./public/shoreguardians-logo.png" alt="ShoreGuardians Logo">
+</p>
 # ShoreGuardians Website
 
 This repository contains the code for the official website for ShoreGuardians, a beach cleanup club run by high-school students from across Chennai. The website serves as an informational platform for the club, showcasing our members, contact details, and more.
