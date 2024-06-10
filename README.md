@@ -39,8 +39,8 @@ Although this project is not meant to be run locally given its informational pur
 
 2. **Open the local dev environment:**
 
-   ```npm
-   run dev
+   ```node
+   npm run dev
    ```
    
 4. **Navigate to "localhost:5173" in your preferred browser.**
