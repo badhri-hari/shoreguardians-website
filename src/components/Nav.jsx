@@ -1,5 +1,6 @@
-import { HStack, Center, Link, Box } from "@chakra-ui/react";
-import { EmailIcon } from "@chakra-ui/icons";
+import { Box, HStack, Center, Link } from "@chakra-ui/react";
+import { AtSignIcon } from "@chakra-ui/icons";
+import { FaInstagram, FaUserPlus } from "react-icons/fa";
 
 export default function Nav() {
   return (
@@ -13,7 +14,7 @@ export default function Nav() {
       </Box>
       <nav>
         <Center className="glassmorphism-nav">
-          <HStack className="nav-hstack" spacing="auto">
+          <HStack className="nav-hstack" spacing="2rem" width="100%">
             <Link href="/" className="nav-links">
               Home
             </Link>
@@ -23,16 +24,32 @@ export default function Nav() {
             <Link href="/recognition" className="nav-links">
               Recognition
             </Link>
-            <a
-              href="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
-              target="blank"
-            >
-              <EmailIcon
-                color="white"
-                boxSize="2em"
-                className="nav-email-container"
-              />
-            </a>
+            <HStack spacing="1rem">
+              <a
+                href="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
+                target="blank"
+              >
+                <AtSignIcon
+                  color="white"
+                  boxSize="2em"
+                  className="nav-email-container"
+                />
+              </a>
+              <a href="https://instagram.com/shore.guardians" target="blank">
+                <FaInstagram
+                  color="white"
+                  size="2em"
+                  className="nav-instagram-container"
+                />
+              </a>
+              <a href="https://forms.gle/BxeDLuxhkKXpJffi6" target="blank">
+                <FaUserPlus
+                  color="white"
+                  size="2em"
+                  className="nav-signup-container"
+                />
+              </a>
+            </HStack>
           </HStack>
         </Center>
       </nav>
