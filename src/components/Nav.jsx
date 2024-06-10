@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   Box,
   HStack,
@@ -17,9 +16,6 @@ import { IoAtSharp, IoCloseOutline } from "react-icons/io5";
 
 export default function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [show, setShow] = useState(false);
-
-  const handleToggle = () => setShow(!show);
 
   return (
     <>
@@ -32,8 +28,8 @@ export default function Nav() {
           />
         </Box>
         <nav>
-          <Center onClick={onOpen} className="glassmorphism-nav">
-            <Box onClick={handleToggle} className="burger-menu">
+          <Center className="glassmorphism-nav">
+            <Box onClick={onOpen} className="burger-menu">
               <Center>
                 <HamburgerIcon boxSize={30} mt={10} aria-label="Open Menu" />
               </Center>
