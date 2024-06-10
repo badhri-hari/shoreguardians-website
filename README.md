@@ -28,7 +28,7 @@ Although this project is not meant to be run locally given its informational pur
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/badhri-hari/shoreguardians.git
+   git clone https://github.com/badhri-hari/shoreguardians-website.git
    ```
 
 2. **Navigate to the project directory:**
