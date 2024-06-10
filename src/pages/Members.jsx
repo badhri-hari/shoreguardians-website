@@ -71,16 +71,16 @@ export default function Members() {
       image: "/pranesh-image.jpg",
     },
     {
+      name: "Sahana Sankari",
+      title: "Marketing Head",
+      emailIndex: 7,
+      image: "/sahana-image.jpg",
+    },
+    {
       name: "Mithul Chokan",
       title: "Role 5",
       emailIndex: 6,
       image: "/mithul-image.jpg",
-    },
-    {
-      name: "Sahana Sankari",
-      title: "Role 6",
-      emailIndex: 7,
-      image: "/sahana-image.jpg",
     },
     {
       name: "Prathap",
