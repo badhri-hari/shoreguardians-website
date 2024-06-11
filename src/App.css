@@ -158,6 +158,25 @@ nav,
   display: none;
 }
 
+.content-blur {
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+}
+
+.blob {
+  background-color: black;
+  height: 300px;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, mediumpurple, #8abcd7);
+  animation: rotate 15s infinite;
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 759px) {
   .header-container {
     display: flex;
@@ -287,6 +306,15 @@ nav,
     height: 14vh;
     width: 100%;
   }
+
+  .content-blur {
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+  }
+
+  .blob {
+    opacity: 0;
+  }
 }
 
 .home-container {
@@ -406,25 +434,6 @@ nav,
   to {
     rotate: 360deg;
   }
-}
-
-.content-blur {
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
-}
-
-.blob {
-  background-color: black;
-  height: 300px;
-  aspect-ratio: 1;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  translate: -50% -50%;
-  border-radius: 50%;
-  background: linear-gradient(to right, mediumpurple, #8abcd7);
-  animation: rotate 15s infinite;
-  opacity: 0.5;
 }
 
 .footer-container {
