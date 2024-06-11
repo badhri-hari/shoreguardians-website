@@ -278,6 +278,7 @@ nav,
     align-items: center;
     justify-content: center;
     font-family: "arvo-bold", sans-serif;
+    outline: none;
   }
 
   .nav-links-mobile:hover {

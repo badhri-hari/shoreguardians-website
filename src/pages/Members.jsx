@@ -231,7 +231,6 @@ export default function Members() {
       {selectedMember && (
         <Modal isOpen={isOpen} onClose={onClose} isCentered>
           <ModalOverlay
-            bg="blackAlpha.600"
             backdropFilter="blur(10px)"
             transition="backdrop-filter 0.3s ease"
           />
