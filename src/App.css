@@ -17,6 +17,10 @@
   margin: 0;
 }
 
+*:focus {
+  outline: none;
+}
+
 html,
 body {
   overflow-x: hidden;

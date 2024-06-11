@@ -100,7 +100,7 @@ export default function Members() {
       name: "Sahana S",
       title: "Marketing Head",
       emailIndex: 7,
-      image: "/sahana-image.jpg",
+      image: "/sahana-image.jpeg",
       accomplishments: "Accomplishments for Sahana S",
     },
     {
