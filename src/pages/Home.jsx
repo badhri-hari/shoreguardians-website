@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { VStack, HStack } from "@chakra-ui/react";
+import { VStack, Stack, StackDivider } from "@chakra-ui/react";
 
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
@@ -69,7 +69,11 @@ export default function Home() {
         <Nav />
         <div className="home-container">
           <VStack className="about-mission-overlay">
-            <HStack className="about-us-component">
+            <Stack
+              direction={["column", "row"]}
+              divider={<StackDivider borderColor="gray.200" />}
+              className="about-us-component"
+            >
               <div className="about-us">
                 <h2>About Us</h2>
                 <p>
@@ -100,8 +104,12 @@ export default function Home() {
                   alt="About Us Image Carousel"
                 />
               </div>
-            </HStack>
-            <HStack className="our-mission-component">
+            </Stack>
+            <Stack
+              direction={["column", "row"]}
+              divider={<StackDivider borderColor="gray.200" />}
+              className="our-mission-component"
+            >
               <div className="rectangle">
                 <img
                   src={images[(currentImageIndex + 2) % images.length]}
@@ -126,7 +134,7 @@ export default function Home() {
                   about the importance of protecting India&#39;s natural beauty.
                 </p>
               </div>
-            </HStack>
+            </Stack>
           </VStack>
         </div>
         <Footer />

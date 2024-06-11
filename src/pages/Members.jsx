@@ -90,6 +90,13 @@ export default function Members() {
       accomplishments: "Accomplishments for Shrikkanth",
     },
     {
+      name: "Mithul",
+      title: "Head Photographer",
+      emailIndex: 6,
+      image: "/mithul-image.jpeg",
+      accomplishments: "Accomplishments for Mithul Chokan",
+    },
+    {
       name: "Pranesh",
       title: "Finances Manager",
       emailIndex: 5,
@@ -102,13 +109,6 @@ export default function Members() {
       emailIndex: 7,
       image: "/sahana-image.jpeg",
       accomplishments: "Accomplishments for Sahana S",
-    },
-    {
-      name: "Mithul Chokan",
-      title: "Role 5",
-      emailIndex: 6,
-      image: "/mithul-image.jpg",
-      accomplishments: "Accomplishments for Mithul Chokan",
     },
     {
       name: "Prathap",

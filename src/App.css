@@ -311,7 +311,9 @@ nav,
     height: 14vh;
     width: 100%;
   }
+}
 
+@media (pointer: coarse) and (hover: none) {
   .content-blur {
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
@@ -365,6 +367,8 @@ nav,
   height: 50%;
   align-items: center;
   justify-content: space-between;
+  gap: calc(1vw + 10px);
+  flex-direction: row;
 }
 
 .about-us,
@@ -400,7 +404,7 @@ nav,
 }
 
 .rectangle {
-  height: 89%;
+  height: calc(75% + 40px);
   width: 62%;
   border-radius: 15px;
   overflow: hidden;
@@ -425,6 +429,73 @@ nav,
 .fade-out-smaller-images {
   transition: opacity 1s ease-in-out;
   opacity: 0.5;
+}
+
+@media only screen and (max-width: 897px) {
+  .home-container {
+    height: max-content;
+    width: 100vw;
+    margin-top: -16vh;
+    margin-bottom: calc(2vh + 10px);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .about-mission-overlay {
+    height: max-content;
+    flex-direction: column;
+    padding: 0;
+    margin-top: calc(19vh + 10px);
+    overflow: scroll;
+    padding-left: 3.2vw;
+    padding-right: 3.2vw;
+  }
+
+  .about-us-component,
+  .our-mission-component {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    width: 99%;
+  }
+
+  .about-us,
+  .our-mission {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 300px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 0 5px white, inset 0 0 2.5px white;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: white;
+    font-family: "arvo-regular", sans-serif;
+    z-index: 2;
+    font-size: 1.2rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .our-mission-component {
+    margin-top: 4.5vh;
+  }
+
+  .rectangle {
+    height: calc(75% + 40px);
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #8abcd7;
+    z-index: 1;
+  }
 }
 
 @keyframes rotate {
