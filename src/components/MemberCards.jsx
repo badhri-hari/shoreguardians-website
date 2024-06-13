@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 
 import { EmailIcon } from "@chakra-ui/icons";
-import { Grid, Box, Avatar, Center } from "@chakra-ui/react";
+import { Grid, Box, Avatar, Center, Input } from "@chakra-ui/react";
 
 export default function MemberCards() {
   const [members, setMembers] = useState([]);
   const [memberCount, setMemberCount] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     fetch("/api/member_details")
@@ -20,18 +21,30 @@ export default function MemberCards() {
       });
   }, []);
 
+  const filteredMembers = members.filter((member) =>
+    member.Name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <>
-      <Center pb={40} px="4" className="members-header">
+      <Center pb={10} px="4" className="members-header">
         {memberCount !== null ? `Our ${memberCount} Members` : "Our Members"}
+      </Center>
+      <Center pb={10} px="4">
+        <Input
+          placeholder="Search members..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="search-input"
+        />
       </Center>
       <Center>
         <Grid
           templateColumns="repeat(3, 1fr)"
           className="members-container-grid"
         >
-          {members.length > 0 ? (
-            members.map((member) => (
+          {filteredMembers.length > 0 ? (
+            filteredMembers.map((member) => (
               <Box className="members-container" key={member.SubmissionTime}>
                 <div className="members-card">
                   <div className="members-card-container">
@@ -60,7 +73,7 @@ export default function MemberCards() {
               </Box>
             ))
           ) : (
-            <div className="members-card">Please wait...</div>
+            <div className="members-card">No members found...</div>
           )}
         </Grid>
       </Center>

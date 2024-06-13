@@ -762,6 +762,32 @@ a {
   color: white;
 }
 
+.search-input {
+  background: rgba(255, 255, 255, 0.25);
+  border: 3px solid transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  font-family: "arvo-regular", sans-serif;
+  font-size: large;
+  height: 40px;
+  width: 85vw;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  transition: all 100ms linear;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  outline: none;
+}
+
 .members-container {
   display: flex;
   flex-direction: column;
