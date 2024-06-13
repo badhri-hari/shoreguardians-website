@@ -62,7 +62,7 @@ export default function Nav() {
                     className="nav-instagram-container-desktop"
                   />
                 </a>
-                <a href="https://forms.gle/BxeDLuxhkKXpJffi6" target="blank">
+                <a href="https://forms.gle/YtEeof8MpSGa8hFE8" target="blank">
                   <FaUserPlus
                     color="white"
                     size="2em"
@@ -127,7 +127,7 @@ export default function Nav() {
                     />
                   </a>
                   <a
-                    href="https://forms.gle/BxeDLuxhkKXpJffi6"
+                    href="https://forms.gle/YtEeof8MpSGa8hFE8"
                     target="_blank"
                     rel="noreferrer"
                   >
