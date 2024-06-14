@@ -16,6 +16,7 @@ export default function Footer() {
               <a href="https://github.com/badhri-hari/" target="blank">
                 Badhri Hari
               </a>
+              &nbsp;,&nbsp;&nbsp;
               <a href={sahanaMail} target="_blank" rel="noreferrer">
                 Sahana S
               </a>
@@ -29,6 +30,7 @@ export default function Footer() {
               <a href="https://github.com/badhri-hari/" target="blank">
                 Badhri Hari
               </a>
+              &nbsp;,&nbsp;&nbsp;
               <a href={sahanaMail} target="_blank" rel="noreferrer">
                 Sahana S
               </a>
