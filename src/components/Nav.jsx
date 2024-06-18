@@ -11,7 +11,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { FaInstagram, FaUserPlus } from "react-icons/fa";
+import { FaInstagram, FaUserPlus, FaLinkedin } from "react-icons/fa";
 import { IoAtSharp, IoCloseOutline } from "react-icons/io5";
 
 export default function Nav() {
@@ -53,6 +53,16 @@ export default function Nav() {
                     color="white"
                     size="2em"
                     className="nav-email-container-desktop"
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/shoreguardians/"
+                  target="blank"
+                >
+                  <FaLinkedin
+                    color="white"
+                    size="2em"
+                    className="nav-signup-container-desktop"
                   />
                 </a>
                 <a href="https://instagram.com/shore.guardians" target="blank">
@@ -124,6 +134,16 @@ export default function Nav() {
                       color="white"
                       size="2em"
                       className="nav-instagram-container-mobile"
+                    />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/shoreguardians/"
+                    target="blank"
+                  >
+                    <FaLinkedin
+                      color="white"
+                      size="2em"
+                      className="nav-signup-container-mobile"
                     />
                   </a>
                   <a
