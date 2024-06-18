@@ -245,6 +245,7 @@ nav,
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 100%;
     width: 100%;
+    transition: all 1s linear;
   }
 
   .nav-hstack {
@@ -310,6 +311,18 @@ nav,
     bottom: 0;
     height: 14vh;
     width: 100%;
+    transition: all 1s linear;
+  }
+
+  .glassmorphism-nav:hover {
+    transform: scale(1);
+    transition: transform 1s;
+  }
+
+  .glassmorphism-nav:active {
+    transform: scale(0.9);
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: transform 0.1s, background-color 0.1s;
   }
 }
 
