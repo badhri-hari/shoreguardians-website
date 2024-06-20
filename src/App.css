@@ -204,6 +204,7 @@ nav,
 
   .nav-logo-blue-background {
     background: rgb(138, 188, 215);
+    background-color: #8abcd7;
     border-radius: 15px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -321,7 +322,7 @@ nav,
 
   .glassmorphism-nav:active {
     transform: scale(0.9);
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.09);
     transition: transform 0.1s, background-color 0.1s;
   }
 }

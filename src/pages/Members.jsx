@@ -56,14 +56,14 @@ export default function Members() {
   const keyMembers = [
     {
       name: "Badhri N Hari",
-      title: "Founder | Director",
+      title: "Founder | President",
       emailIndex: 0,
       image: "/badhri-image.jpg",
       accomplishments: "Accomplishments for Badhri N Hari",
     },
     {
       name: "Rishi RM",
-      title: "Founder | President",
+      title: "Founder | Director",
       emailIndex: 1,
       image: "/rishi-image.jpg",
       accomplishments: "Accomplishments for Rishi RM",
