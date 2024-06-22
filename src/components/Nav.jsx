@@ -41,9 +41,9 @@ export default function Nav() {
               <Link href="/members" className="nav-links-desktop">
                 Members
               </Link>
-              <Link href="/recognition" className="nav-links-desktop">
+              {/* <Link href="/recognition" className="nav-links-desktop">
                 Recognition
-              </Link>
+              </Link> */}
               <HStack spacing="1rem" className="nav-icons-container-desktop">
                 <a
                   href="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
@@ -106,13 +106,13 @@ export default function Nav() {
                 >
                   Members
                 </Link>
-                <Link
+                {/* <Link
                   href="/recognition"
                   className="nav-links-mobile"
                   onClick={onClose}
                 >
                   Recognition
-                </Link>
+                </Link> */}
                 <HStack spacing="1rem" className="nav-icons-container-mobile">
                   <a
                     href="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
