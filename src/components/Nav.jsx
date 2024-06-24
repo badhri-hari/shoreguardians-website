@@ -38,9 +38,9 @@ export default function Nav() {
               <Link href="/" className="nav-links-desktop">
                 Home
               </Link>
-              {/* <Link href="/members" className="nav-links-desktop">
+              <Link href="/members" className="nav-links-desktop">
                 Members
-              </Link> */}
+              </Link>
               {/* <Link href="/recognition" className="nav-links-desktop">
                 Recognition
               </Link> */}
@@ -99,13 +99,13 @@ export default function Nav() {
                 <Link href="/" className="nav-links-mobile" onClick={onClose}>
                   Home
                 </Link>
-                {/* <Link
+                <Link
                   href="/members"
                   className="nav-links-mobile"
                   onClick={onClose}
                 >
                   Members
-                </Link> */}
+                </Link>
                 {/* <Link
                   href="/recognition"
                   className="nav-links-mobile"

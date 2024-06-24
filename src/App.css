@@ -657,7 +657,7 @@ a {
   color: white;
 }
 
-.members-core-grid {
+.members-core-grid-container {
   width: 90vw;
   height: 100vh;
   overflow: hidden;
@@ -674,7 +674,11 @@ a {
   position: relative;
 }
 
-.members-core-grid::-webkit-scrollbar {
+.members-core-grid-container::-webkit-scrollbar {
+  display: none;
+}
+
+.members-core-grid-mobile {
   display: none;
 }
 
@@ -747,6 +751,10 @@ a {
   aspect-ratio: 1 / 1;
   border-radius: 50% !important;
   margin-top: 100vh;
+}
+
+.members-grid-mobile {
+  display: none;
 }
 
 .members-container-grid {
@@ -886,7 +894,7 @@ a {
 }
 
 .members-modal {
-  background: #8abcd7;
+  background: #8abcd7d6;
   font-family: "arvo-regular", sans-serif;
   color: white;
   height: 50vh;
@@ -898,9 +906,8 @@ a {
 }
 
 .members-modal-glassmorphism {
-  background: rgb(138, 188, 215);
   border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -911,12 +918,214 @@ a {
 
 .members-modal-picture {
   position: absolute;
-  left: 5%;
   top: 27%;
+  left: 5%;
+}
+
+.members-modal-text {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  margin-right: 20px;
 }
 
 .members-modal-picture .chakra-avatar__img {
   height: 200px !important;
   width: 200px !important;
   border-radius: 50% !important;
+}
+
+@media only screen and (max-width: 700px) {
+  .members-founders-container {
+    flex-direction: column;
+  }
+
+  .members-founders-card {
+    background: 0;
+    height: 20vh;
+    width: 92vw;
+    margin-top: 1.2vh;
+    margin-bottom: 0;
+    padding: 5px;
+  }
+
+  .members-founders-card-container {
+    padding: 30px 20px;
+  }
+
+  .members-founders-card-text-container {
+    font-size: 15px;
+    margin-left: 3%;
+    top: 0;
+    margin-top: 8%;
+  }
+
+  .members-founders-card-contacts {
+    margin-top: 12%;
+  }
+
+  .members-founders-card-contacts img,
+  .members-founders-card-contacts svg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .members-founders-card-picture {
+    bottom: 25px;
+    right: 10px;
+  }
+
+  .members-founders-card-picture .chakra-avatar__img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50% !important;
+  }
+
+  .members-core-grid-desktop {
+    display: none;
+  }
+
+  .members-core-grid-mobile {
+    display: flex;
+    height: fit-content;
+    width: 95%;
+  }
+
+  .members-core-grid-container {
+    height: 10vh;
+    overflow: auto;
+    padding-top: 75vh;
+  }
+
+  .members-core-card {
+    height: 15vh;
+    width: 79vw;
+    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: 5px solid rgba(0, 0, 0, 0.01);
+  }
+
+  .members-core-card-container {
+    padding: 8px;
+    height: 80%;
+    font-size: 12px;
+    border: 5px solid rgba(0, 0, 0, 0.01);
+  }
+
+  .members-core-card-contacts {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .members-core-card-contacts img,
+  .members-core-card-contacts svg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .members-core-card-picture {
+    position: absolute;
+    bottom: 16%;
+    left: 70%;
+  }
+
+  .members-core-card-picture .chakra-avatar__img {
+    width: 70px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50% !important;
+    z-index: 1000;
+  }
+
+  .members-grid-desktop {
+    display: none;
+  }
+
+  .members-grid-mobile {
+    display: flex;
+    height: fit-content;
+    width: 95%;
+  }
+
+  .members-card {
+    height: 15vh;
+    width: 70vw;
+    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: 5px solid rgba(0, 0, 0, 0.01);
+  }
+
+  .members-card-container {
+    padding: 8px;
+    height: 80%;
+    font-size: 12px;
+    border: 5px solid rgba(0, 0, 0, 0.01);
+  }
+
+  .members-card-contacts {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  .members-card-contacts img,
+  .members-card-contacts svg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .members-card-picture {
+    position: absolute;
+    bottom: 16%;
+    left: 70%;
+  }
+
+  .members-card-picture .chakra-avatar__img {
+    width: 70px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50% !important;
+    z-index: 1000;
+  }
+
+  .members-modal {
+    background: #8abcd7;
+    height: 50vh;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 50vh;
+    border-radius: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .members-modal-glassmorphism {
+    border-radius: 0px;
+    border: 0px;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    height: 90%;
+    width: 90%;
+    padding: 0px;
+    overflow: auto;
+  }
+
+  .members-modal-picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .members-modal-picture .chakra-avatar__img {
+    height: 0px !important;
+    width: 0px !important;
+    border-radius: 0% !important;
+  }
+
+  .members-modal-text {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+  }
 }
