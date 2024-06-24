@@ -16,10 +16,10 @@ export default function Footer() {
               <a href="https://github.com/badhri-hari/" target="blank">
                 Badhri Hari
               </a>
-              &nbsp;,&nbsp;&nbsp;
+              {/* &nbsp;,&nbsp;&nbsp;
               <a href={sahanaMail} target="_blank" rel="noreferrer">
                 Sahana S
-              </a>
+              </a> */}
             </div>
           </VStack>
         ) : (
@@ -30,10 +30,10 @@ export default function Footer() {
               <a href="https://github.com/badhri-hari/" target="blank">
                 Badhri Hari
               </a>
-              &nbsp;,&nbsp;&nbsp;
+              {/* &nbsp;,&nbsp;&nbsp;
               <a href={sahanaMail} target="_blank" rel="noreferrer">
                 Sahana S
-              </a>
+              </a> */}
             </div>
           </HStack>
         )}
