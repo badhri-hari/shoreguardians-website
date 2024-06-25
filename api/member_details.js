@@ -1,8 +1,11 @@
 import axios from "axios";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export default async function handler(req, res) {
-  const apiKey = "SHOREGUARDIANS_SECRET_KEY";
-  const url = `https://script.google.com/macros/s/AKfycby-UX_a1vyZzNGJZywanMFZhVPpfssCQ47L1xrqPrFVZiT-6V7k3VBZA2M7v6sHK6Wo/exec?apiKey=${apiKey}`;
+  const apiKey = process.env.SHOREGUARDIANS_API_KEY;
+  const url = `https://script.google.com/macros/s/AKfycbxpGBpy9-a1EFXFWM0Gz9QjYudYpyNvavYuJALzgkIdoTve-JQXigwGzDDiNugs1sM/exec?apiKey=${apiKey}`;
 
   try {
     const response = await axios.get(url);
