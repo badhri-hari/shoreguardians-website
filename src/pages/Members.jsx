@@ -59,8 +59,7 @@ export default function Members() {
       title: "Founder | President",
       emailIndex: 0,
       image: "/key-members/badhri-image.jpg",
-      accomplishments:
-        "As the President of ShoreGuardians, I have been instrumental in establishing and leading the club since its inception a year ago. Under my leadership, the club grew to nearly 100 members and successfully executed multiple large-scale beach cleanups. I have handled collaborations with organizations like MYRafiky and Oceans Are Us, contributing to our recognition in the Adyar Times and expanding our impact through the UNESCO-recognized Roots & Shoots program.",
+      accomplishments: "Accomplishments for Badhri",
     },
     {
       name: "Rishi RM",
@@ -289,8 +288,7 @@ export default function Members() {
                 <ModalHeader
                   style={{
                     fontFamily: "arvo-bold, sans-serif",
-                    fontSize: "40px",
-                    marginBottom: "1vh",
+                    fontSize: "30px",
                   }}
                 >
                   {selectedMember.name} | {selectedMember.title}
