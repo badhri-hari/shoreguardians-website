@@ -11,6 +11,12 @@ export default async function handler(req, res) {
     const response = await axios.get(url);
     const members = response.data.slice(1);
     res.status(200).json(members);
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "GET");
+    res.setHeader(
+      "Access-Control-Allow-Headers",
+      "Content-Type, Authorization"
+    );
   } catch (error) {
     console.error("Error fetching data:", error);
     res.status(500).json({ error: "Error fetching member details" });
