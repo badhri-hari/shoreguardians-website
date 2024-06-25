@@ -125,14 +125,14 @@ export default function Members() {
       accomplishments: "Accomplishments for Prathap",
     },
     {
-      name: "Pritam KS",
+      name: "Pritam",
       title: "Role 8",
       emailIndex: 9,
       image: "/key-members/pritam-image.jpg",
       accomplishments: "Accomplishments for Pritam KS",
     },
     {
-      name: "Dana Dev DS",
+      name: "Dana Dev",
       title: "Role 9",
       emailIndex: 10,
       image: "/key-members/dana-image.png",
