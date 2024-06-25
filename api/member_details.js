@@ -5,7 +5,7 @@ dotenv.config();
 
 export default async function handler(req, res) {
   const apiKey = process.env.SHOREGUARDIANS_API_KEY;
-  const url = `https://script.google.com/macros/s/AKfycbxpGBpy9-a1EFXFWM0Gz9QjYudYpyNvavYuJALzgkIdoTve-JQXigwGzDDiNugs1sM/exec?apiKey=${apiKey}`;
+  const url = `https://script.google.com/macros/s/AKfycbxKwpuOaYVcBi2Xyt96lfIYteosmIIP-qRIFSGQJcwwBxrRJq4jqI9WY-7qNtOvSQLT/exec?apiKey=${apiKey}`;
 
   try {
     const response = await axios.get(url);
