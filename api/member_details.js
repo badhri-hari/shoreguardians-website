@@ -17,6 +17,10 @@ export default async function handler(req, res) {
       "Access-Control-Allow-Headers",
       "Content-Type, Authorization"
     );
+    res.setHeader(
+      "Content-Security-Policy",
+      "default-src 'self'; img-src 'self' https://lh3.googleusercontent.com data:; script-src 'self'"
+    );
 
     res.status(200).json(data);
   } catch (error) {
