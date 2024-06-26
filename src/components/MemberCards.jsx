@@ -12,6 +12,7 @@ export default function MemberCards() {
     fetch("/api/member_details")
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
         setMembers(data);
         setMemberCount(data.length);
       })

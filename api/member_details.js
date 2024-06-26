@@ -5,12 +5,13 @@ dotenv.config();
 
 export default async function handler(req, res) {
   const apiKey = process.env.SHOREGUARDIANS_API_KEY;
-  const url = `https://script.google.com/macros/s/AKfycbxgVO_7gO9HTauCxdPfQ4w6gHyAJgfU2ZCwwMLZP1uItKZtZ3BV33hDla59wHNtni9Q/exec?apiKey=${apiKey}`;
+  console.log(`API Key: ${apiKey}`);
+  const url = `https://script.google.com/macros/s/AKfycbwepVB46QaCcvrT1iDesIl_fo-u4FAoz1vPoF-5RZZmFgcNP7Y5k23bldvw2Z69AUcF/exec?apiKey=${apiKey}`;
 
   try {
     const response = await axios.get(url);
-    const data = response.data;
 
+    const data = response.data;
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Access-Control-Allow-Methods", "GET");
     res.setHeader(
@@ -21,7 +22,6 @@ export default async function handler(req, res) {
     res.status(200).json(data);
   } catch (error) {
     console.error("Error fetching data:", error.message);
-
     res.status(500).json({ error: "Error fetching member details" });
   }
 }
