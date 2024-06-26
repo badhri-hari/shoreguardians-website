@@ -9,8 +9,7 @@ export default async function handler(req, res) {
 
   try {
     const response = await axios.get(url);
-    const members = response.data.slice(1);
-    res.status(200).json(members);
+    res.status(200).json(response);
     res.setHeader("Access-Control-Allow-Origin", "*");
     res.setHeader("Access-Control-Allow-Methods", "GET");
     res.setHeader(
