@@ -10,7 +10,7 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src 'self' data:; script-src 'self'; style-src 'self' 'unsafe-inline'"
+          "value": "default-src 'self'; img-src 'self' data:; script-src 'self' https://vercel.com https://*.vercel-insights.com; style-src 'self' 'unsafe-inline'"
         },
         {
           "key": "X-Content-Type-Options",
