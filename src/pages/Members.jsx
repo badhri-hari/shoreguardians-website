@@ -18,6 +18,7 @@ import {
 import Nav from "../components/Nav";
 import MemberCards from "../components/MemberCards";
 import Footer from "../components/Footer";
+import Head from "../components/Head";
 
 export default function Members() {
   const [position, setPosition] = useState({ left: 0, top: 0 });
@@ -144,6 +145,10 @@ export default function Members() {
 
   return (
     <>
+      <Head
+        pageTitle="Members"
+        description="Our club's key members and volunteers."
+      />
       <div
         className="blob"
         style={{

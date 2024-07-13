@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { VStack, Stack, StackDivider } from "@chakra-ui/react";
 
+import Head from "../components/Head";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 
@@ -56,6 +57,10 @@ export default function Home() {
 
   return (
     <>
+      <Head
+        pageTitle="ShoreGuardians"
+        description="Cleaning Chennai's Beaches, One Bag at a Time!"
+      />
       <div
         className="blob"
         style={{

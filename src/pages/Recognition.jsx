@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import Head from "../components/Head";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 
@@ -18,6 +19,10 @@ export default function Recognition() {
 
   return (
     <>
+      <Head
+        pageTitle="Recognitions and Partnerships"
+        description="Our club's recognitions and partnerships."
+      />
       <div
         className="blob"
         style={{
