@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 import "./App.css";
 import Home from "./pages/Home.jsx";
@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <HelmetProvider>
-      <SpeedInsights>
+      <Analytics>
         <Router>
           <Routes>
             <Route path="*" element={<Home />} />
@@ -21,7 +21,7 @@ root.render(
             <Route path="/recognition" element={<Recognition />} />
           </Routes>
         </Router>
-      </SpeedInsights>
+      </Analytics>
     </HelmetProvider>
   </React.StrictMode>
 );
