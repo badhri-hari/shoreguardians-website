@@ -117,27 +117,27 @@ export default function Members() {
       image: "/key-members/pranesh-image.jpg",
       accomplishments: "Accomplishments for Pranesh",
     },
-    {
-      name: "Prathap",
-      title: "Role 7",
-      emailIndex: 8,
-      image: "/key-members/prathap-image.jpg",
-      accomplishments: "Accomplishments for Prathap",
-    },
-    {
-      name: "Pritam",
-      title: "Role 8",
-      emailIndex: 9,
-      image: "/key-members/pritam-image.jpg",
-      accomplishments: "Accomplishments for Pritam KS",
-    },
-    {
-      name: "Dana Dev",
-      title: "Role 9",
-      emailIndex: 10,
-      image: "/key-members/dana-image.png",
-      accomplishments: "Accomplishments for Dana Dev DS",
-    },
+    // {
+    //   name: "Prathap",
+    //   title: "Role 7",
+    //   emailIndex: 8,
+    //   image: "/key-members/prathap-image.jpg",
+    //   accomplishments: "Accomplishments for Prathap",
+    // },
+    // {
+    //   name: "Pritam",
+    //   title: "Role 8",
+    //   emailIndex: 9,
+    //   image: "/key-members/pritam-image.jpg",
+    //   accomplishments: "Accomplishments for Pritam KS",
+    // },
+    // {
+    //   name: "Dana Dev",
+    //   title: "Role 9",
+    //   emailIndex: 10,
+    //   image: "/key-members/dana-image.png",
+    //   accomplishments: "Accomplishments for Dana Dev DS",
+    // },
   ];
 
   const founders = keyMembers.slice(0, 2);
