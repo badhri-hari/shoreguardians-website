@@ -659,7 +659,7 @@ a {
 
 .members-core-grid-container {
   width: 90vw;
-  height: 100vh;
+  height: 70vh;
   overflow: hidden;
   border: 2px solid white;
   background: rgba(255, 255, 255, 0.25);
@@ -670,7 +670,7 @@ a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
   box-shadow: 0 0 5px white, inset 0 0 2.5px white;
   margin-bottom: 6vh;
-  padding-top: 7vh;
+  padding-top: 6vh;
   position: relative;
 }
 
@@ -995,7 +995,7 @@ a {
   .members-core-grid-container {
     height: 10vh;
     overflow: auto;
-    padding-top: 75vh;
+    padding-top: 48vh;
   }
 
   .members-core-card {

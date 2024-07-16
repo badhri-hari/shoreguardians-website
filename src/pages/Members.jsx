@@ -71,12 +71,12 @@ export default function Members() {
         "As the Director of ShoreGuardians, I've played a crucial role in the planning and execution the club’s initiatives. I reached out to and managed our partnership with Annetts Club, coordinating major collaborations and organizing cleanups that mobilized up to 80 members. My efforts have been pivotal in establishing a strong foundation for the club's ongoing activities and expanding its reach.",
     },
     {
-      name: "Sahana S",
-      title: "Marketing Head",
-      emailIndex: 7,
-      image: "/key-members/sahana-image.jpeg",
+      name: "Shrikkanth",
+      title: "Vice President",
+      emailIndex: 4,
+      image: "/key-members/shrikkanth-image.jpg",
       accomplishments:
-        "As the Marketing Head, I manage the club's social media presence, growing our Instagram account to 300+ followers. Through engaging posts and reels, I successfully raise awareness about the club’s initiatives and achievements. My strategies help increase the club's visibility and attract widespread support and participation.",
+        "As Vice President, I manage the day-to-day operations and ensure the smooth execution of the club’s activities. I support the President in overseeing major events, such as high-impact cleanup initiatives and collaborations with external organizations. My role enhances the club's operational efficiency and member engagement.",
     },
     {
       name: "Fawaz RM",
@@ -87,12 +87,12 @@ export default function Members() {
         "As Vice Director, I assist the Director in planning and executing strategic projects and partnerships. I coordinate with partner organizations like MYRafiky and Oceans Are Us, ensuring that collaborations run seamlessly and effectively. My organizational skills contribute to the successful management of large-scale cleanups.",
     },
     {
-      name: "Shrikkanth",
-      title: "Vice President",
-      emailIndex: 4,
-      image: "/key-members/shrikkanth-image.jpg",
+      name: "Sahana S",
+      title: "Marketing Head",
+      emailIndex: 7,
+      image: "/key-members/sahana-image.jpeg",
       accomplishments:
-        "As Vice President, I manage the day-to-day operations and ensure the smooth execution of the club’s activities. I support the President in overseeing major events, such as high-impact cleanup initiatives and collaborations with external organizations. My role enhances the club's operational efficiency and member engagement.",
+        "As the Marketing Head, I manage the club's social media presence, growing our Instagram account to 300+ followers. Through engaging posts and reels, I successfully raise awareness about the club’s initiatives and achievements. My strategies help increase the club's visibility and attract widespread support and participation.",
     },
     {
       name: "Siddhaarth",
