@@ -39,7 +39,7 @@ Although this project is not meant to be run locally given its informational pur
 
 2. **Open the local dev environment:**
 
-```node
+   ```node
    npm i
    ```
    ```node
