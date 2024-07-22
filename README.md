@@ -2,7 +2,7 @@
   <img src="./public/shoreguardians-logo.png" alt="ShoreGuardians Logo">
 </p>
 
-### ShoreGuardians Website
+# ShoreGuardians Website
 
 This repository contains the code for the official website for ShoreGuardians, a beach cleanup club run by high-school students from across Chennai. The website serves as an informational platform for the club, showcasing our members, contact details, and more.
 
@@ -30,22 +30,20 @@ Although this project is not meant to be run locally given its informational pur
    ```bash
    git clone https://github.com/badhri-hari/shoreguardians-website.git
    ```
-
 2. **Navigate to the project directory:**
 
    ```bash
    cd shoreguardians
    ```
-
-2. **Open the local dev environment:**
+3. **Open the local dev environment:**
 
    ```node
    npm i
    ```
+
    ```node
    npm run dev
    ```
-   
 4. **Navigate to "localhost:5173" in your preferred browser.**
 
 ## Contributing
