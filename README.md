@@ -23,7 +23,7 @@ This project is built using the following technologies:
 
 ## Installation
 
-Although this project is not meant to be run locally given its informational purpose, you may follow these steps if you wish to do so:
+This project is not meant to be run locally given its informational purpose, you may follow these steps if you wish to do so:
 
 1. **Clone the repository:**
 
