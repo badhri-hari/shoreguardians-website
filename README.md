@@ -23,7 +23,7 @@ This project is built using the following technologies:
 
 ## Installation
 
-This project is not meant to be run locally given its informational purpose, you may follow these steps if you wish to do so:
+This project is not meant to be run locally given its informational purpos. However, you may follow these steps if you wish to do so:
 
 1. **Clone the repository:**
 
@@ -55,3 +55,4 @@ Contributions are not expected. However, if you are part of the future ShoreGuar
 For any inquiries related to this project, please contact:
 
 - **Badhri Hari:** badhrihari123@gmail.com
+- **ShoreGuardians Team:** shoreguardians.chennai@gmail.com
