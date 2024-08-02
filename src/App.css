@@ -321,7 +321,7 @@ nav,
   }
 
   .glassmorphism-nav:active {
-    transform: scale(0.9);
+    transform: scale(0.95);
     background-color: rgba(0, 0, 0, 0.09);
     transition: transform 0.1s, background-color 0.1s;
   }
