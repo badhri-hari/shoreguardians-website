@@ -2,7 +2,6 @@ import {
   Box,
   HStack,
   Center,
-  Link,
   VStack,
   Drawer,
   DrawerBody,
@@ -13,6 +12,8 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { FaInstagram, FaUserPlus, FaLinkedin } from "react-icons/fa";
 import { IoAtSharp, IoCloseOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
+import { Tooltip } from "react-tooltip";
 
 export default function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -35,48 +36,89 @@ export default function Nav() {
               </Center>
             </Box>
             <HStack className="nav-hstack" spacing="2rem" width="100%">
-              <Link href="/" className="nav-links-desktop">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `nav-links-desktop ${isActive ? "active" : ""}`
+                }
+              >
                 Home
-              </Link>
-              <Link href="/members" className="nav-links-desktop">
+              </NavLink>
+              <NavLink
+                to="/members"
+                className={({ isActive }) =>
+                  `nav-links-desktop ${isActive ? "active" : ""}`
+                }
+              >
                 Members
-              </Link>
-              {/* <Link href="/recognition" className="nav-links-desktop">
+              </NavLink>
+              {/* <NavLink to="/recognition" className={({ isActive }) =>
+                  `nav-links-desktop ${isActive ? "active" : ""}`
+                }>
                 Recognition
-              </Link> */}
-              <HStack spacing="1rem" className="nav-icons-container-desktop">
+              </NavLink> */}
+              <HStack spacing="1.2rem">
                 <a
-                  href="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
+                  to="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
                   target="blank"
                 >
                   <IoAtSharp
-                    color="white"
+                    color="red"
                     size="2em"
                     className="nav-email-container-desktop"
+                    data-tooltip-id="my-tooltip"
+                    data-tooltip-content="Email Us!"
+                    data-tooltip-place="bottom"
+                    id="clickable"
+                    data-tooltip-offset="12"
+                    data-tooltip-variant="info"
+                    data-tooltip-delay-show="180"
+                  />
+                  <Tooltip id="my-tooltip" />
+                </a>
+                <a to="https://instagram.com/shore.guardians" target="blank">
+                  <FaInstagram
+                    color="#ff6e6e"
+                    size="2em"
+                    className="nav-instagram-container-desktop"
+                    data-tooltip-id="my-tooltip"
+                    data-tooltip-content="Visit our Instagram Page!"
+                    data-tooltip-place="bottom"
+                    id="clickable"
+                    data-tooltip-offset="12"
+                    data-tooltip-variant="info"
+                    data-tooltip-delay-show="180"
                   />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/shoreguardians/"
+                  to="https://www.linkedin.com/company/shoreguardians/"
                   target="blank"
                 >
                   <FaLinkedin
-                    color="white"
+                    color="#0072b1"
                     size="2em"
                     className="nav-signup-container-desktop"
+                    data-tooltip-id="my-tooltip"
+                    data-tooltip-content="Visit our LinkedIn Page!"
+                    data-tooltip-place="bottom"
+                    id="clickable"
+                    data-tooltip-offset="12"
+                    data-tooltip-variant="info"
+                    data-tooltip-delay-show="180"
                   />
                 </a>
-                <a href="https://instagram.com/shore.guardians" target="blank">
-                  <FaInstagram
-                    color="white"
+                <a to="https://forms.gle/YtEeof8MpSGa8hFE8" target="blank">
+                  <FaUserPlus
+                    color="#6792c9"
                     size="2em"
                     className="nav-instagram-container-desktop"
-                  />
-                </a>
-                <a href="https://forms.gle/YtEeof8MpSGa8hFE8" target="blank">
-                  <FaUserPlus
-                    color="white"
-                    size="2em"
-                    className="nav-signup-container-desktop"
+                    data-tooltip-id="my-tooltip"
+                    data-tooltip-content="Sign Up!"
+                    data-tooltip-place="bottom"
+                    id="clickable"
+                    data-tooltip-offset="12"
+                    data-tooltip-variant="info"
+                    data-tooltip-delay-show="180"
                   />
                 </a>
               </HStack>
@@ -96,63 +138,73 @@ export default function Nav() {
           >
             <DrawerBody>
               <VStack spacing="2rem">
-                <Link href="/" className="nav-links-mobile" onClick={onClose}>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    `nav-links-mobile ${isActive ? "active" : ""}`
+                  }
+                  onClick={onClose}
+                >
                   Home
-                </Link>
-                <Link
-                  href="/members"
-                  className="nav-links-mobile"
+                </NavLink>
+                <NavLink
+                  to="/members"
+                  className={({ isActive }) =>
+                    `nav-links-mobile ${isActive ? "active" : ""}`
+                  }
                   onClick={onClose}
                 >
                   Members
-                </Link>
-                {/* <Link
-                  href="/recognition"
-                  className="nav-links-mobile"
+                </NavLink>
+                {/* <NavLink
+                  to="/recognition"
+                  className={({ isActive }) =>
+                    `nav-links-mobile ${isActive ? "active" : ""}`
+                  }
                   onClick={onClose}
                 >
                   Recognition
-                </Link> */}
+                </NavLink> */}
                 <HStack spacing="1rem" className="nav-icons-container-mobile">
                   <a
-                    href="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
+                    to="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
                     target="_blank"
                     rel="noreferrer"
                   >
                     <IoAtSharp
-                      color="white"
+                      color="red"
                       size="2em"
                       className="nav-email-container-mobile"
                     />
                   </a>
                   <a
-                    href="https://instagram.com/shore.guardians"
+                    to="https://instagram.com/shore.guardians"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <FaInstagram
-                      color="white"
+                      color="#ff6e6e"
                       size="2em"
                       className="nav-instagram-container-mobile"
                     />
                   </a>
                   <a
-                    href="https://www.linkedin.com/company/shoreguardians/"
+                    to="https://www.linkedin.com/company/shoreguardians/"
                     target="blank"
                   >
                     <FaLinkedin
-                      color="white"
+                      color="#0072b1"
                       size="2em"
                       className="nav-signup-container-mobile"
                     />
                   </a>
                   <a
-                    href="https://forms.gle/YtEeof8MpSGa8hFE8"
+                    to="https://forms.gle/YtEeof8MpSGa8hFE8"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <FaUserPlus
-                      color="white"
+                      color="#6792c9"
                       size="2em"
                       className="nav-signup-container-mobile"
                     />

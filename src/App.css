@@ -15,6 +15,9 @@
 
 * {
   margin: 0;
+  --rt-color-info: #8abcd7;
+  --rt-opacity: 0.85;
+  font-family: "arvo-regular", sans-serif;
 }
 
 *:focus {
@@ -148,10 +151,28 @@ nav,
 
 .nav-links-desktop:hover {
   scale: 1.05;
-  background: rgba(56, 44, 44, 0.1);
+  background: rgba(56, 44, 44, 0.25);
   border-radius: 5px;
   position: relative;
   transition: all 0.3s ease;
+}
+
+.nav-email-container-desktop,
+.nav-instagram-container-desktop,
+.nav-signup-container-desktop {
+  border: 5px solid transparent;
+  border-radius: 5px;
+  transition: all 0.05s linear;
+  background: rgb(255, 255, 255, 0.6);
+}
+
+.nav-email-container-desktop:hover,
+.nav-instagram-container-desktop:hover,
+.nav-signup-container-desktop:hover {
+  padding: 3px;
+  border: 5px solid transparent;
+  background: rgb(255, 255, 255, 1);
+  transform: scale(1.1);
 }
 
 .nav-links-desktop::after {
@@ -996,6 +1017,15 @@ a {
     height: 10vh;
     overflow: auto;
     padding-top: 48vh;
+  }
+
+  .active {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+
+  .active:hover {
+    transform: none;
   }
 
   .members-core-card {
