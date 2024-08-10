@@ -1032,9 +1032,10 @@ a {
   }
 
   .members-core-grid-container {
-    height: 10vh;
-    overflow: auto;
-    padding-top: 48vh;
+    height: 60vh;
+    overflow: hidden;
+    padding-bottom: 5vh;
+    width: 90vw;
   }
 
   .active {
@@ -1093,13 +1094,13 @@ a {
   .members-grid-mobile {
     display: flex;
     height: fit-content;
-    width: 95%;
+    width: 88%;
   }
 
   .members-card {
     height: 15vh;
     width: 70vw;
-    margin: 10px;
+    margin-left: 1.6%;
     margin-top: 0;
     margin-bottom: 10px;
     border: 5px solid rgba(0, 0, 0, 0.01);
