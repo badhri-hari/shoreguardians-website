@@ -16,7 +16,7 @@
 * {
   margin: 0;
   --rt-color-info: #8abcd7;
-  --rt-opacity: 0.85;
+  --rt-opacity: 1;
   font-family: "arvo-regular", sans-serif;
 }
 
@@ -73,6 +73,22 @@ body::-webkit-scrollbar {
   height: 10vh;
   border-radius: 10%;
   transition: all 0.25s ease;
+  animation: spin 5s cubic-bezier(0.175, 0.085, 0.32, 1.275) infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(380deg);
+  }
+  90% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .nav-logo-container:hover .nav-image {
@@ -402,7 +418,6 @@ nav,
   display: flex;
   height: 50%;
   align-items: center;
-  justify-content: space-between;
   gap: calc(1vw + 10px);
   flex-direction: row;
 }
@@ -597,6 +612,7 @@ a {
   align-items: center;
   gap: 20px;
   padding: 20px;
+  margin-top: 2vh;
 }
 
 .members-founders-card {
@@ -680,7 +696,7 @@ a {
 }
 
 .members-core-grid-container {
-  width: 90vw;
+  width: 70vw;
   height: 70vh;
   overflow: hidden;
   border: 2px solid white;

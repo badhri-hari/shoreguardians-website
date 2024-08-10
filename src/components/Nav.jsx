@@ -52,11 +52,14 @@ export default function Nav() {
               >
                 Members
               </NavLink>
-              {/* <NavLink to="/recognition" className={({ isActive }) =>
+              <NavLink
+                to="/partnerships"
+                className={({ isActive }) =>
                   `nav-links-desktop ${isActive ? "active" : ""}`
-                }>
-                Recognition
-              </NavLink> */}
+                }
+              >
+                Partnerships
+              </NavLink>
               <HStack spacing="1.2rem">
                 <a
                   to="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
@@ -156,15 +159,15 @@ export default function Nav() {
                 >
                   Members
                 </NavLink>
-                {/* <NavLink
-                  to="/recognition"
+                <NavLink
+                  to="/partnerships"
                   className={({ isActive }) =>
                     `nav-links-mobile ${isActive ? "active" : ""}`
                   }
                   onClick={onClose}
                 >
-                  Recognition
-                </NavLink> */}
+                  Partnerships
+                </NavLink>
                 <HStack spacing="1rem" className="nav-icons-container-mobile">
                   <a
                     to="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."

@@ -87,14 +87,6 @@ export default function Members() {
         "As Vice Director, I assist the Director in planning and executing strategic projects and partnerships. I coordinate with partner organizations like MYRafiky and Oceans Are Us, ensuring that collaborations run seamlessly and effectively. My organizational skills contribute to the successful management of large-scale cleanups.",
     },
     {
-      name: "Sahana S",
-      title: "Marketing Head",
-      emailIndex: 7,
-      image: "/key-members/sahana-image.jpeg",
-      accomplishments:
-        "As the Marketing Head, I manage the club's social media presence, growing our Instagram account to 300+ followers. Through engaging posts and reels, I successfully raise awareness about the club’s initiatives and achievements. My strategies help increase the club's visibility and attract widespread support and participation.",
-    },
-    {
       name: "Siddhaarth",
       title: "Chief of Members",
       emailIndex: 2,
@@ -103,41 +95,13 @@ export default function Members() {
         "As Chief of Members, I am responsible for member recruitment, retention, and engagement within ShoreGuardians. I have successfully grown the club to nearly 100 members over the course of a year and maintained high levels of participation in cleanups and events. My efforts have fostered a strong, active community dedicated to environmental conservation.",
     },
     {
-      name: "Mithul",
-      title: "Head Photographer",
-      emailIndex: 6,
-      image: "/key-members/mithul-image.jpeg",
+      name: "Sahana S",
+      title: "Marketing Head",
+      emailIndex: 7,
+      image: "/key-members/sahana-image.jpeg",
       accomplishments:
-        "As the Head Photographer, I capture the essence of the club’s activities through compelling visuals. My work has significantly enhanced the club's online presence, particularly on Instagram, where my photos and reels have garnered over 200 likes and 20k+ views. My photography is crucial in documenting and promoting the club’s impact.",
+        "As the Marketing Head, I manage the club's social media presence, growing our Instagram account to 300+ followers. Through engaging posts and reels, I successfully raise awareness about the club’s initiatives and achievements. My strategies help increase the club's visibility and attract widespread support and participation.",
     },
-    {
-      name: "Pranesh",
-      title: "Finances Manager",
-      emailIndex: 5,
-      image: "/key-members/pranesh-image.jpg",
-      accomplishments: "Accomplishments for Pranesh",
-    },
-    // {
-    //   name: "Prathap",
-    //   title: "Role 7",
-    //   emailIndex: 8,
-    //   image: "/key-members/prathap-image.jpg",
-    //   accomplishments: "Accomplishments for Prathap",
-    // },
-    // {
-    //   name: "Pritam",
-    //   title: "Role 8",
-    //   emailIndex: 9,
-    //   image: "/key-members/pritam-image.jpg",
-    //   accomplishments: "Accomplishments for Pritam KS",
-    // },
-    // {
-    //   name: "Dana Dev",
-    //   title: "Role 9",
-    //   emailIndex: 10,
-    //   image: "/key-members/dana-image.png",
-    //   accomplishments: "Accomplishments for Dana Dev DS",
-    // },
   ];
 
   const founders = keyMembers.slice(0, 2);
@@ -200,7 +164,7 @@ export default function Members() {
         <Center>
           <Center className="members-core-grid-container">
             <div className="members-core-grid-desktop">
-              <SimpleGrid columns={[1, 2, 3]} spacingX={50} spacingY={10}>
+              <SimpleGrid columns={[1, 2]} spacingX={50} spacingY={0}>
                 {coreMembers.map((keyMember, index) => (
                   <div key={index} className="members-core-card">
                     <div className="members-core-card-container">

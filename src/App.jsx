@@ -6,7 +6,7 @@ import { HelmetProvider } from "react-helmet-async";
 import "./App.css";
 import Home from "./pages/Home.jsx";
 import Members from "./pages/Members.jsx";
-import Recognition from "./pages/Recognition.jsx";
+import Partnerships from "./pages/Partnerships.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,7 +16,7 @@ root.render(
         <Routes>
           <Route path="*" element={<Home />} />
           <Route path="/members" element={<Members />} />
-          <Route path="/recognition" element={<Recognition />} />
+          <Route path="/partnerships" element={<Partnerships />} />
         </Routes>
       </Router>
     </HelmetProvider>
