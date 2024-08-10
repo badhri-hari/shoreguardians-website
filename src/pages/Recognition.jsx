@@ -29,7 +29,7 @@ export default function Recognition() {
           position: "fixed",
           left: `${position.left}vw`,
           top: `${position.top}vh`,
-          transition: "left 0.3s, top 0.3s",
+          transition: "left 0.5s, top 0.5s",
         }}
       ></div>
       <div className="content-blur" onPointerMove={handlePointerMove}>
