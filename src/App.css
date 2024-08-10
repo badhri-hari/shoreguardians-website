@@ -252,6 +252,7 @@ nav,
   .nav-image {
     height: 12vh;
     border-radius: 10%;
+    animation: none;
   }
 
   .nav-logo-container:hover .nav-image {
