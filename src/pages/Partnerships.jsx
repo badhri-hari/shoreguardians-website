@@ -21,7 +21,7 @@ export default function Partnerships() {
   return (
     <>
       <Head
-        pageTitle="Partnerships"
+        pageTitle="Partnerships and News"
         description="Our club's recognitions and partnerships."
       />
       <div
@@ -37,13 +37,18 @@ export default function Partnerships() {
         <Nav />
         <div
           className="home-container"
-          style={{ height: "175vh", paddingTop: "0" }}
+          style={{
+            height: "260vh",
+            paddingTop: "0",
+            marginBottom: "-17vh",
+          }}
         >
           <VStack
             className="about-mission-overlay"
             style={{
-              marginTop: "17vh",
-              height: "92.5%",
+              marginTop: "0",
+              height: "100%",
+              paddingTop: "0",
             }}
           >
             <Stack
@@ -52,10 +57,17 @@ export default function Partnerships() {
               className="about-us-component"
               style={{
                 marginBottom: "0",
-                height: "31.3%",
+                height: "55vh",
               }}
             >
-              <div className="about-us">
+              <div className="rectangle">
+                <img
+                  src="/shoreguardians-logo.png"
+                  className="fade-in-smaller-images"
+                  alt=""
+                />
+              </div>
+              <div className="our-mission">
                 <h2>Annettes Club of RCMC</h2>
                 <p>
                   ShoreGuardians and the{" "}
@@ -63,16 +75,37 @@ export default function Partnerships() {
                     href="https://www.instagram.com/annettes_rcmc/?hl=en"
                     target="_blank"
                     rel="noreferrer"
-                    style={{
-                      textDecorationThickness: "1.2px",
-                      textUnderlineOffset: "0.1em",
-                    }}
                   >
                     Annettes Club of Rotary Club (Madras Central)
                   </a>{" "}
                   have joined hands to make waves of change. Together,
                   we&apos;ve cleaned up our shores across multiple cleanups, and
                   are dedicated to a cleaner, greener tomorrow.
+                </p>
+              </div>
+            </Stack>
+            <Stack
+              direction={["column", "row"]}
+              divider={<StackDivider borderColor="gray.200" />}
+              className="about-us-component"
+              style={{
+                marginBottom: "0",
+                height: "55vh",
+              }}
+            >
+              <div className="about-us">
+                <h2>Adyar Times</h2>
+                <p>
+                  Our efforts were recognized by the{" "}
+                  <a
+                    href="https://adyartimes.in/youth-group-shows-concern-for-environmental-issues/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Adyar Times
+                  </a>{" "}
+                  group, which lead to a feature article about the club, our
+                  purpose, and our outreach.
                 </p>
               </div>
               <div className="rectangle">
@@ -89,7 +122,7 @@ export default function Partnerships() {
               className="about-us-component"
               style={{
                 marginBottom: "0",
-                height: "31.3%",
+                height: "55vh",
               }}
             >
               <div className="rectangle">
@@ -107,7 +140,6 @@ export default function Partnerships() {
                     href="https://myrafiky.com/"
                     target="_blank"
                     rel="noreferrer"
-                    style={{}}
                   >
                     MyRafiky
                   </a>{" "}
@@ -122,7 +154,7 @@ export default function Partnerships() {
               className="about-us-component"
               style={{
                 marginBottom: "0",
-                height: "31.3%",
+                height: "55vh",
               }}
             >
               <div className="about-us">
@@ -134,7 +166,6 @@ export default function Partnerships() {
                     href="https://rootsandshoots.in/"
                     target="_blank"
                     rel="noreferrer"
-                    style={{}}
                   >
                     Jane Goodall Institute (India)
                   </a>

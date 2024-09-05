@@ -58,7 +58,7 @@ export default function Nav() {
                   `nav-links-desktop ${isActive ? "active" : ""}`
                 }
               >
-                Partnerships
+                Partnerships and News
               </NavLink>
               <HStack spacing="1.2rem">
                 <a

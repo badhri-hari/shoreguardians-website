@@ -191,6 +191,7 @@ nav,
   background: rgba(255, 255, 255, 1);
   border: 3px solid;
   transform: scale(1.1);
+  cursor: none;
 }
 
 .nav-links-desktop::after {
