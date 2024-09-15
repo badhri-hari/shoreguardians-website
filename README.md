@@ -15,11 +15,12 @@ This repository contains the code for the official website for ShoreGuardians, a
 
 ## Technologies Used
 
-This project is built using the following technologies:
+This project is built using the following technologies, libraries, and frameworks:
 
 - **Vite.js**: Used for its fast build times and smooth developer experience.
 - **Chakra UI**: For layout components, icons, and styling.
 - **Google Apps Script**: To fetch Members' data from Google Sheets and Drive.
+- **Vercel:** Used to deploy the website for free.
 
 ## Contributing
 
@@ -29,5 +30,5 @@ Contributions are not expected. However, if you are part of the future ShoreGuar
 
 For any inquiries related to this project, please contact:
 
-- **Badhri Hari:** badhrihari123@gmail.com
+- **Developer:** badhrihari123@gmail.com
 - **ShoreGuardians Team:** shoreguardians.chennai@gmail.com
