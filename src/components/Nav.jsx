@@ -62,8 +62,9 @@ export default function Nav() {
               </NavLink>
               <HStack spacing="1.2rem">
                 <a
-                  to="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
-                  target="blank"
+                  href="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
+                  target="_blank"
+                  rel="noreferrer noopener"
                 >
                   <IoAtSharp
                     color="red"
@@ -79,7 +80,11 @@ export default function Nav() {
                   />
                   <Tooltip id="my-tooltip" />
                 </a>
-                <a to="https://instagram.com/shore.guardians" target="blank">
+                <a
+                  href="https://instagram.com/shore.guardians"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <FaInstagram
                     color="#ff6e6e"
                     size="2em"
@@ -94,8 +99,9 @@ export default function Nav() {
                   />
                 </a>
                 <a
-                  to="https://www.linkedin.com/company/shoreguardians/"
-                  target="blank"
+                  href="https://www.linkedin.com/company/shoreguardians/"
+                  target="_blank"
+                  rel="noreferrer noopener"
                 >
                   <FaLinkedin
                     color="#0072b1"
@@ -110,7 +116,11 @@ export default function Nav() {
                     data-tooltip-delay-show="180"
                   />
                 </a>
-                <a to="https://forms.gle/YtEeof8MpSGa8hFE8" target="blank">
+                <a
+                  href="https://forms.gle/YtEeof8MpSGa8hFE8"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   <FaUserPlus
                     color="#6792c9"
                     size="2em"
@@ -170,9 +180,9 @@ export default function Nav() {
                 </NavLink>
                 <HStack spacing="1rem" className="nav-icons-container-mobile">
                   <a
-                    to="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
+                    href="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noreferrer noopener"
                   >
                     <IoAtSharp
                       color="white"
@@ -181,9 +191,9 @@ export default function Nav() {
                     />
                   </a>
                   <a
-                    to="https://instagram.com/shore.guardians"
+                    href="https://instagram.com/shore.guardians"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noreferrer noopener"
                   >
                     <FaInstagram
                       color="white"
@@ -192,8 +202,9 @@ export default function Nav() {
                     />
                   </a>
                   <a
-                    to="https://www.linkedin.com/company/shoreguardians/"
-                    target="blank"
+                    href="https://www.linkedin.com/company/shoreguardians/"
+                    target="_blank"
+                    rel="noreferrer noopener"
                   >
                     <FaLinkedin
                       color="white"
@@ -202,9 +213,9 @@ export default function Nav() {
                     />
                   </a>
                   <a
-                    to="https://forms.gle/YtEeof8MpSGa8hFE8"
+                    href="https://forms.gle/YtEeof8MpSGa8hFE8"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noreferrer noopener"
                   >
                     <FaUserPlus
                       color="white"
