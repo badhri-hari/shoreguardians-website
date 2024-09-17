@@ -34,6 +34,7 @@ export default function MemberCards() {
         <Input
           placeholder="Search members..."
           value={searchTerm}
+          maxLength={11}
           onChange={(e) => setSearchTerm(e.target.value)}
           className="search-input"
         />
