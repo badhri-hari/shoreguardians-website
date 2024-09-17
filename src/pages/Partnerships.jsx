@@ -49,6 +49,7 @@ export default function Partnerships() {
               marginTop: "0",
               height: "100%",
               paddingTop: "0",
+              paddingLeft: "10.5%",
             }}
           >
             <Stack
@@ -60,11 +61,11 @@ export default function Partnerships() {
                 height: "55vh",
               }}
             >
-              <div className="rectangle">
+              <div className="rectangle partner-rectangles">
                 <img
-                  src="/shoreguardians-logo.png"
-                  className="fade-in-smaller-images"
-                  alt=""
+                  src="/partnerships_images/annettes.jpg"
+                  className="annettes"
+                  alt="Annettes Club logo"
                 />
               </div>
               <div className="our-mission">
@@ -108,11 +109,11 @@ export default function Partnerships() {
                   purpose, and our outreach.
                 </p>
               </div>
-              <div className="rectangle">
+              <div className="rectangle partner-rectangles">
                 <img
-                  src="/shoreguardians-logo.png"
-                  className="fade-in-smaller-images"
-                  alt=""
+                  src="/partnerships_images/adyar.jpg"
+                  className="partner-images"
+                  alt="Adyar Times Feature Article's main image"
                 />
               </div>
             </Stack>
@@ -125,11 +126,11 @@ export default function Partnerships() {
                 height: "55vh",
               }}
             >
-              <div className="rectangle">
+              <div className="rectangle partner-rectangles">
                 <img
-                  src="/shoreguardians-logo.png"
-                  className="fade-in-smaller-images"
-                  alt=""
+                  src="/partnerships_images/myrafiky.jpg"
+                  className="partner-images"
+                  alt="MyRafiky Logo"
                 />
               </div>
               <div className="our-mission">
@@ -173,11 +174,11 @@ export default function Partnerships() {
                   platform and create an outline for future collaboratoins.
                 </p>
               </div>
-              <div className="rectangle">
+              <div className="rectangle partner-rectangles">
                 <img
-                  src="/shoreguardians-logo.png"
-                  className="fade-in-smaller-images"
-                  alt=""
+                  src="/partnerships_images/jane.jpg"
+                  className="partner-images jane"
+                  alt="Jane Goodall Institute India Logo"
                 />
               </div>
             </Stack>

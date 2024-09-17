@@ -1191,3 +1191,17 @@ a {
     left: 0%;
   }
 }
+
+.partner-rectangles {
+  width: fit-content;
+}
+
+.partner-images {
+  max-height: 100%;
+  max-width: fit-content;
+}
+
+.jane {
+  max-height: 22.5%;
+  max-width: fit-content;
+}
