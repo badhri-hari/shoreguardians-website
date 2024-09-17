@@ -221,7 +221,7 @@ nav,
   opacity: 0.5;
 }
 
-@media only screen and (max-width: 805px) {
+@media only screen and (max-width: 1045px) {
   .header-container {
     display: flex;
     width: 100%;
@@ -365,6 +365,16 @@ nav,
     transform: scale(0.95);
     background-color: rgba(0, 0, 0, 0.09);
     transition: transform 0.1s, background-color 0.1s;
+  }
+}
+
+@media only screen and (min-width: 1880px) {
+  .nav-image {
+    height: 12vh;
+    width: 100%;
+    border-radius: 10%;
+    animation: none;
+    transition: none;
   }
 }
 
