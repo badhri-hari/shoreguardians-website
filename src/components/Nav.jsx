@@ -117,7 +117,7 @@ export default function Nav() {
                   />
                 </a>
                 <a
-                  href="https://forms.gle/YtEeof8MpSGa8hFE8"
+                  href="https://forms.gle/ZmhYk2ko54hg3gWu9"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
@@ -213,7 +213,7 @@ export default function Nav() {
                     />
                   </a>
                   <a
-                    href="https://forms.gle/YtEeof8MpSGa8hFE8"
+                    href="https://forms.gle/ZmhYk2ko54hg3gWu9"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
