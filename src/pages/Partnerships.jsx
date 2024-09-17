@@ -137,7 +137,7 @@ export default function Partnerships() {
                 <p>
                   We worked with the{" "}
                   <a
-                    href="https://myrafiky.com/"
+                    href="https://www.instagram.com/p/C9SQMicPpCL/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -163,7 +163,7 @@ export default function Partnerships() {
                   To commemorate Plastic Free July 2024, We partnered up with
                   the{" "}
                   <a
-                    href="https://rootsandshoots.in/"
+                    href="https://www.instagram.com/reel/C9ehqcMqnA-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
                     target="_blank"
                     rel="noreferrer"
                   >
