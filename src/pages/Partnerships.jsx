@@ -35,40 +35,21 @@ export default function Partnerships() {
       ></div>
       <div className="content-blur" onPointerMove={handlePointerMove}>
         <Nav />
-        <div
-          className="home-container"
-          style={{
-            height: "260vh",
-            paddingTop: "0",
-            marginBottom: "-17vh",
-          }}
-        >
-          <VStack
-            className="about-mission-overlay"
-            style={{
-              marginTop: "0",
-              height: "100%",
-              paddingTop: "0",
-              paddingLeft: "10.5%",
-            }}
-          >
+        <div className="partner-home-container">
+          <VStack className="partner-about-mission-overlay">
             <Stack
               direction={["column", "row"]}
               divider={<StackDivider borderColor="gray.200" />}
-              className="about-us-component"
-              style={{
-                marginBottom: "0",
-                height: "55vh",
-              }}
+              className="partner-about-us-component"
             >
               <div className="rectangle partner-rectangles">
                 <img
                   src="/partnerships_images/annettes.jpg"
-                  className="annettes"
+                  className="partner-images"
                   alt="Annettes Club logo"
                 />
               </div>
-              <div className="our-mission">
+              <div className="partner-our-mission">
                 <h2>Annettes Club of RCMC</h2>
                 <p>
                   ShoreGuardians and the{" "}
@@ -77,7 +58,7 @@ export default function Partnerships() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Annettes Club of Rotary Club (Madras Central)
+                    Annettes Club of the Rotary Club Madras Central
                   </a>{" "}
                   have joined hands to make waves of change. Together,
                   we&apos;ve cleaned up our shores across multiple cleanups, and
@@ -88,13 +69,13 @@ export default function Partnerships() {
             <Stack
               direction={["column", "row"]}
               divider={<StackDivider borderColor="gray.200" />}
-              className="about-us-component"
+              className="partner-about-us-component"
               style={{
                 marginBottom: "0",
                 height: "55vh",
               }}
             >
-              <div className="about-us">
+              <div className="partner-about-us">
                 <h2>Adyar Times</h2>
                 <p>
                   Our efforts were recognized by the{" "}
@@ -120,7 +101,7 @@ export default function Partnerships() {
             <Stack
               direction={["column", "row"]}
               divider={<StackDivider borderColor="gray.200" />}
-              className="about-us-component"
+              className="partner-about-us-component"
               style={{
                 marginBottom: "0",
                 height: "55vh",
@@ -133,7 +114,7 @@ export default function Partnerships() {
                   alt="MyRafiky Logo"
                 />
               </div>
-              <div className="our-mission">
+              <div className="partner-our-mission">
                 <h2>MyRafiky</h2>
                 <p>
                   We worked with the{" "}
@@ -152,13 +133,13 @@ export default function Partnerships() {
             <Stack
               direction={["column", "row"]}
               divider={<StackDivider borderColor="gray.200" />}
-              className="about-us-component"
+              className="partner-about-us-component"
               style={{
                 marginBottom: "0",
-                height: "55vh",
+                height: "50vh",
               }}
             >
-              <div className="about-us">
+              <div className="partner-about-us">
                 <h2>Jane Goodall Institute</h2>
                 <p>
                   To commemorate Plastic Free July 2024, We partnered up with

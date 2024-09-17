@@ -1205,3 +1205,125 @@ a {
   max-height: 22.5%;
   max-width: fit-content;
 }
+
+.partner-home-container {
+  height: 120vh;
+  width: 100vw;
+  margin-top: -16vh;
+  margin-bottom: calc(2vh + 10px);
+  position: relative;
+  overflow: hidden;
+  height: 260vh;
+  padding-top: 0;
+  margin-bottom: -17vh;
+}
+
+.partner-about-mission-overlay {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  margin-top: calc(19vh + 10px);
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+  justify-content: center;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-top: 0;
+  height: 100%;
+  padding-top: 0;
+  padding-left: 10.5%;
+}
+
+.partner-about-mission-overlay::-webkit-scrollbar {
+  display: none;
+}
+
+.partner-about-us-component {
+  display: flex;
+  height: 50%;
+  align-items: center;
+  gap: calc(1vw + 10px);
+  flex-direction: row;
+  margin-bottom: 0;
+  height: 55vh;
+}
+
+.partner-our-mission,
+.partner-about-us {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 70%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  padding: 35px;
+  box-shadow: 0 0 5px white, inset 0 0 2.5px white;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  color: white;
+  font-family: "arvo-regular", sans-serif;
+  z-index: 2;
+  font-size: 1.2rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .partner-home-container {
+    height: max-content;
+    width: 100vw;
+    margin-top: -16vh;
+    margin-bottom: calc(2vh + 10px);
+    position: relative;
+    overflow-y: hidden;
+  }
+
+  .partner-about-mission-overlay {
+    height: fit-content;
+    flex-direction: column;
+    padding: 0;
+    margin-top: calc(19vh + 10px);
+    overflow: hidden;
+    padding-left: 3.2vw;
+    padding-right: 3.2vw;
+  }
+
+  .partner-about-us-component {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    width: 99%;
+  }
+
+  .partner-our-mission,
+  .partner-about-us {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 300px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 0 5px white, inset 0 0 2.5px white;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    color: white;
+    font-family: "arvo-regular", sans-serif;
+    z-index: 2;
+    font-size: 1.2rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .partner-images,
+  .partner-rectangles {
+    display: none;
+  }
+}

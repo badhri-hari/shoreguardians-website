@@ -159,6 +159,15 @@ export default function Nav() {
                 >
                   Members
                 </NavLink>
+                <NavLink
+                  to="/partnerships"
+                  className={({ isActive }) =>
+                    `nav-links-mobile ${isActive ? "active" : ""}`
+                  }
+                  onClick={onClose}
+                >
+                  Partnerships and News
+                </NavLink>
                 <HStack spacing="1rem" className="nav-icons-container-mobile">
                   <a
                     to="mailto:shoreguardians.chennai@gmail.com?cc=badhrihari123@gmail.com,rishirajanmenon@gmail.com&subject=Hey ShoreGuardians! I Have A Question..."
