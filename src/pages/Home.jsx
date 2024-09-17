@@ -86,7 +86,7 @@ export default function Home() {
                   dedicated to promoting social responsibility among
                   Chennai&#39;s youth. In a society that often prioritizes
                   academic success over civic duty, our club stands out by
-                  focusing on instilling civic sense in students from 10th to
+                  focusing on instilling civic sense in students from 9th to
                   12th grade. Our mission is to foster a sense of community,
                   environmental stewardship, and active citizenship among the
                   younger generation. We aim to inspire and empower students to
