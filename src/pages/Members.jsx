@@ -60,7 +60,8 @@ export default function Members() {
       title: "Founder | President",
       emailIndex: 0,
       image: "/key-members/badhri-image.jpg",
-      accomplishments: "Accomplishments for Badhri",
+      accomplishments:
+        "As the President of ShoreGuardians, I've played an instrumental role in growing the club and getting it recognition. One of my key achievements was securing a recognition with the Jane Goodall Institute of India, promoting and solidifying the club's efforts and significantly elevating our profile. Alongside this, I planned and managed cleanups, helping to coordinate up to 30 volunteers at once.",
     },
     {
       name: "Rishi RM",
@@ -68,7 +69,7 @@ export default function Members() {
       emailIndex: 1,
       image: "/key-members/rishi-image.jpg",
       accomplishments:
-        "As the Director of ShoreGuardians, I've played a crucial role in the planning and execution the club’s initiatives. I reached out to and managed our partnership with Annetts Club, coordinating major collaborations and organizing cleanups that mobilized up to 80 members. My efforts have been pivotal in establishing a strong foundation for the club's ongoing activities and expanding its reach.",
+        "As the Director of ShoreGuardians, I've played a crucial role in the planning and execution the club’s initiatives. I reached out to and managed our partnership with Annetts Club, coordinating the collaborations and organizing cleanups that mobilized up to 30 members. My efforts have been pivotal in establishing a strong foundation for the club's ongoing activities and expanding its reach.",
     },
     {
       name: "Shrikkanth",
@@ -84,7 +85,7 @@ export default function Members() {
       emailIndex: 3,
       image: "/key-members/fawaz-image.jpg",
       accomplishments:
-        "As Vice Director, I assist the Director in planning and executing strategic projects and partnerships. I coordinate with partner organizations like MYRafiky and Oceans Are Us, ensuring that collaborations run seamlessly and effectively. My organizational skills contribute to the successful management of large-scale cleanups.",
+        "As Vice Director, I assist the Director in planning and executing strategic projects and partnerships. I coordinated with partner organizations like MYRafiky, ensuring that the partnership went seamlessly and effectively. My organizational skills contributed to the successful growth in our volunteer base.",
     },
     {
       name: "Siddhaarth",
@@ -92,7 +93,7 @@ export default function Members() {
       emailIndex: 2,
       image: "/key-members/siddhaarth-image.jpg",
       accomplishments:
-        "As Chief of Members, I am responsible for member recruitment, retention, and engagement within ShoreGuardians. I have successfully grown the club to nearly 100 members over the course of a year and maintained high levels of participation in cleanups and events. My efforts have fostered a strong, active community dedicated to environmental conservation.",
+        "As Chief of Members, I am responsible for member recruitment, retention, and engagement within ShoreGuardians. I have played a key role in successfully growing the club to nearly 100 members over the course of a year and ensured high levels of participation in cleanup events. My efforts have fostered a motivated and participative community dedicated to tackling shoreline pollution.",
     },
     {
       name: "Sahana S",
@@ -100,7 +101,7 @@ export default function Members() {
       emailIndex: 7,
       image: "/key-members/sahana-image.jpeg",
       accomplishments:
-        "As the Marketing Head, I manage the club's social media presence, growing our Instagram account to 300+ followers. Through engaging posts and reels, I successfully raise awareness about the club’s initiatives and achievements. My strategies help increase the club's visibility and attract widespread support and participation.",
+        "As the Marketing Head, I manage the club's social media presence, growing our Instagram account to 300+ followers. Through creating and publishing engaging posts and reels, I successfully raised awareness about the club’s events and achievements. My strategies help increase the club's visibility and attract widespread support and participation.",
     },
   ];
 
