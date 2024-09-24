@@ -1111,7 +1111,7 @@ a {
 
   .members-card {
     height: 15vh;
-    width: 70vw;
+    width: 65vw;
     margin-left: 1.6%;
     margin-top: 0;
     margin-bottom: 10px;
@@ -1138,8 +1138,8 @@ a {
 
   .members-card-picture {
     position: absolute;
-    bottom: 16%;
-    left: 70%;
+    top: 1%;
+    left: 46%;
   }
 
   .members-card-picture .chakra-avatar__img {
