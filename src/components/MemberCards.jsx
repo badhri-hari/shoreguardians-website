@@ -75,7 +75,7 @@ export default function MemberCards() {
                 </Box>
               ))
             ) : (
-              <div className="members-card">No members found...</div>
+              <div className="members-card">Loading...</div>
             )}
           </Grid>
         </div>
@@ -115,7 +115,7 @@ export default function MemberCards() {
                 </Box>
               ))
             ) : (
-              <div className="members-card">No members found...</div>
+              <div className="members-card">Loading...</div>
             )}
           </Grid>
         </div>
