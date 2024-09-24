@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-
+import { useEffect, useState, useRef } from "react";
 import { EmailIcon } from "@chakra-ui/icons";
 import { Grid, Box, Avatar, Center, Input } from "@chakra-ui/react";
 
@@ -7,6 +6,7 @@ export default function MemberCards() {
   const [members, setMembers] = useState([]);
   const [memberCount, setMemberCount] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
+  const searchInputRef = useRef(null);
 
   const getQueryParam = (param) => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -17,6 +17,10 @@ export default function MemberCards() {
     const memberQuery = getQueryParam("member");
     if (memberQuery) {
       setSearchTerm(memberQuery);
+
+      if (searchInputRef.current) {
+        searchInputRef.current.scrollIntoView({ behavior: "smooth" });
+      }
     }
 
     fetch("/api/member_details")
@@ -42,6 +46,7 @@ export default function MemberCards() {
       </Center>
       <Center pb={10} px="4">
         <Input
+          ref={searchInputRef}
           placeholder="Search members..."
           value={searchTerm}
           maxLength={11}
