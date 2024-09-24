@@ -8,7 +8,17 @@ export default function MemberCards() {
   const [memberCount, setMemberCount] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
 
+  const getQueryParam = (param) => {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  };
+
   useEffect(() => {
+    const memberQuery = getQueryParam("member");
+    if (memberQuery) {
+      setSearchTerm(memberQuery);
+    }
+
     fetch("/api/member_details")
       .then((response) => response.json())
       .then((data) => {
