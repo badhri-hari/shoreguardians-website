@@ -88,10 +88,10 @@ export default function Members() {
         "As Vice Director, I assist the Director in planning and executing strategic projects and partnerships. I coordinated with partner organizations like MYRafiky, ensuring that the partnership went seamlessly and effectively. My organizational skills contributed to the successful growth in our volunteer base.",
     },
     {
-      name: "Pranesh",
+      name: "Siddhaarth",
       title: "Chief of Members",
-      emailIndex: 5,
-      image: "/key-members/pranesh-image.png",
+      emailIndex: 2,
+      image: "/key-members/siddhaarth-image.jpg",
       accomplishments:
         "As Chief of Members, I am responsible for member recruitment, retention, and engagement within ShoreGuardians. I have played a key role in successfully growing the club to nearly 100 members over the course of a year and ensured high levels of participation in cleanup events. My efforts have fostered a motivated and participative community dedicated to tackling shoreline pollution.",
     },
