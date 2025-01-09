@@ -74,7 +74,7 @@ export default function Members() {
       name: "Pritam",
       title: "Vice President",
       emailIndex: 9,
-      image: "",
+      image: "/key-members/pritam-image.png",
       accomplishments:
         "As Vice President, I manage the day-to-day operations and ensure the smooth execution of the club’s activities. I support the President in overseeing major events, such as high-impact cleanup initiatives and collaborations with external organizations. My role enhances the club's operational efficiency and member engagement.",
     },
