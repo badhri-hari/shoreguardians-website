@@ -49,7 +49,6 @@ export default function Members() {
     `mailto:praneshsch@gmail.com?subject=Hey Pranesh!`,
     `mailto:mithulchokan12@gmail.com?subject=Hey Mithul!`,
     `mailto:sahanaselvasankari@gmail.com?subject=Hey Sahana!`,
-    `mailto:example@gmail.com?subject=Hey Prathap!`,
     `mailto:pritamkrishna2007@gmail.com?subject=Hey Pritam!`,
     `mailto:danadev0dd@gmail.com?subject=Hey Dana Dev!`,
   ];
@@ -72,10 +71,10 @@ export default function Members() {
         "As the Director of ShoreGuardians, I've played a crucial role in the planning and execution the club’s initiatives. I reached out to and managed our partnership with Annetts Club, coordinating the collaborations and organizing cleanups that mobilized up to 30 members. My efforts have been pivotal in establishing a strong foundation for the club's ongoing activities and expanding its reach.",
     },
     {
-      name: "Shrikkanth",
+      name: "Pritam",
       title: "Vice President",
-      emailIndex: 4,
-      image: "/key-members/shrikkanth-image.jpg",
+      emailIndex: 9,
+      image: "",
       accomplishments:
         "As Vice President, I manage the day-to-day operations and ensure the smooth execution of the club’s activities. I support the President in overseeing major events, such as high-impact cleanup initiatives and collaborations with external organizations. My role enhances the club's operational efficiency and member engagement.",
     },
@@ -91,7 +90,7 @@ export default function Members() {
       name: "Pranesh",
       title: "Chief of Members",
       emailIndex: 5,
-      image: "/key-members/pranesh-image.png",
+      image: "/key-members/pranesh-image.jpg",
       accomplishments:
         "As Chief of Members, I am responsible for member recruitment, retention, and engagement within ShoreGuardians. I have played a key role in successfully growing the club to nearly 100 members over the course of a year and ensured high levels of participation in cleanup events. My efforts have fostered a motivated and participative community dedicated to tackling shoreline pollution.",
     },
