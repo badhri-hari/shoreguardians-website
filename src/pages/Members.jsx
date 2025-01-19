@@ -51,6 +51,7 @@ export default function Members() {
     `mailto:sahanaselvasankari@gmail.com?subject=Hey Sahana!`,
     `mailto:pritamkrishna2007@gmail.com?subject=Hey Pritam!`,
     `mailto:danadev0dd@gmail.com?subject=Hey Dana Dev!`,
+    `mailto:aashilmohammed24@gmail.com?subject=Hey Aashil!`,
   ];
 
   const keyMembers = [
@@ -95,10 +96,10 @@ export default function Members() {
         "As Chief of Members, I am responsible for member recruitment, retention, and engagement within ShoreGuardians. I have played a key role in successfully growing the club to nearly 100 members over the course of a year and ensured high levels of participation in cleanup events. My efforts have fostered a motivated and participative community dedicated to tackling shoreline pollution.",
     },
     {
-      name: "Sahana S",
+      name: "Aashil",
       title: "Marketing Head",
-      emailIndex: 7,
-      image: "/key-members/sahana-image.jpeg",
+      emailIndex: 10,
+      image: "/key-members/aashil-image.jpeg",
       accomplishments:
         "As the Marketing Head, I manage the club's social media presence, growing our Instagram account to 300+ followers. Through creating and publishing engaging posts and reels, I successfully raised awareness about the club’s events and achievements. My strategies help increase the club's visibility and attract widespread support and participation.",
     },
