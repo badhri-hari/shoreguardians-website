@@ -3,7 +3,7 @@ import { useMediaQuery } from "@chakra-ui/react";
 
 export default function Footer() {
   const [isSmallerScreen] = useMediaQuery("(max-width: 425px)");
-  const sahanaMail = "mailto:sahanaselvasankari@gmail.com?subject=Hey Sahana!";
+  const fawazMail = "mailto:rmfawaz07@gmail.com?subject=Hey Fawaz!";
 
   return (
     <Center className="footer-container">
@@ -17,7 +17,7 @@ export default function Footer() {
                 Badhri Hari
               </a>
                &nbsp;,&nbsp;&nbsp;
-              <a href="rmfawaz07@gmail.com" target="_blank" rel="noreferrer">
+              <a href={fawazMail} target="_blank" rel="noreferrer">
                 Fawaz Reyas Mohideen
               </a>
             </div>
@@ -31,7 +31,7 @@ export default function Footer() {
                 Badhri Hari
               </a>
               &nbsp;,&nbsp;&nbsp;
-              <a href="rmfawaz07@gmail.com" target="_blank" rel="noreferrer">
+              <a href={fawazMail} target="_blank" rel="noreferrer">
                 Fawaz Reyas Mohideen
               </a>
             </div>
