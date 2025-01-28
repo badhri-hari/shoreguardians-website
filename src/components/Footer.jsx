@@ -1,4 +1,4 @@
-import { HStack, Center, VStack } from "@chakra-ui/react";
+aimport { HStack, Center, VStack } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/react";
 
 export default function Footer() {
@@ -16,10 +16,10 @@ export default function Footer() {
               <a href="https://github.com/badhri-hari/" target="blank">
                 Badhri Hari
               </a>
-              {/* &nbsp;,&nbsp;&nbsp;
-              <a href={sahanaMail} target="_blank" rel="noreferrer">
-                Sahana S
-              </a> */}
+               &nbsp;,&nbsp;&nbsp;
+              <a href="rmfawaz07@gmail.com" target="_blank" rel="noreferrer">
+                Fawaz Reyas Mohideen
+              </a>
             </div>
           </VStack>
         ) : (
