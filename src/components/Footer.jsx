@@ -1,4 +1,4 @@
-aimport { HStack, Center, VStack } from "@chakra-ui/react";
+import { HStack, Center, VStack } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/react";
 
 export default function Footer() {
