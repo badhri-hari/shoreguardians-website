@@ -103,6 +103,14 @@ export default function Members() {
       accomplishments:
         "As the Marketing Head, I manage the club's social media presence, growing our Instagram account to 300+ followers. Through creating and publishing engaging posts and reels, I successfully raised awareness about the club’s events and achievements. My strategies help increase the club's visibility and attract widespread support and participation.",
     },
+    {
+      name: "Dana Dev",
+      title: "Eco-Awareness Advocate",
+      emailIndex: 9,
+      image: "/key-members/dana-image.jpg",
+      accomplishments:
+        "I am dedicated to spreading knowledge & awareness to encourage society—starting with our members to lead a life that adapts to a more sustainable lifestyle",
+    },
   ];
 
   const founders = keyMembers.slice(0, 2);
