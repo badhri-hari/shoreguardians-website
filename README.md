@@ -9,7 +9,6 @@ This repository contains the code for the official website for ShoreGuardians, a
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
 - [Contributing](#contributing)
 - [Contact](#contact)
 
