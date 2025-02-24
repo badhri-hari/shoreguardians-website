@@ -6,11 +6,11 @@
 
 This repository contains the code for the official website for ShoreGuardians, a beach cleanup club run by high-school students from across Chennai. The website serves as an informational platform for the club, showcasing our members, contact details, and more.
 
-## Table of Contents
+## License
+This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.  
+This means you are free to use, modify, and share this project **for non-commercial purposes only**, as long as you give proper credit.  
 
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [Contact](#contact)
+See the [LICENSE](LICENSE) file for more details.
 
 ## Technologies Used
 
