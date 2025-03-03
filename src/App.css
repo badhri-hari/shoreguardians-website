@@ -710,7 +710,8 @@ a {
 
 .members-core-grid-container {
   width: 70vw;
-  height: 90vh;
+  height: 70vh;
+  overflow: hidden;
   border: 2px solid white;
   background: rgba(255, 255, 255, 0.25);
   border-radius: 15px;
@@ -720,8 +721,7 @@ a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
   box-shadow: 0 0 5px white, inset 0 0 2.5px white;
   margin-bottom: 6vh;
-  padding-top: 11vh;
-  padding-bottom: 4vh;
+  padding-top: 6vh;
   position: relative;
 }
 
@@ -734,7 +734,7 @@ a {
 }
 
 .members-core-card {
-  width: 27vw;
+  width: 26vw;
   height: 35vh;
   border-radius: 10px;
   position: relative;
@@ -1044,10 +1044,9 @@ a {
   }
 
   .members-core-grid-container {
-    height: 75vh;
+    height: 60vh;
     overflow: hidden;
     padding-bottom: 5vh;
-    padding-top: -5vh;
     width: 90vw;
   }
 
