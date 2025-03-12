@@ -1,25 +1,12 @@
 <p align="center">
-  <img src="./public/shoreguardians-logo.png" alt="ShoreGuardians Logo">
+  <img src="https://github.com/user-attachments/assets/6fa2bec0-8487-4ba2-9727-e658b2ea290f" alt="ShoreGuardians Logo" height="350" width="700">
 </p>
 
 # ShoreGuardians Website
 
 This repository contains the code for the official website for ShoreGuardians, a beach cleanup club run by high-school students from across Chennai. The website serves as an informational platform for the club, showcasing our members, contact details, and more.
 
-## License
-This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.  
-This means you are free to use, modify, and share this project **for non-commercial purposes only**, as long as you give proper credit.  
-
-See the [LICENSE](LICENSE) file for more details.
-
-## Technologies Used
-
-This project is built using the following technologies, libraries, and frameworks:
-
-- **Vite.js**: Used for its fast build times and smooth developer experience.
-- **Chakra UI**: For layout components, icons, and styling.
-- **Google Apps Script**: To fetch Members' data from Google Sheets and Drive.
-- **Vercel:** Used to deploy the website for free.
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## Contributing
 
