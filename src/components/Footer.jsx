@@ -12,13 +12,9 @@ export default function Footer() {
           <VStack className="glassmorphism-footer" padding={"10px"}>
             <img src="/shoreguardians-logo.png" className="footer-logo"></img>
             <div className="footer-text-container">
-              Web Design Team:{" "}
+              Site Developer:{" "}
               <a href="https://github.com/badhri-hari/" target="blank">
                 Badhri Hari
-              </a>
-               &nbsp;,&nbsp;&nbsp;
-              <a href={fawazMail} target="_blank" rel="noreferrer">
-                Fawaz Reyas Mohideen
               </a>
             </div>
           </VStack>
@@ -26,13 +22,9 @@ export default function Footer() {
           <HStack className="glassmorphism-footer" padding={"10px"}>
             <img src="/shoreguardians-logo.png" className="footer-logo"></img>
             <div className="footer-text-container">
-              Web Design Team:{" "}
+              Site Developer:{" "}
               <a href="https://github.com/badhri-hari/" target="blank">
                 Badhri Hari
-              </a>
-              &nbsp;,&nbsp;&nbsp;
-              <a href={fawazMail} target="_blank" rel="noreferrer">
-                Fawaz Reyas Mohideen
               </a>
             </div>
           </HStack>

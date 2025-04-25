@@ -710,7 +710,7 @@ a {
 
 .members-core-grid-container {
   width: 70vw;
-  height: 90vh;
+  height: 40vh;
   border: 2px solid white;
   background: rgba(255, 255, 255, 0.25);
   border-radius: 15px;
@@ -734,10 +734,11 @@ a {
 }
 
 .members-core-card {
-  width: 27vw;
-  height: 35vh;
+  width: 40vw;
+  height: 45vh;
   border-radius: 10px;
   position: relative;
+  left: 46.5%;
   flex: 0 0 auto;
   z-index: 1;
 }
@@ -748,7 +749,7 @@ a {
   left: 0;
   right: 0;
   padding: 30px;
-  height: 20vh;
+  height: 28vh;
   background-color: #7facc4;
   color: #ffffff;
   border-radius: 8px;
@@ -793,15 +794,14 @@ a {
 
 .members-core-card-picture {
   position: absolute;
-  left: 63%;
-  bottom: 15%;
+  left: 65%;
+  bottom: 25%;
 }
 
 .members-core-card-picture .chakra-avatar__img {
-  width: 9vw;
+  width: 10vw;
   aspect-ratio: 1 / 1;
   border-radius: 50% !important;
-  margin-top: 100vh;
 }
 
 .members-grid-mobile {
@@ -1044,7 +1044,7 @@ a {
   }
 
   .members-core-grid-container {
-    height: 75vh;
+    height: 20vh;
     overflow: hidden;
     padding-bottom: 5vh;
     padding-top: -5vh;
@@ -1061,10 +1061,11 @@ a {
   }
 
   .members-core-card {
-    height: 15vh;
-    width: 79vw;
+    height: 30vh;
+    width: 78vw;
+    left: 0;
     margin: 10px;
-    margin-top: 0;
+    margin-top: -15px;
     margin-bottom: 10px;
     border: 5px solid rgba(0, 0, 0, 0.01);
   }
@@ -1078,7 +1079,7 @@ a {
 
   .members-core-card-contacts {
     display: flex;
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   .members-core-card-contacts img,
@@ -1089,12 +1090,12 @@ a {
 
   .members-core-card-picture {
     position: absolute;
-    bottom: 3.5%;
-    left: 62%;
+    bottom: 30%;
+    left: 56%;
   }
 
   .members-core-card-picture .chakra-avatar__img {
-    width: 100px;
+    width: 110px;
     aspect-ratio: 1 / 1;
     border-radius: 50% !important;
     z-index: 1000;

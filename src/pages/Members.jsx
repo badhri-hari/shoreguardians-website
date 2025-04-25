@@ -43,15 +43,7 @@ export default function Members() {
   const mailtoURLs = [
     `mailto:badhrihari123@gmail.com?subject=Hey Badhri!`,
     `mailto:rishirajanmenon@gmail.com?subject=Hey Rishi!`,
-    `mailto:siddvaka1303@gmail.com?subject=Hey Siddhaarth!`,
-    `mailto:rmfawaz07@gmail.com?subject=Hey Fawaz!`,
-    `mailto:shrikkanthb@gmail.com?subject=Hey Shrikkanth!`,
-    `mailto:praneshsch@gmail.com?subject=Hey Pranesh!`,
-    `mailto:mithulchokan12@gmail.com?subject=Hey Mithul!`,
     `mailto:sahanaselvasankari@gmail.com?subject=Hey Sahana!`,
-    `mailto:pritamkrishna2007@gmail.com?subject=Hey Pritam!`,
-    `mailto:danadev0dd@gmail.com?subject=Hey Dana Dev!`,
-    `mailto:aashilmohammed24@gmail.com?subject=Hey Aashil!`,
   ];
 
   const keyMembers = [
@@ -72,44 +64,12 @@ export default function Members() {
         "As the Director of ShoreGuardians, I've played a crucial role in the planning and execution the club’s initiatives. I reached out to and managed our partnership with Annetts Club, coordinating the collaborations and organizing cleanups that mobilized up to 30 members. My efforts have been pivotal in establishing a strong foundation for the club's ongoing activities and expanding its reach.",
     },
     {
-      name: "Pritam",
-      title: "Vice President",
-      emailIndex: 9,
-      image: "/key-members/pritam-image.png",
-      accomplishments:
-        "As Vice President, I manage the day-to-day operations and ensure the smooth execution of the club’s activities. I support the President in overseeing major events, such as high-impact cleanup initiatives and collaborations with external organizations. My role enhances the club's operational efficiency and member engagement.",
-    },
-    {
-      name: "Fawaz RM",
-      title: "Vice Director",
-      emailIndex: 3,
-      image: "/key-members/fawaz-image.jpg",
-      accomplishments:
-        "As Vice Director, I assist the Director in planning and executing strategic projects and partnerships. I coordinated with partner organizations like MYRafiky, ensuring that the partnership went seamlessly and effectively. My organizational skills contributed to the successful growth in our volunteer base.",
-    },
-    {
-      name: "Pranesh",
-      title: "Chief of Members",
-      emailIndex: 5,
-      image: "/key-members/pranesh-image.jpg",
-      accomplishments:
-        "As Chief of Members, I am responsible for member recruitment, retention, and engagement within ShoreGuardians. I have played a key role in successfully growing the club to nearly 100 members over the course of a year and ensured high levels of participation in cleanup events. My efforts have fostered a motivated and participative community dedicated to tackling shoreline pollution.",
-    },
-    {
-      name: "Aashil",
+      name: "Sahana",
       title: "Marketing Head",
-      emailIndex: 10,
-      image: "/key-members/aashil-image.jpeg",
+      emailIndex: 2,
+      image: "/key-members/sahana-image.jpg",
       accomplishments:
         "As the Marketing Head, I manage the club's social media presence, growing our Instagram account to 300+ followers. Through creating and publishing engaging posts and reels, I successfully raised awareness about the club’s events and achievements. My strategies help increase the club's visibility and attract widespread support and participation.",
-    },
-    {
-      name: "Dana Dev",
-      title: "Eco-Awareness Advocate",
-      emailIndex: 9,
-      image: "/key-members/dana-image.jpg",
-      accomplishments:
-        "I am dedicated to spreading knowledge & awareness to encourage society—starting with our members to lead a life that adapts to a more sustainable lifestyle",
     },
   ];
 

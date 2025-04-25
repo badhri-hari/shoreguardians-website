@@ -107,6 +107,7 @@ export default function Home() {
                     fade ? "fade-in-smaller-images" : "fade-out-smaller-images"
                   }`}
                   alt="About Us Image Carousel"
+                  loading="lazy"
                 />
               </div>
             </Stack>
@@ -122,6 +123,7 @@ export default function Home() {
                     fade ? "fade-in-smaller-images" : "fade-out-smaller-images"
                   }`}
                   alt="Our Mission Image Carousel"
+                  loading="lazy"
                 />
               </div>
               <div className="our-mission">
