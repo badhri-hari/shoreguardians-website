@@ -41,40 +41,40 @@ export default function Members() {
   };
 
   const mailtoURLs = [
-    `mailto:badhrihari123@gmail.com?subject=Hey Badhri!`,
-    `mailto:rishirajanmenon@gmail.com?subject=Hey Rishi!`,
-    `mailto:sahanaselvasankari@gmail.com?subject=Hey Sahana!`,
+    `mailto:aadhils2009@gmail.com?subject=Hey Aadhil!`,
+    `mailto:roshanamrith2009@gmail.com?subject=Hey Roshan!`,
+    `mailto:ahilmanav@gmail.com?subject=Hey Ahil!`,
   ];
 
   const keyMembers = [
     {
-      name: "Badhri Hari",
-      title: "Founder | President",
+      name: "Aadhil",
+      title: "President",
       emailIndex: 0,
-      image: "/key-members/badhri-image.jpg",
+      image: "/key-members/aadhil-image.jpg",
       accomplishments:
-        "As the President of ShoreGuardians, I've played an instrumental role in growing the club and getting it recognition. One of my key achievements was securing a recognition with the Jane Goodall Institute of India, promoting and solidifying the club's efforts and significantly elevating our profile. Alongside this, I planned and managed cleanups, helping to coordinate up to 30 volunteers at once.",
+        "I’m Aadhil, and I am the President of ShoreGuardians. I believe that small actions can bring big changes and to protect our iconic beaches and marine life, I work to encourage simple beach cleanups that reduce pollution and keep our coastlines looking serene. In my role, I lead our team in planning cleanups, guiding projects, and ensuring that our efforts create a lasting impact. Our goal is to build a strong community that is dedicated to preserving the health of our coasts. Together, lets help keep our shores clean and waste-free.",
     },
     {
-      name: "Rishi RM",
-      title: "Founder | Director",
+      name: "Roshan",
+      title: "Director",
       emailIndex: 1,
-      image: "/key-members/rishi-image.jpg",
+      image: "/key-members/roshan-image.jpg",
       accomplishments:
-        "As the Director of ShoreGuardians, I've played a crucial role in the planning and execution the club’s initiatives. I reached out to and managed our partnership with Annetts Club, coordinating the collaborations and organizing cleanups that mobilized up to 30 members. My efforts have been pivotal in establishing a strong foundation for the club's ongoing activities and expanding its reach.",
+        "I am Roshan, I am passionate about protecting coastlines. By leading beach cleanups, reducing plastic waste, and restoring ecosystems, me and my peers look forward to inspire communities to take action for a cleaner, healthier, and sustainable ocean future because there is more than it meets the eye.",
     },
     {
-      name: "Sahana",
-      title: "Marketing Head",
+      name: "Ahil Manav",
+      title: "Director",
       emailIndex: 2,
-      image: "/key-members/sahana-image.jpg",
+      image: "/key-members/ahil-image.jpg",
       accomplishments:
-        "As the Marketing Head, I manage the club's social media presence, growing our Instagram account to 300+ followers. Through creating and publishing engaging posts and reels, I successfully raised awareness about the club’s events and achievements. My strategies help increase the club's visibility and attract widespread support and participation.",
+        "I’m Ahil Manav, and I've always wanted to do something meaningful for the environment. I believe that every action, whether it’s saving energy, reducing waste, or encouraging others to live sustainably adds up to create real change. For me, protecting the planet isn’t just an idea, it’s a responsibility. I love learning new ways to care for nature and as a director of ShoreGuardians I aim to do my part for the planet!",
     },
   ];
 
-  const founders = keyMembers.slice(0, 2);
-  const coreMembers = keyMembers.slice(2);
+  const founders = keyMembers.slice(0, 3);
+  const coreMembers = keyMembers.slice(3);
 
   return (
     <>

@@ -49,7 +49,8 @@ export default function Partnerships() {
               <div className="partner-about-us">
                 <h2>Adyar Times</h2>
                 <p>
-                  The efforts of our club&apos;s founders were recognized by the{" "}
+                  The efforts of our club&apos;s founders, Badhri Hari and Rishi
+                  Rajan Menon, were recognized by{" "}
                   <a
                     href="https://adyartimes.in/youth-group-shows-concern-for-environmental-issues/"
                     target="_blank"
@@ -57,8 +58,8 @@ export default function Partnerships() {
                   >
                     Adyar Times
                   </a>{" "}
-                  group, which lead to a feature article about the club, our
-                  purpose, and our outreach.
+                  , which lead to a feature article about the club, our purpose,
+                  and our outreach.
                 </p>
               </div>
               <div className="rectangle partner-rectangles">

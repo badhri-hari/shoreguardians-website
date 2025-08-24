@@ -626,6 +626,7 @@ a {
   gap: 20px;
   padding: 20px;
   margin-top: 2vh;
+  flex-direction: column;
 }
 
 .members-founders-card {
@@ -703,12 +704,16 @@ a {
 }
 
 .members-core-header {
+  display: none !important;
+
   font-family: "arvo-regular", sans-serif;
   font-size: xx-large;
   color: white;
 }
 
 .members-core-grid-container {
+  display: none !important;
+
   width: 70vw;
   height: 40vh;
   border: 2px solid white;
