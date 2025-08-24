@@ -607,6 +607,10 @@ a {
   text-underline-offset: 0.3em;
 }
 
+a:hover {
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 759px) {
   .footer-logo {
     height: 200px;
@@ -620,23 +624,44 @@ a {
 }
 
 .members-founders-container {
-  display: flex;
+  display: flex;          
+  flex-direction: column; 
   justify-content: center;
-  align-items: center;
+  align-items: center; 
   gap: 20px;
   padding: 20px;
   margin-top: 2vh;
-  flex-direction: column;
+  width: 100%;
+}
+
+.members-founders-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.members-founders-row.single {
+  justify-content: center;
+  min-width: 100%;
+}
+
+.members-founders-row:not(.single) {
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  min-width: 100%;
 }
 
 .members-founders-card {
   background: linear-gradient(51deg, #2b59c3 30%, #20063b 95%);
-  margin: 10px;
-  width: 40vw;
-  height: 40vh;
   border-radius: 10px;
   position: relative;
-  flex: 0 0 auto;
+  width: min(600px, 90%);
+  max-width: 40vw;
+  height: 40vh;
+  margin: 0 auto;
 }
 
 .members-founders-card-container {

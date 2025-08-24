@@ -48,7 +48,7 @@ export default function Members() {
 
   const keyMembers = [
     {
-      name: "Aadhil",
+      name: "Aadhil.S",
       title: "President",
       emailIndex: 0,
       image: "/key-members/aadhil-image.jpg",
@@ -64,7 +64,7 @@ export default function Members() {
         "I am Roshan, I am passionate about protecting coastlines. By leading beach cleanups, reducing plastic waste, and restoring ecosystems, me and my peers look forward to inspire communities to take action for a cleaner, healthier, and sustainable ocean future because there is more than it meets the eye.",
     },
     {
-      name: "Ahil Manav",
+      name: "Ahil Manav M P",
       title: "Director",
       emailIndex: 2,
       image: "/key-members/ahil-image.jpg",
@@ -95,15 +95,15 @@ export default function Members() {
         <Nav />
         <Center>
           <div className="members-founders-container">
-            {founders.map((founder, index) => (
-              <div key={index} className="members-founders-card">
+            <div className="members-founders-row single">
+              <div className="members-founders-card">
                 <div className="members-founders-card-container">
                   <div className="members-founders-card-text-container">
-                    <h1>{founder.name}</h1>
-                    <p>{founder.title}</p>
+                    <h1>{founders[0].name}</h1>
+                    <p>{founders[0].title}</p>
                     <div className="members-founders-card-contacts">
                       <a
-                        href={mailtoURLs[founder.emailIndex]}
+                        href={mailtoURLs[founders[0].emailIndex]}
                         target="_blank"
                         rel="noreferrer"
                       >
@@ -115,16 +115,49 @@ export default function Members() {
                           fontSize: "40px",
                           cursor: "pointer",
                         }}
-                        onClick={() => handleClick(founder)}
+                        onClick={() => handleClick(founders[0])}
                       />
                     </div>
                   </div>
                   <div className="members-founders-card-picture">
-                    <Avatar name={founder.name} src={founder.image} />
+                    <Avatar name={founders[0].name} src={founders[0].image} />
                   </div>
                 </div>
               </div>
-            ))}
+            </div>
+
+            <div className="members-founders-row">
+              {founders.slice(1).map((founder, index) => (
+                <div key={index} className="members-founders-card">
+                  <div className="members-founders-card-container">
+                    <div className="members-founders-card-text-container">
+                      <h1>{founder.name}</h1>
+                      <p>{founder.title}</p>
+                      <div className="members-founders-card-contacts">
+                        <a
+                          href={mailtoURLs[founder.emailIndex]}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <EmailIcon />
+                        </a>
+                        <CgDetailsMore
+                          style={{
+                            color: "black",
+                            fontSize: "40px",
+                            cursor: "pointer",
+                          }}
+                          onClick={() => handleClick(founder)}
+                        />
+                      </div>
+                    </div>
+                    <div className="members-founders-card-picture">
+                      <Avatar name={founder.name} src={founder.image} />
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </Center>
         <Center pt={20} pb={40} px="4" className="members-core-header">
